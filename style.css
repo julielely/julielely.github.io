@@ -1,0 +1,1091 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Source+Serif+Pro:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Source+Serif+Pro:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&display=swap');
+
+@font-face {
+    font-family: "Proxima Nova";
+    font-weight: lighter;
+    src: url("fonts/Proxima_Nova_Thin.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    font-weight: bold;
+    src: url("fonts/Proxima_Nova_Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    font-weight: normal;
+    src: url("fonts/Proxima_Nova_Regular.otf") format("opentype");
+}
+
+:root {
+  --large-highlight: rgba(242, 205, 255, 0.6);
+  --text-highlight: rgba(58, 141, 247, 0.3);
+  --button1-highlight: rgba(151, 207, 208, 0.7);
+  --button2-highlight: rgba(43, 34, 46, 0.6);
+}
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.background {
+  background: #F5F5F5;
+  padding-top: 20px;
+}
+
+.home-background {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 auto;
+  background: #F5F5F5;
+  padding-top: 60px;
+  padding-bottom: 10px;
+}
+
+#other {
+  margin-right: 0px;
+}
+
+nav ul li {
+  float: right;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px 70px;
+  overflow: hidden;
+}
+
+#article-nav-items {
+  background-image: url('../images/gradient_nav.jpg');
+  background-position: 0px;
+  background-size: cover;
+}
+
+.header-nav-prog {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.progress-container {
+  z-index: 1;
+  width: 100%;
+  height: 8px;
+  background: #F5F5F5;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #7fc4f1;
+  width: 0%;
+}
+
+nav ul li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: opacity 0.5s linear;
+  transition: .5s ease-out;
+}
+
+.nav-items li {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav-items li {
+  list-style: none;
+  margin-right: 45px;
+  transition: opacity 0.5s linear;
+  transition: .5s ease-out;
+}
+
+.nav-items li a {
+  color: #FFFFFF;
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+}
+
+.other-items {
+  padding-top: 10px;
+}
+
+body {
+  background-image: url('images/gradient.jpg');
+  background-position: 0px;
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  margin: 0px;
+}
+
+header {
+  background-color: #F5F5F5;
+  width: 100%;
+  height: 10px;
+}
+
+* {
+  text-decoration: none;
+}
+
+
+.nav-items li a:hover {
+  transform: translate(0px, -5px);
+}
+
+.photo {
+  display: none;
+}
+
+.button {
+  transition: .5s ease-out;
+}
+
+.button-exp:hover {
+  opacity: 1;
+  background: var(--text-highlight, rgba(151, 207, 208, 0.7));
+}
+
+.button-contact:hover {
+  opacity: 1;
+  background: var(--button1-highlight, rgba(151, 207, 208, 0.7));
+}
+
+#desktop-name {
+  display: none;
+}
+
+#tech {
+  display: none;
+}
+
+#exp {
+  display: none;
+}
+
+/*First Section*/
+.top-content {
+  display: table;
+  margin: 20px auto;
+  width: 86%;
+  background-color: #FFFFFF;
+  margin-top: 60px;
+  padding-top: 26px;
+}
+
+.main-content {
+  display: table;
+  margin: 10px auto;
+  width: 86%;
+  background-color: #FFFFFF;
+}
+
+.main-text {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.text-highlight {
+  background-color: var(--text-highlight, rgba(151, 207, 208, 0.7));
+}
+
+.title-highlight {
+  background-color: var(--large-highlight, rgba(151, 207, 208, 0.7));
+  display: inline-block;
+  padding: 0.07em;
+  height: .75em;
+  line-height: .45em;
+}
+
+.home-title-highlight {
+  background-color: var(--large-highlight, rgba(151, 207, 208, 0.7));
+  display: inline-block;
+  height: .70em;
+  line-height: .45em;
+}
+
+#connect-highlight {
+  background-color: var(--button1-highlight, rgba(151, 207, 208, 0.7));
+}
+
+#greeting {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  color: #2C2C2C;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+#home-greeting {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  color: #2C2C2C;
+  text-align: left;
+  margin: 10px 0px 42px 0px;
+}
+
+#julie-title {
+  font-family: "Source Serif Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  text-align: center;
+  margin: 0px;
+}
+
+#home-julie-title {
+  font-family: "Source Serif Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 90px;
+  line-height: 136px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin: 0px;
+}
+
+#definition {
+  font-family: "Source Serif Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: #2C2C2C;
+  padding-bottom: 20px;
+}
+
+#home-definition {
+  font-family: "Source Serif Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: #2C2C2C;
+  padding-top: 10px;
+}
+
+.body-text {
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.home-body-text {
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15.5px;
+
+  text-align: center;
+  width: 440px;
+  font-weight: 400;
+  line-height: 18px;
+  padding-top: 15px;
+}
+
+#contact {
+  margin-top: 70px;
+}
+/*Skills section*/
+.skills-experience-content {
+  padding-bottom: 50px;
+}
+
+.header-text {
+  position: relative;
+  font-family: "Source Serif Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  color: #2C2C2C;
+}
+
+.subheader-text {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  color: #2C2C2C;
+}
+
+#exp-highlight {
+  background-color: var(--text-highlight, rgba(151, 207, 208, 0.7));
+}
+
+.button {
+  text-decoration: none;
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+  padding: 6px 30px 6px 30px;
+  font-family: "Source Serif Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #2C2C2C;
+}
+
+.div-button {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.socials:hover {
+  transform: translate(0px, -5px);
+}
+
+.socials {
+  font-family: "Source Serif Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+
+  display: flex;
+  text-align: left;
+  letter-spacing: 0.02em;
+  transition: opacity 0.5s linear;
+  transition: .5s ease-out;
+}
+
+.socials a {
+  color: #2C2C2C;
+}
+
+.link {
+  text-align: center;
+  font-family: Inconsolata;
+  font-style: normal;
+  color: #2C2C2C;
+}
+
+
+@media only screen and (min-width: 800px) {
+
+  /*HEADER*/
+  #desktop-name {
+    display: block;
+  }
+
+  #logo a {
+    font-family: "Source Serif Pro";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    float: left;
+    letter-spacing: 0.0em;
+    text-transform: none;
+  }
+
+  .wrapper {
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+
+  .other-items {
+    padding-top: 10px;
+  }
+
+nav li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: opacity 0.5s linear;
+  transition: .5s ease-out;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .main-text {
+    padding: 20px 20vw;
+  }
+
+  body #julie-title {
+    font-size: 7.4vw;
+  }
+
+  .skills-experience-content {
+    padding: 0px 60px 60px 60px;
+  }
+
+  .connect-items {
+    padding: 0px 60px 0px 60px;
+  }
+}
+
+/* index.html */
+
+.intro-box {
+  margin: 70px auto;
+  margin-bottom: 100px;
+  width: 76%;
+  padding-top: 55px;
+  padding-right: 0%;
+  padding-bottom: 55px;
+  padding-left: 0%;
+  background-color: #FFF;
+  text-align: center;
+}
+
+.home-header-text {
+  display: inline-block;
+  text-align: center;
+}
+
+.header-container {
+  display: inline-block;
+}
+
+/* Project Containers */
+
+.all-content {
+  padding: 50px;
+}
+
+.proj-container {
+  width: 76%;
+  margin: auto;
+  background-color: #FFF;
+  transition: .5s ease-out;
+}
+
+.proj-container + .proj-container {
+  margin-top: 40px;
+}
+.proj-header {
+  display: block;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.proj-image {
+  display: inline-block;
+}
+
+.proj-box {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.proj-text {
+  position: relative;
+  display: inline-block;
+  overflow: visible;
+  margin: auto 50px;
+  margin-right: 0px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+}
+
+.proj-image {
+  width: 300px;
+}
+
+.proj-title {
+  font-family: "Roboto Slab";
+  font-size: 55px;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.proj-subheader {
+  font-family: "Roboto Slab";
+  margin-top: 0px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.proj-content {
+  margin-top: 11px;
+  font-family: "Inconsolata";
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.proj-tags {
+  margin-top: 15px;
+  padding: 0px;
+  float: left;
+}
+
+.proj-tag li {
+  display: inline;
+}
+
+.proj-onetag {
+  display: inline-block;
+  margin-right: 16px;
+  padding: 8px 8px;
+  border-radius: 4px;
+  background: rgba(155,206,253,0.3);
+;
+
+  font-family: "Proxima Nova";
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.connect-box {
+  margin-bottom: 0px;
+}
+
+/* HelpUX */
+#helpUX {
+  font-family: "Poppins";
+  font-weight: 700;
+}
+
+#helpUX-sub {
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+#helpUX-tags li {
+  background: rgba(242,205,255,0.3);
+}
+
+/* Activ */
+#activ {
+  font-family: "Source Serif Pro";
+  font-weight: 700;
+}
+
+#activ-sub {
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+#activ-tags li {
+  background: rgba(151,207,208,0.3);
+}
+
+/* Serene */
+#serene {
+  font-family: "Playfair Display";
+  font-weight: 700;
+}
+
+#serene-sub {
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+#serene-tags li {
+  background: rgba(155,206,253,0.3);
+}
+
+.proj-container:hover {
+  transform: translate(0px, -8px);
+}
+
+figure {
+  margin: 0px;
+}
+
+/* Articles - Start */
+
+.article-background {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 auto;
+  background: #FFF;
+  padding-top: 60px;
+  padding-bottom: 10px;
+}
+
+.content-container {
+  margin-top: 80px;
+  padding: 45px 300px;
+  text-align: left;
+}
+
+.article-header {
+  display: flex;
+  flex: 0 1 auto;
+  justify-content: space-between;
+
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+  letter-spacing: 0.1em;
+}
+
+.project-topic {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.project-date {
+  font-weight: 400;
+}
+
+
+.article-title {
+  font-family: "Roboto Slab";
+  font-size: 72px;
+  font-weight: 700;
+  margin: 40px 0px 0px 0px;
+}
+
+.article-subheader {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0px;
+  margin-top: -5px;
+}
+
+.article-description {
+  font-family: "Inconsolata";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.task-header {
+  font-family: "Roboto Mono";
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  margin: 0px;
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+#award {
+  position: absolute;
+  bottom: -25px;
+  right: -25px;
+  width: 110px;
+}
+
+#first-task {
+  margin-top: 50px;
+}
+
+.task-container {
+  width: 680px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.task-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.task-container img {
+  width: 270px;
+  margin-right: 25px;
+}
+
+.circle {
+  width:29px;
+  height:29px;
+  border-radius:50%;
+  color:#fff;
+  text-align:center;
+  font-family: "Roboto Mono";
+  font-size: 18px;
+  font-weight: 700;
+  background:#2C2C2C;
+  margin-right: 15px;
+}
+
+.task-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.circle-and-text-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.circle-and-text {
+  display: flex;
+}
+
+#community img {
+  order: 2;
+  margin-right: 0px;
+  margin-left: 25px;
+}
+/* Main Text Content */
+
+.article-main-header {
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgb(121,184,229,1);
+  margin: 20px 0px 0px 0px;
+}
+
+.article-body-text {
+  font-family: "Proxima Nova";
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+.main-subheader {
+  font-family: "Roboto Mono", "Source Serif Pro";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 0px 0px 30px 0px;
+}
+
+.content-background ul {
+  display: inline-block;
+  list-style: none;
+  padding-left: 0;
+}
+
+#preview-img {
+  margin-top: -20px;
+}
+
+#empathy-map {
+  display: block;
+  margin: 40px auto;
+  width: 80%;
+}
+
+/* HelpUX */
+#helpux-title {
+  font-family: "Poppins";
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+}
+.first-helpux-ideation {
+  display: flex;
+}
+
+.helpux-persona img{
+  width: auto;
+  max-width: 270px;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+.helpux-templates {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.template-imgs + .template-imgs {
+  margin-top: 20px;
+}
+
+.helpux-preview-img {
+  margin-top: 10px;
+}
+
+/* Articles - End */
+/* Photo Animation */
+
+.inline-photo-left {
+  opacity: 0;
+  -webkit-transform: translateX(-3em);
+          transform: translateX(-3em);
+  -webkit-transition: opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  transition: opacity .5s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  transition: transform 5s .25s cubic-bezier(0,1,.3,1),
+              opacity .5s .25s ease-out;
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .5s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  width: 90%;
+
+  will-change: transform, opacity;
+}
+
+.inline-photo-left.is-visible {
+  opacity: 1;
+  -webkit-transform: translateX(0em);
+          transform: translateX(0em);
+}
+
+
+.inline-photo-right {
+  opacity: 0;
+  -webkit-transform: translateX(3em);
+          transform: translateX(3em);
+  -webkit-transition: opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  transition: opacity .5s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  transition: transform 5s .25s cubic-bezier(0,1,.3,1),
+              opacity .5s .25s ease-out;
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .5s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  width: 90%;
+
+  will-change: transform, opacity;
+}
+
+.inline-photo-right.is-visible {
+  opacity: 1;
+  -webkit-transform: translateX(0em);
+          transform: translateX(0em);
+}
+
+/* BLOOM END */
+@media only screen and (max-width: 530px) {
+  body .header-text {
+    font-size: 6.5vw;
+  }
+}
+
+/*Mobile Phone*/
+@media only screen and (max-width: 800px) {
+
+  .body-text {
+    padding: 20px;
+  }
+
+  .nav-container {
+    height: 65px;
+  }
+
+  .nav-items {
+    overflow: hidden;
+    background-image: url('../images/gradient.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  nav a.icon {
+    padding: 14px 16px;
+    font-size: 25px;
+    color: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .active {
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body p {
+    padding-top: 0px;
+  }
+
+  .main-text {
+    padding: 60px 6vw 0px 23vw;
+  }
+
+  body #greeting {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  body #julie-title {
+    text-align: left;
+    font-size: 6.2vw;
+  }
+
+  body #definition {
+    text-align: left;
+    font-size: 20px;
+  }
+
+  /*Photo*/
+  .photo {
+    transform: translateX(30px);
+    display: inline;
+    width: 380px;
+    float: right;
+    shape-outside: url("images/BW.png");
+    shape-margin: 1%;
+  }
+
+  body .div-button {
+    text-align: left;
+    margin-bottom: 60px;
+  }
+
+  #tech {
+    position: absolute;
+    left: -190px;
+    top: 160px;
+    font-family: Source Serif Pro;
+    font-weight: bold;
+    font-size: 175px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.04);
+    transform: rotate(-90deg);
+    z-index: 2;
+    clip-path: inset(0px 195px 0px 0px);
+  }
+
+  #exp {
+    position: absolute;
+    right: -200px;
+    top: 1175px;
+    font-family: Source Serif Pro;
+    font-weight: bold;
+    font-size: 175px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.04);
+    transform: rotate(90deg);
+    z-index: 2;
+    clip-path: inset(0px 97px 0px 0px);
+  }
+
+  /*Skills + experiences*/
+  body .header-text {
+    font-size: 50px;
+  }
+
+  body .main-content {
+    margin-top: 50px;
+  }
+
+  .skills-experience-content {
+    padding: 0px 60px 60px 60px;
+  }
+
+  .skills-section {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .content-header {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 30px;
+  }
+
+  /*Contact*/
+  .connect-items {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0px 80px;
+    align-items: center;
+  }
+
+  .connect-items a {
+    text-decoration: none;
+    color: #2C2C2C;
+  }
+}
+
+.skills-content {
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: justify;
+
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+
+.footer-content {
+  margin-top: -10px;
+  display: block;
+  padding: 50px 0px;
+  color: #2C2C2C;
+  background-color: #F5F5F5;
+}
+
+.home-footer-content {
+  margin-top: -20px;
+  display: block;
+  padding: 30px 0px;
+  color: #2C2C2C;
+  background-color: #F5F5F5;
+}
+
+.julies-footer {
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  text-align: center;
+}
