@@ -687,6 +687,7 @@ figure {
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
+  word-spacing: -3px;
 }
 
 .task-header {
@@ -729,9 +730,28 @@ img {
   justify-content: space-between;
 }
 
+.helpux-task {
+  align-items: center;
+  flex-direction: column;
+}
+
 .task-container img {
   width: 270px;
   margin-right: 25px;
+}
+
+.helpux-task-container {
+  width: 100%;
+  margin-bottom: 0px;
+}
+.helpux-task-container img {
+  width: 85%;
+  margin-right: 0px;
+  margin-bottom: 20px;
+}
+
+.helpux-adjustment img {
+  width: 70%;
 }
 
 .circle {
@@ -793,6 +813,7 @@ img {
   font-weight: 700;
   line-height: 28px;
   margin: 0px 0px 30px 0px;
+  word-spacing: -3px;
 }
 
 .content-background ul {
