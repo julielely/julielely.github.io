@@ -1165,7 +1165,7 @@ img {
   text-align: center;
 }
 
-@media only screen and (min-width: 1700px){
+@media only screen and (min-width: 1800px){
   .home-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
