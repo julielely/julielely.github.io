@@ -43,6 +43,11 @@ nav {
 }
 
 .home-background {
+  background: #F5F5F5;
+  padding-top: 40px;
+}
+
+.home-container {
   display: flex;
   flex-direction: column;
   flex: 0 1 auto;
@@ -1109,4 +1114,27 @@ img {
   font-weight: normal;
   font-size: 15px;
   text-align: center;
+}
+
+@media only screen and (min-width: 1700px){
+  .home-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 76%;
+    margin: auto;
+    flex-direction: row;
+    /* flex: 0 1 auto;
+    background: #F5F5F5;
+    padding-top: 60px;
+    padding-bottom: 10px; */
+  }
+
+  .proj-container {
+    width: 50%;
+    margin: 0px;
+  }
+
+  .proj-container + .proj-container {
+    margin-top: 0px;
+  }
 }
