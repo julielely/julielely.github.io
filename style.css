@@ -546,9 +546,10 @@ nav li a {
 
 .proj-content {
   margin-top: 11px;
-  font-family: "Inconsolata";
+  margin-bottom: 5px;
+  font-family: "Proxima Nova";
   font-size: 18px;
-  line-height: 20px;
+  line-height: 24px;
 }
 
 .proj-tags {
@@ -567,15 +568,58 @@ nav li a {
   padding: 8px 8px;
   border-radius: 4px;
   background: rgba(155,206,253,0.3);
-;
 
   font-family: "Proxima Nova";
   font-size: 12px;
   font-weight: bold;
+  margin-top: 10px;
 }
 
 .connect-box {
   margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 800px){
+  #home-julie-title {
+    font-size: 74px;
+  }
+  .proj-text {
+    display: none;
+  }
+
+  .all-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .proj-header {
+    text-align: center;
+  }
+
+  .proj-box {
+    justify-content: center;
+  }
+
+  .proj-image {
+    width: 84%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  #home-julie-title {
+    font-size: 64px;
+  }
+
+  .home-body-text {
+    width: 320px;
+    font-size: 14.5px;
+  }
+
+  .proj-image {
+    width: 260px;
+  }
+
 }
 
 /* HelpUX */
