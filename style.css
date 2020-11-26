@@ -313,7 +313,7 @@ header {
   font-family: "Inconsolata";
   font-style: normal;
   font-weight: normal;
-  font-size: 15.5px;
+  font-size: 16.5px;
 
   text-align: center;
   width: 440px;
@@ -652,6 +652,11 @@ nav li a {
 
 #activ-tags li {
   background: rgba(151,207,208,0.3);
+}
+
+#projectus {
+  font-family: "Poppins";
+  font-weight: 700;
 }
 
 /* Serene */
@@ -1162,23 +1167,32 @@ img {
 
 @media only screen and (min-width: 1700px){
   .home-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
     width: 76%;
     margin: auto;
-    flex-direction: row;
-    /* flex: 0 1 auto;
-    background: #F5F5F5;
-    padding-top: 60px;
-    padding-bottom: 10px; */
   }
 
   .proj-container {
-    width: 50%;
+    width: 100%;
     margin: 0px;
+    height: 24vw;
+
+    display: flex;
+    align-items: center;
   }
+
 
   .proj-container + .proj-container {
     margin-top: 0px;
+  }
+
+  .proj-tags {
+    display: none;
+  }
+
+  #projectus {
+    font-size: 45px;
   }
 }
