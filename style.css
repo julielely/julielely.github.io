@@ -7,19 +7,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&display=swap');
 
 @font-face {
-    font-family: "Proxima Nova";
+    font-family: "Proxima Nova", sans-serif;
     font-weight: lighter;
     src: url("fonts/Proxima_Nova_Thin.otf") format("opentype");
 }
 
 @font-face {
-    font-family: "Proxima Nova";
+    font-family: "Proxima Nova", sans-serif;
     font-weight: bold;
     src: url("fonts/Proxima_Nova_Bold.otf") format("opentype");
 }
 
 @font-face {
-    font-family: "Proxima Nova";
+    font-family: "Proxima Nova", sans-serif;
     font-weight: normal;
     src: url("fonts/Proxima_Nova_Regular.otf") format("opentype");
 }
@@ -235,7 +235,7 @@ header {
 }
 
 #greeting {
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -246,7 +246,7 @@ header {
 }
 
 #home-greeting {
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -257,7 +257,7 @@ header {
 }
 
 #julie-title {
-  font-family: "Source Serif Pro";
+  font-family: "Source Serif Pro", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 60px;
@@ -266,7 +266,7 @@ header {
 }
 
 #home-julie-title {
-  font-family: "Source Serif Pro";
+  font-family: "Source Serif Pro", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 90px;
@@ -280,7 +280,7 @@ header {
 }
 
 #definition {
-  font-family: "Source Serif Pro";
+  font-family: "Source Serif Pro", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -291,7 +291,7 @@ header {
 }
 
 #home-definition {
-  font-family: "Source Serif Pro";
+  font-family: "Source Serif Pro", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
@@ -547,7 +547,7 @@ nav li a {
 .proj-content {
   margin-top: 11px;
   margin-bottom: 5px;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", sans-serif;
   font-size: 18px;
   line-height: 24px;
 }
@@ -569,7 +569,7 @@ nav li a {
   border-radius: 4px;
   background: rgba(155,206,253,0.3);
 
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", sans-serif;
   font-size: 12px;
   font-weight: bold;
   margin-top: 10px;
@@ -855,7 +855,7 @@ img {
 }
 
 .article-body-text {
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", sans-serif;
   font-size: 18px;
   font-weight: normal;
   line-height: 30px;
