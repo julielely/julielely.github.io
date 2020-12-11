@@ -696,8 +696,8 @@ figure {
 }
 
 .content-container {
-  margin-top: 80px;
-  padding: 45px 300px;
+  margin: 90px auto;
+  width: 58%;
   text-align: left;
 }
 
@@ -843,7 +843,7 @@ img {
 }
 /* Main Text Content */
 
-.article-main-header {
+.article-main-header, .activ-main-header {
   font-family: "Source Sans Pro";
   font-size: 18px;
   font-weight: 700;
@@ -852,6 +852,10 @@ img {
   text-transform: uppercase;
   color: rgb(121,184,229,1);
   margin: 20px 0px 0px 0px;
+}
+
+.activ-main-header {
+  color: rgb(127 181 185);
 }
 
 .article-body-text {
@@ -893,6 +897,7 @@ img {
   font-style: normal;
   font-weight: 700;
 }
+
 .first-helpux-ideation {
   display: flex;
 }
@@ -970,6 +975,28 @@ img {
 }
 
 /* BLOOM END */
+
+
+/* Activ Title*/
+
+.activ-title {
+  font-family: "Source Serif Pro";
+}
+
+.activ-subheader {
+  font-family: "Source Sans Pro";
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.activ-image {
+  margin-top: 20px;
+}
+
+.activ-preview {
+  margin-bottom: -5px;
+}
+
 @media only screen and (max-width: 530px) {
   body .header-text {
     font-size: 6.5vw;
