@@ -126,7 +126,7 @@ nav ul li a {
   font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 17px;
   letter-spacing: 0.15em;
   text-decoration: none;
 }
@@ -697,7 +697,7 @@ figure {
 
 .content-container {
   margin: 90px auto;
-  width: 58%;
+  width: 62%;
   text-align: left;
 }
 
