@@ -54,14 +54,14 @@
               <li><strong>My Role:</strong> Lead designer, established overall branding and directed high fidelity prototyping</li>
               <li><strong>Team:</strong> Arina Romanova, Chintan Jani, and Nicole Lopez</li>
               <li><strong>Timeline:</strong> 48 hours</li>
-              <li><strong>Tools:</strong> Figma, opendoodles, flaticon</li>
+              <li><strong>Tools:</strong> Figma for Prototyping, opendoodles for illustrations, and flaticon for icons</li>
             </ul>
           </section>
           <section class="preview">
             <p class="article-main-header">Preview</p>
             <p class="main-subheader">A quick preview of Bloom, an app that <br>
               encourages users to adopt sustainable habits</p>
-            <img id="preview-img" src="images/bloom/preview.png" alt="Overview of Bloom app">
+            <img id="preview-img" src="images/bloom/preview.jpg" alt="Overview of Bloom app">
           </section>
           <section class="introduction">
             <p class="article-main-header">Introduction</p>
@@ -91,11 +91,13 @@
           </section>
           <section class="ideation">
             <p class="article-main-header">Ideation & User Analysis</p>
-            <p class="main-subheader">What do users want or need?</p>
+            <p class="main-subheader">Getting personal and making <br>sustainable tasks manageable</p>
             <p>In the short amount of time we had, we decided to informally
-              interviewed our close friends and family about their thoughts on
+              interview our close friends and family about their thoughts on
               climate change and building sustainable habits.</p>
             <img id="empathy-map" src="images/bloom/empathy-map.png" alt="Empathy map with sticky notes">
+            <p><strong>Audience:</strong><br>Based on our research and experience, we decided to target
+            bloom towards people between the ages of 16-28 who are comfortable with technology.</p>
             <p><strong>Pain Points:</strong><br>Consumers want to purchase
               healthy options, but there is an overload of information or
               prices are too high, or sustainable options aren’t as available</p>
@@ -117,34 +119,15 @@
               make Bloom a hybrid of JouleBug, Buycott, and Recycle Nation and
               synthesize the most impactful traits of each, creating a
               “one-stop-shop” for building sustainable habits and learning
-              about their impact. In our app, we wanted to focus on <strong>three main
-                functions</strong>:</p>
+              about the user's impact. In our app, we wanted to focus on <strong>three main
+                features</strong>:</p>
             <section class="task-container">
               <div id="first-task" class="task-content">
-                <img src="images/bloom/community.gif" alt="Preview of community screen" class="inline-photo-left show-on-scroll">
+                <img src="images/bloom/task.gif" alt="Preview of task screen" class="inline-photo-left show-on-scroll">
                 <div class="circle-and-text-container inline-photo-right show-on-scroll">
                   <div class="circle-and-text">
                     <div>
                       <div class="circle">1</div>
-                    </div>
-                    <div class="task-text">
-                      <h4 class="task-header">community</h4>
-                      <p class="task-body">Create a community that incentivizes
-                        behavioral changes through <strong>leaderboards</strong>,
-                        <strong>badges</strong>, and <strong>community progress</strong>
-                        depending on how many tasks are completed</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section class="task-container">
-              <div id="community" class="task-content">
-                <img src="images/bloom/task.gif" alt="Preview of community screen" class="inline-photo-right show-on-scroll">
-                <div class="circle-and-text-container inline-photo-left show-on-scroll">
-                  <div class="circle-and-text">
-                    <div>
-                      <div class="circle">2</div>
                     </div>
                     <div class="task-text">
                       <h4 class="task-header">tasks</h4>
@@ -152,6 +135,25 @@
                         (daily, weekly, yearly) and <strong>type of habit</strong> (transportation,
                         water usage, etc), depending on what the user is
                         interested in and earn points for every task completed</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="task-container">
+              <div id="community" class="task-content">
+                <img  src="images/bloom/community.gif" alt="Preview of community screen" class="inline-photo-right show-on-scroll">
+                <div class="circle-and-text-container inline-photo-left show-on-scroll">
+                  <div class="circle-and-text">
+                    <div>
+                      <div class="circle">2</div>
+                    </div>
+                    <div class="task-text">
+                      <h4 class="task-header">community</h4>
+                      <p class="task-body">Create a community that incentivizes
+                        behavioral changes through <strong>leaderboards</strong>,
+                        <strong>badges</strong>, and <strong>community progress</strong>
+                        depending on how many tasks are completed</p>
                     </div>
                   </div>
                 </div>
@@ -182,38 +184,50 @@
               unique to the user’s needs and goals. </p>
           </section>
           <section class="design-decisions">
-            <p class="article-main-header">Design Decisions</p>
+            <p class="article-main-header">Design Iterations & Decisions</p>
             <p class="main-subheader">How can we make the UI clean, stylish, and accessible?</p>
-            <p><strong>Onboarding:</strong> For our onboarding process, we wanted to make it both
-              personable and straightforward. Firstly, we opted to ask for
-              their first and last name at the beginning, allowing the following
-              screen to be personalized with the user’s name. </p>
+            <div class="split-two">
+              <div class="split-column">
+                <img src="images/bloom/nav-bar.png" alt="Dashboard color contrast">
+              </div>
+              <p class="split-column"><strong>Accessibility:</strong> To make our design as acessible as possible,
+              we made sure that all background and foreground colors had a contrast ratio of at least 4.5:1 according
+              to Web Content Accessibility Guidelines (WCAG). In the earlier iterations of our design, we
+              had poor color contrast with the navigation bar, as shown on the left. Additionally, we followed
+              iOS Typography Guidelines to maximize readability.
+              </p>
+            </div>
+            <p><strong>Onboarding:</strong> For our onboarding process, we
+              wanted to make it both personable and straightforward. Firstly,
+              we opted to ask for the user's first and last name at the beginning,
+              enabling the following screen to be personalized with the user’s name. </p>
             <img src="images/bloom/design-decisions.jpg" alt="Design decision annotations">
-            <p><strong>Overall Branding:</strong> For overall branding, we wanted our app to
-              look clean, but also stylish and fun! We chose our “main” color
-              to be a muted green to match the overall theme of the app:
-              sustainability and to “stay green.” Moreover, to make illustrations
-              seemlessly blend in with the overall interface, we decided to add
-              a black stroke to most boxes and buttons for clear continuity and
-              closure.</p>
+            <p><strong>Overall Branding:</strong> For overall branding, we
+            wanted our app to look clean and appeal to a younger audience.
+            Thus, we chose two-dimensional illustrations, pastel colors,
+            and all lowercase headers to give off a chill, approachable,
+            laidback vibe. The app's primary color, a muted green, envokes
+            themes of sustainability and growth. To make illustrations
+            seamlessly blend in with the overall interface, we decided to
+            add a black stroke to most boxes and buttons for clear continuity
+            and closure. </p>
             <img src="images/bloom/design-decisions-2.jpg" alt="Design decision annotations">
           </section>
           <section class="takeaways">
             <p class="article-main-header"> Takeaways & Next Steps</p>
             <p class="main-subheader">Focusing on our strengths as a team</p>
-            <p>This was my third designathon, and it was one of the most
-              smooth and efficient experience I’ve had. On our first call as a team,
-              we immediately started with getting to know each other as both people,
-              students, and designers. <strong>We made it clear what our strengths and
-                weaknesses are right off the bat</strong>, which made delegating tasks
-              both quick and straightforward.<br><br>
-              Instead of spreading ourselves thin, we decided that we would
-              all contribute where we felt the most confident: Nicole and Arina
-              were both confident in user research and ideation, while Chintan
-              and I found our strengths in high-fidelity prototyping. While we
-              all contributed from the beginning to end, no matter where our
-              speciality lied, <strong>we funneled our focus and attention where we
-                felt the most confident and felt the happiest doing.</strong></p>
+            <p>Just Design was my third designation, and it was one of the most
+              smooth and efficient experience I’ve had. On our first call as a
+              team, we immediately started by getting to know each other as people,
+              students, and designers.<strong>We made it clear what our strengths
+              and weaknesses were right off the bat</strong>, which made
+              delegating tasks both quick and straightforward. <br><br>
+
+              Chintan and I found our strengths in high-fidelity prototyping,
+              while Nicole and Arina were both confident in user research and
+              ideation. <strong>We funneled our focus and attention where we
+              felt the most confident and felt the happiest doing</strong>,
+              without missing out on the entire design process.</p>
             <p class="main-subheader">User research & usability testing</p>
             <p>Due to the time constraint and the high-speed nature of weekend
               designathons, we did not have time to conduct user interviews,
@@ -221,12 +235,6 @@
               and user feedback. If I had more time, I would conduct more
               research and interviews to understand users better and create a
               solid foundation before designing</p>
-            <p class="main-subheader">Fleshing out the "News" section</p>
-            <p>Lastly, out of our three main features, our news section was the
-              least fleshed out. If we had more time, I would love to expand on
-              the news feature, which covers an integral part of the app: to
-              further educate users on the benefits of sustainability and the
-              consequences of climate change.</p>
           </section>
 
         </div>

@@ -974,6 +974,15 @@ img {
           transform: translateX(0em);
 }
 
+.split-two {
+  display: flex;
+}
+
+.split-column {
+  width: 50%;
+  margin: 0px;
+}
+
 /* BLOOM END */
 
 
