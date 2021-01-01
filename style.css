@@ -619,7 +619,6 @@ nav li a {
   .proj-image {
     width: 260px;
   }
-
 }
 
 /* HelpUX */
@@ -974,13 +973,33 @@ img {
           transform: translateX(0em);
 }
 
-.split-two {
+/* Horizontal*/
+.split-two-horizontal {
   display: flex;
+  flex-direction: row;
 }
 
-.split-column {
+.split-column-horizontal {
   width: 50%;
   margin: 0px;
+}
+
+.bloom-text-adj {
+  margin: 0px 0px 0px 40px;
+}
+
+/*Vertical*/
+.split-two-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.split-column-vertical {
+  width: 100%;
+}
+
+#access-text p {
+  margin-top: 0px;
 }
 
 /* BLOOM END */
@@ -1005,6 +1024,25 @@ img {
 .activ-preview {
   margin-bottom: -5px;
 }
+
+/*Bloom Split Column*/
+/* @media only screen and (max-width: 1200px) {
+  .split-two {
+    flex-direction: column;
+  }
+
+  .split-column {
+    width: 100%;
+  }
+
+  #bloom-nav {
+    text-align: center;
+  }
+
+  #bloom-nav img {
+    width: 80%;
+  }
+} */
 
 @media only screen and (max-width: 530px) {
   body .header-text {

@@ -187,16 +187,18 @@
           <section class="design-decisions">
             <p class="article-main-header">Design Iterations & Decisions</p>
             <p class="main-subheader">How can we make the UI clean, stylish, and accessible?</p>
-            <div class="split-two">
-              <div class="split-column">
-                <img src="images/bloom/nav-bar.png" alt="Dashboard color contrast">
+            <div id ="split-two" class="split-two-vertical">
+              <div id="bloom-nav-img" class="split-column-vertical">
+                <img src="images/bloom/bloom-long.png" alt="Dashboard color contrast">
               </div>
-              <p class="split-column"><strong>Accessibility:</strong> To make our design as accessible as possible,
-              we made sure that all background and foreground colors had a contrast ratio of at least 4.5:1 according
-              to Web Content Accessibility Guidelines (WCAG). In the earlier iterations of our design, we
-              had poor color contrast with the navigation bar, as shown on the left. Additionally, we followed
-              iOS Typography Guidelines to maximize readability.
-              </p>
+              <div id="access-text" class="split-column-vertical">
+                <p><strong>Accessibility:</strong> To make our design as accessible as possible,
+                we made sure that all background and foreground colors had a contrast ratio of at least 4.5:1 according
+                to Web Content Accessibility Guidelines (WCAG). In the earlier iterations of our design, we
+                had poor color contrast with the navigation bar, as shown on the left. Additionally, we followed
+                iOS Typography Guidelines to maximize readability.
+                </p>
+              </div>
             </div>
             <p><strong>Onboarding:</strong> For our onboarding process, we
               wanted to make it both personable and straightforward. Firstly,
@@ -209,7 +211,7 @@
             and all lowercase headers to give off a chill, approachable vibe. The app's primary color, a muted green, envokes
             themes of sustainability and growth. To make illustrations
             seamlessly blend in with the overall interface, we decided to
-            add a black stroke to most boxes and buttons for clear continuity
+            add a black stroke to most boxes and buttons for consistency, clear continuity,
             and closure. </p>
             <img src="images/bloom/design-decisions-2.jpg" alt="Design decision annotations">
           </section>
@@ -246,6 +248,38 @@
   </footer>
   </div>
   <script src="javascripts/show-on-scroll.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+
+    function imageAdjust() {
+      winWidth = $(window).width();
+      $("#split-two").removeClass();
+      $("#split-two div").removeClass();
+      $("#split-two div p").removeClass();
+
+      if (winWidth >= 1175 && winWidth <= 1350) {
+        $("#bloom-nav-img img").attr("src", "images/bloom/bloom-short.png");
+
+        $("#split-two").addClass("split-two-horizontal");
+        $("#split-two div").addClass("split-column-horizontal");
+        $("#access-text p").addClass("bloom-text-adj");
+        $("#bloom-nav-img").css("order", 0);
+      }
+      else {
+        $("#bloom-nav-img img").attr("src", "images/bloom/bloom-long.png");
+
+        $("#split-two").addClass("split-two-vertical");
+        $("#split-two div").addClass("split-column-vertical");
+        $("#bloom-nav-img").css("order", 2);
+      }
+    }
+    imageAdjust();
+
+    $(window).resize(function () {
+      imageAdjust();
+    });
+
+  </script>
 </body>
 
 </html>
