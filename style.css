@@ -201,7 +201,7 @@ header {
 
 .main-content {
   display: table;
-  margin: 10px auto;
+  margin: 25px auto;
   width: 86%;
   background-color: #FFFFFF;
 }
@@ -323,12 +323,10 @@ header {
 }
 
 #contact {
-  margin-top: 70px;
+  margin-top: 60px;
 }
+
 /*Skills section*/
-.skills-experience-content {
-  padding-bottom: 50px;
-}
 
 .header-text {
   position: relative;
@@ -372,6 +370,10 @@ header {
   margin-bottom: 20px;
 }
 
+/* Socials */
+.contact-content {
+  padding: 20px 80px;
+}
 .socials:hover {
   transform: translate(0px, -5px);
 }
@@ -400,6 +402,179 @@ header {
   color: #2C2C2C;
 }
 
+
+/*Website Style Guide*/
+
+#style-highlight {
+  background-color: var(--large-highlight, rgba(151, 207, 208, 0.7));
+}
+
+.style-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.style-col {
+  width: 50%;
+}
+
+.style-titles {
+  font-family: "Source Sans Pro";
+  font-weight: bold;
+  font-size: 18px;
+  text-align: left;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.about-container {
+  padding: 60px 80px;
+}
+
+.box-pair {
+  width: 136px;
+  margin-right: 18px
+}
+
+.color-boxes {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.color-box {
+  display: inline-block;
+  width: 68px;
+  height: 53px;
+}
+
+.color-descriptions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hex-value{
+  display: inline-block;
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  text-align: left;
+  color: #838383;
+}
+
+.opacity-value {
+  text-align: right;
+}
+
+#style-col1 {
+  margin-right: 50px;
+}
+
+#blue-box1 {
+  float: left;
+  background: rgba(152,206,255,1);
+}
+
+#blue-box2 {
+  background: rgba(152,206,255,0.3);
+}
+
+#light-blue-box1 {
+  float: left;
+  background: rgba(196, 221, 253, 1);
+}
+
+#light-blue-box2 {
+  background: rgba(196, 221, 253, 0.3);
+}
+
+#black-box1 {
+  float: left;
+  background: rgba(44, 44, 44, 1);
+}
+
+#black-box2 {
+  background: rgba(44, 44, 44, 0.05);
+}
+
+#pink-box1 {
+  float: left;
+  background: rgba(242, 205, 255, 1);
+}
+
+#pink-box2 {
+  background: rgba(242, 205, 255, 0.3);
+}
+
+#green-box1 {
+  float: left;
+  background: rgba(151, 207, 208, 1);
+}
+
+#green-box2 {
+  background: rgba(151, 207, 208, 0.3);
+}
+
+.typography-content {
+  text-align: left;
+  color: #2C2C2C;
+}
+
+#header1-title {
+  font-family: "Source Serif Pro";
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  margin: -8px 0px 0px 0px;
+}
+
+#header2-title {
+  font-family: "Source Sans Pro";
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: -8px 0px 0px 0px;
+}
+
+#para1-title {
+  font-family: "Inconsolata";
+  font-size: 16px;
+  line-height: 17px;
+  margin: -8px 0px 0px 0px;
+}
+
+#para2-title {
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  line-height: 19px;
+  margin: -8px 0px 0px 0px;
+}
+
+#started-text {
+  display: inline-block;
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  text-align: left;
+  color: #838383;
+  font-weight: normal;
+  text-transform: none;
+  letter-spacing: 0em;
+}
+
+#figma-title {
+  margin-bottom: 40px;
+}
+
+.button-figma:hover {
+  opacity: 1;
+  background: rgba(242, 205, 255, 0.7);
+}
+
+.margin-bottom-adj {
+  margin-top: 0px;
+  margin-bottom: 26px;
+}
 
 @media only screen and (min-width: 800px) {
 
@@ -447,13 +622,18 @@ nav li a {
     font-size: 7.4vw;
   }
 
-  .skills-experience-content {
-    padding: 0px 60px 60px 60px;
+  .style-col1 {
+    margin-right: 0px;
   }
 
-  .connect-items {
-    padding: 0px 60px 0px 60px;
+  .box-pair {
+    width: 120px;
   }
+
+  .color-box {
+    width: 60px;
+  }
+
 }
 
 /* index.html */
@@ -1053,9 +1233,9 @@ img {
 /*Mobile Phone*/
 @media only screen and (max-width: 800px) {
 
-  .body-text {
+  /* .body-text {
     padding: 20px;
-  }
+  } */
 
   .nav-container {
     height: 65px;
@@ -1147,7 +1327,7 @@ img {
   #exp {
     position: absolute;
     right: -200px;
-    top: 1215px;
+    top: 1210px;
     font-family: Source Serif Pro;
     font-weight: bold;
     font-size: 175px;
@@ -1169,10 +1349,6 @@ img {
     margin-top: 50px;
   }
 
-  .skills-experience-content {
-    padding: 0px 60px 60px 60px;
-  }
-
   .skills-section {
     display: flex;
     flex-direction: row;
@@ -1181,7 +1357,7 @@ img {
   .content-header {
     display: flex;
     flex-direction: row;
-    padding: 10px 30px;
+    padding: 10px 40px 10px 0px;
   }
 
   /*Contact*/
@@ -1189,7 +1365,6 @@ img {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    padding: 0px 80px;
     align-items: center;
   }
 
@@ -1216,7 +1391,7 @@ img {
 }
 
 .footer-content {
-  margin-top: -10px;
+  margin-top: -30px;
   display: block;
   padding: 50px 0px;
   color: #2C2C2C;
@@ -1256,7 +1431,6 @@ img {
     display: flex;
     align-items: center;
   }
-
 
   .proj-container + .proj-container {
     margin-top: 0px;
