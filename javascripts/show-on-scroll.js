@@ -48,3 +48,16 @@ function myFunction() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
+
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+// var prevScrollpos = window.pageYOffset;
+// window.onscroll = function() {
+//   myFunction();
+//   var currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos) {
+//     $("#navbar").css("display", "block").delay(500).fadeIn();
+//   } else {
+//     $("#navbar").css("display", "none");
+//   }
+//   prevScrollpos = currentScrollPos;
+// }
