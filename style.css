@@ -459,7 +459,7 @@ header {
 
 .hex-value{
   display: inline-block;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", "Source Sans Pro";
   font-size: 14px;
   text-align: left;
   color: #838383;
@@ -548,7 +548,7 @@ header {
 }
 
 #para2-title {
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", "Source Sans Pro";
   font-size: 16px;
   line-height: 19px;
   margin: -8px 0px 0px 0px;
@@ -556,7 +556,7 @@ header {
 
 #started-text {
   display: inline-block;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", "Source Sans Pro";
   font-size: 14px;
   text-align: left;
   color: #838383;
@@ -730,7 +730,7 @@ nav li a {
 .proj-content {
   margin-top: 11px;
   margin-bottom: 5px;
-  font-family: "Proxima Nova", sans-serif;
+  font-family: "Proxima Nova", "Source Sans Pro";
   font-size: 18px;
   line-height: 24px;
 }
@@ -752,7 +752,7 @@ nav li a {
   border-radius: 4px;
   background: rgba(155,206,253,0.3);
 
-  font-family: "Proxima Nova", sans-serif;
+  font-family: "Proxima Nova", "Source Sans Pro";
   font-size: 12px;
   font-weight: bold;
   margin-top: 10px;
@@ -1041,7 +1041,7 @@ img {
 }
 
 .article-body-text {
-  font-family: "Proxima Nova", sans-serif;
+  font-family: "Proxima Nova", "Source Sans Pro";
   font-size: 18px;
   font-weight: normal;
   line-height: 30px;
