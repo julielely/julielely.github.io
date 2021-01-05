@@ -61,3 +61,7 @@ function myFunction() {
 //   }
 //   prevScrollpos = currentScrollPos;
 // }
+
+// AOS.init({
+//   duration: 5000,
+// })
