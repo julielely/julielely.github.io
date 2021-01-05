@@ -19,7 +19,7 @@
         <li id="logo" style="float:left"><a href="index.html" id="desktop-name">julie lely</a></li>
         <li id="other" class="other-items"><a href="https://drive.google.com/drive/folders/1age4p6W6hQMEnJ5W70dl-IMmnl5dLXz1?usp=sharing" target="_blank">MORE</a></li>
         <li class="other-items"><a href="about.html">ABOUT</a></li>
-        <li class="other-items"><a href="index.html">WORK</a></li>
+        <li class="other-items"><a href="index.html">PROJECTS</a></li>
       </ul>
     </nav>
     </a>
@@ -48,8 +48,30 @@
         </div>
         <div class="article-body-text">
           <section class="content-background">
-            <p class="article-main-header">Background</p>
-            <ul>
+            <p id="background-title" class="article-main-header">Background</p>
+            <div id="background-flex">
+              <div class="background-col">
+                <h3 class="article-main-header">Bloom TL;DR</h3>
+                <p>A mobile app that encourages users to adopt sustainable habits</p>
+              </div>
+              <div class="background-col">
+                <h3 class="article-main-header">Role</h3>
+                <p>Directed high fidelity prototyping</p>
+              </div>
+              <div class="background-col">
+                <h3 class="article-main-header">Team</h3>
+                <p>Arina Romanova, Chintan Jani, and Nicole Lopez</p>
+              </div>
+              <div class="background-col">
+                <h3 class="article-main-header">Tools</h3>
+                <p>Figma<br>Flaticon<br>opendoodles</p>
+              </div>
+              <div class="background-col">
+                <h3 class="article-main-header">Timeline</h3>
+                <p>48 hours</p>
+              </div>
+            </div>
+            <ul id="background-ul">
               <li><strong>Bloom TL;DR:</strong> A mobile app that encourages users to adopt sustainable habits</li>
               <li><strong>My Role:</strong> Lead designer, established overall branding and directed high fidelity prototyping</li>
               <li><strong>Team:</strong> Arina Romanova, Chintan Jani, and Nicole Lopez</li>
@@ -57,6 +79,7 @@
               <li><strong>Tools:</strong> Figma for Prototyping, opendoodles for illustrations, and flaticon for icons</li>
             </ul>
           </section>
+          <div class="line-divider"> </div>
           <section class="preview">
             <p class="article-main-header">Preview</p>
             <p class="main-subheader">A quick preview of Bloom, an app that <br>
@@ -243,8 +266,28 @@
       </article>
     </div>
   </main>
-  <footer class="footer-content">
-    <p class="julies-footer">coded with ♡ by Julie Lely</p>
+  <footer class="footer-container footer-article-container ">
+    <div class="footer-content footer-article-adj">
+      <div class="footer-col1">
+        <p id="spontaneous">be spontaneous.</p>
+        <p id="love-code">coded with ♡ by Julie Lely</p>
+        <div class="footer-links">
+          <a href="index.html"><span class="underline">projects</span>&#160;<strong>•</strong>&#160;</a>
+          <a href="about.html"><span class="underline">about</span>&#160;<strong>•</strong>&#160;</a>
+          <a href="files/LELY_JULIE.pdf"><span class="underline">resume</span></a>
+        </div>
+      </div>
+      <div class="footer-col2">
+        <p> </p>
+        <a class="button button-figma" href="mailto:julielely@gmail.com" target="_blank">contact me</a>
+        <p class="footer-filler"> </p>
+        <div class="footer-links social-links">
+          <a id="email">julielely@gmail.com</a>
+          <a class="social-icons" href="https://www.linkedin.com/in/julielely/" target="_blank"><img src="images/socials/linkedin.png" alt="linkedin"></a>
+          <a class="social-icons" href="https://github.com/julielely" target="_blank"><img src="images/socials/github.png" alt="github"></a>
+        </div>
+      </div>
+    </div>
   </footer>
   </div>
   <script src="javascripts/show-on-scroll.js"></script>
@@ -256,6 +299,19 @@
       $("#split-two").removeClass();
       $("#split-two div").removeClass();
       $("#split-two div p").removeClass();
+
+      if(winWidth >= 1100) {
+        $("#background-flex").css("display", "flex");
+        $("#background-ul").css("display", "none");
+        $("#background-title").css("display", "none");
+        $(".line-divider").css("display", "block");
+      }
+      else {
+        $("#background-flex").css("display", "none");
+        $("#background-ul").css("display", "inline-block");
+        $("#background-title").css("display", "inline");
+        $(".line-divider").css("display", "none");
+      }
 
       if (winWidth >= 1175 && winWidth <= 1350) {
         $("#bloom-nav-img img").attr("src", "images/bloom/bloom-short.png");

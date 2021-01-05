@@ -40,11 +40,13 @@ nav {
 .background {
   background: #F5F5F5;
   padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .home-background {
   background: #F5F5F5;
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .home-container {
@@ -323,7 +325,9 @@ header {
 }
 
 #contact {
-  margin-top: 60px;
+  margin-top: 40px;
+  color: rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.1em;
 }
 
 /*Skills section*/
@@ -1052,8 +1056,7 @@ img {
   word-spacing: -3px;
 }
 
-.content-background ul {
-  display: inline-block;
+#background-ul {
   list-style: none;
   padding-left: 0;
 }
@@ -1223,6 +1226,37 @@ img {
   }
 } */
 
+/*Bloom Background Columns*/
+#background-title {
+  display: none;
+}
+
+#background-ul {
+  display: none;
+}
+
+#background-flex {
+  margin-top: 20px
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.helpux-content-background ul {
+  display: inline-block;
+  list-style: none;
+  padding-left: 0;
+}
+
+.background-col {
+  width: 18%;
+}
+
+.line-divider {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 10px 0px 30px 0px;
+}
+
 @media only screen and (max-width: 530px) {
   body .header-text {
     font-size: 6.5vw;
@@ -1336,7 +1370,7 @@ img {
     color: rgba(0, 0, 0, 0.04);
     transform: rotate(90deg);
     z-index: 2;
-    clip-path: inset(0px 97px 0px 0px);
+    clip-path: inset(0px 180px 0px 0px);
   }
 
   /*Skills + experiences*/
@@ -1389,7 +1423,7 @@ img {
   padding-left: 40px;
 }
 
-.footer-content {
+/* .footer-content {
   margin-top: -30px;
   display: block;
   padding: 50px 0px;
@@ -1411,6 +1445,117 @@ img {
   font-weight: normal;
   font-size: 15px;
   text-align: center;
+} */
+
+.footer-container {
+  color: #2C2C2C;
+  background-color: #FFFFFF;
+}
+
+.footer-article-container {
+  background-color: #F5F5F5;
+}
+
+.footer-content {
+  display: flex;
+  padding: 50px 0px;
+  margin: auto;
+  width: 86%;
+}
+
+.footer-width-adj {
+  width: 76%;
+}
+
+.footer-article-adj {
+  width: 66%;
+}
+
+.home-footer-content {
+  display: block;
+  padding: 30px 0px;
+  color: #2C2C2C;
+  background-color: #F5F5F5;
+}
+
+#love-code {
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: left;
+  margin: 0px 0px 50px 0px;
+}
+
+.footer-col1 {
+  width: 50%;
+  text-align: left;
+}
+
+.footer-col2 {
+  width: 50%;
+  text-align: right;
+}
+
+.footer-links {
+  display: inline;
+  font-family: "Inconsolata";
+  font-size: 18px;
+  letter-spacing: 0.02em;
+}
+
+.footer-links a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.footer-links a img {
+  width: 20px;
+}
+
+.footer-filler {
+  margin-bottom: 80px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.social-links a {
+  margin-left: 15px;
+}
+
+#email {
+  width: 200px;
+}
+
+.social-icons {
+  width: 20px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.nav-underline {
+  /* text-decoration: underline; */
+  border-bottom: 2px solid;
+}
+
+#spontaneous {
+  font-family: "Source Serif Pro";
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  margin: 0px;
+}
+
+@media only screen and (max-width: 950px){
+  #spontaneous{
+    font-size: 30px;
+  }
 }
 
 @media only screen and (min-width: 1800px){
