@@ -39,7 +39,7 @@ nav {
 
 .background {
   background: #F5F5F5;
-  padding-top: 20px;
+  padding-top: 2px;
   padding-bottom: 40px;
 }
 
@@ -271,7 +271,7 @@ header {
   font-family: "Source Serif Pro", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 90px;
+  font-size: 85px;
   line-height: 136px;
 
   display: flex;
@@ -315,7 +315,7 @@ header {
   font-family: "Inconsolata";
   font-style: normal;
   font-weight: normal;
-  font-size: 16.5px;
+  font-size: 16px;
 
   text-align: center;
   width: 440px;
