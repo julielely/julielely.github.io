@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 @font-face {
     font-family: "Proxima Nova", sans-serif;
@@ -86,6 +87,10 @@ nav ul {
   width: 100%;
 }
 
+#header-relative {
+  position: relative;
+}
+
 .progress-container {
   z-index: 1;
   width: 100%;
@@ -97,6 +102,16 @@ nav ul {
   height: 8px;
   background: #7fc4f1;
   width: 0%;
+}
+
+.fixed-progress-bar {
+  height: 8px;
+  background: #2F80ED;
+  width: 0%;
+
+  z-index: -1;
+  position: fixed;
+  top: 0;
 }
 
 nav ul li a {
@@ -271,7 +286,7 @@ header {
   font-family: "Source Serif Pro", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 85px;
+  font-size: 78px;
   line-height: 136px;
 
   display: flex;
@@ -317,8 +332,8 @@ header {
   font-weight: normal;
   font-size: 16px;
 
-  text-align: center;
-  width: 440px;
+  text-align: left;
+  width: 380px;
   font-weight: 400;
   line-height: 18px;
   padding-top: 15px;
@@ -655,11 +670,26 @@ nav li a {
 
 .home-header-text {
   display: inline-block;
-  text-align: center;
+  text-align: left;
 }
 
 .header-container {
   display: inline-block;
+}
+
+.floating {
+    text-transform: uppercase;
+    animation-name: floating;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-top: -5px;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 6px); }
+    100%   { transform: translate(0, -0px); }
 }
 
 /* Project Containers */
@@ -710,12 +740,12 @@ nav li a {
 }
 
 .proj-image {
-  width: 300px;
+  width: 360px;
 }
 
 .proj-title {
   font-family: "Roboto Slab";
-  font-size: 55px;
+  font-size: 46px;
   font-weight: 700;
   margin: 0px;
 }
@@ -804,6 +834,266 @@ nav li a {
   }
 }
 
+/* Course Browser */
+#course-browser {
+  font-family: "Open Sans";
+  font-weight: 600;
+}
+
+#course-browser-sub {
+  font-family: "Open Sans";
+  font-weight: 400px;
+}
+
+#distribution-table {
+  display: block;
+  margin: 0px auto;
+  width: 90%;
+}
+
+#distribution-paoinpoints {
+  display: block;
+  margin: 0px auto;
+  width: 100%;
+}
+
+#course-insights {
+  display: block;
+  margin: 0px auto;
+  width: 80%;
+}
+
+.pain-points-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pain-points-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pain-points-p {
+  line-height: 20px;
+  /* margin: 14px auto; */
+}
+
+.pain-point-title {
+  margin: 0px;
+}
+
+.blue-span {
+  color: #2F80ED;
+}
+
+#quotes-img {
+  width: 50%;
+  height: 50%;
+  margin-right: 45px;
+}
+
+#course-circle-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:32px;
+  height:32px;
+  color:#fff;
+  background-color: #2F80ED;
+  margin-right: 22px;
+}
+
+#course-flow-1 {
+  width: 100%;
+}
+
+.img-shadow {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.07);
+}
+
+.solution-hide {
+  display: none;
+}
+
+.solution-point {
+  margin-top: 24px;
+}
+
+#solution-points {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#solution-points h1 {
+  cursor: pointer;
+}
+
+.solution-point {
+  font-family: 'Proxima Nova';
+}
+
+#solution-explainations p {
+  margin-top: 10px;
+}
+
+#solution-gifs {
+  line-height: 0px;
+}
+
+.solutions-header-title, .selected-solution {
+  margin: 0px 24px 0px 0px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #BBBAC0;
+  text-transform: uppercase;
+  transition: opacity 0.3s linear;
+  transition: .3s ease-out;
+}
+
+.solutions-header-title:hover {
+  color: #848484;
+}
+
+.selected-solution {
+  color: #FFF;
+  padding: 1px 8px;
+  background: #2F80ED;
+  border-radius: 6px;
+}
+
+#hierarchy-img {
+  margin-left: 0px;
+  margin-right: 25px;
+}
+
+/* #course-website a{
+  text-decoration: underline;
+}
+
+#course-website a:visited {
+  color: #2F80ED;
+} */
+
+.interaction-container {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.course-mockups {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.course-mockups img {
+  width: 70%;
+
+}
+
+.interaction-container img {
+  width: 270px;
+  margin-right: 25px;
+}
+
+
+.design-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.design-content img {
+  width: 400px;
+  height: 100%;
+}
+
+.design-decisions-header {
+  font-family: "Roboto Mono";
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  margin: 0px;
+}
+
+.decision-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.decision-text p{
+  margin-top: 8px;
+}
+
+.design-circles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width:28px;
+  height:28px;
+  border-radius:50%;
+  color:#fff;
+  text-align:center;
+  font-family: "Roboto Mono";
+  font-size: 18px;
+  font-weight: 700;
+  background:#2F80ED;
+  margin-right: 15px;
+}
+
+.coursebrowser-insights {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.course-insights {
+  width: 48.5%;
+  border: 1px solid #EAEAEA;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+}
+
+.course-insights p {
+  line-height: 22px;
+  padding: 12px 42px;
+}
+
+#alignment-section {
+  margin-bottom: 0px;
+}
+
+.course-button {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 15px;
+
+  padding: 8px 16px;
+  background: #2F80ED;
+  border: 1px solid #2F80ED;
+  border-radius: 4px;
+  color: #FFF;
+  text-align: center;
+  transition: opacity 0.3s linear;
+  transition: .3s ease-out;
+}
+
+#course-website h3 {
+  margin-bottom: 16px;
+}
+
+.course-button:hover {
+  background-color: #1A6CDA;
+}
+
 /* HelpUX */
 #helpUX {
   font-family: "Poppins";
@@ -860,6 +1150,7 @@ nav li a {
 
 .proj-container:hover {
   transform: translate(0px, -8px);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.08);
 }
 
 figure {
@@ -881,6 +1172,10 @@ figure {
   margin: 90px auto;
   width: 66%;
   text-align: left;
+}
+
+#course-container {
+  margin-top: 60px;
 }
 
 .article-header {
@@ -1025,7 +1320,7 @@ img {
 }
 /* Main Text Content */
 
-.article-main-header, .activ-main-header {
+.article-main-header, .activ-main-header, .course-main-header {
   font-family: "Source Sans Pro";
   font-size: 18px;
   font-weight: 700;
@@ -1038,6 +1333,10 @@ img {
 
 .activ-main-header {
   color: rgb(127 181 185);
+}
+
+.course-main-header {
+  color: #2F80ED;
 }
 
 .article-body-text {
@@ -1236,10 +1535,14 @@ img {
 }
 
 #background-flex {
-  margin-top: 20px
-  display: flex;
+  margin-top: 20px;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.content-background {
+  display: flex;
+  flex-direction: column;
 }
 
 .helpux-content-background ul {
@@ -1248,8 +1551,12 @@ img {
   padding-left: 0;
 }
 
-.background-col {
+.background-col, .background-course-col{
   width: 18%;
+}
+
+.background-course-col p {
+  margin-top: 5px;
 }
 
 .line-divider {
@@ -1261,6 +1568,18 @@ img {
   body .header-text {
     font-size: 6.5vw;
   }
+}
+
+/* Course Browser */
+#course-title {
+  margin: 0px;
+  font-family: 'Open Sans';
+  font-size: 50px;
+}
+
+#course-subheader {
+  font-family: 'Open Sans';
+  font-weight: 400;
 }
 
 /*Mobile Phone*/

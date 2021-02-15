@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="myIcon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <meta name=author content="Julie Lely">
+  <title>bloom</title>
+</head>
+
+<body>
+  <header id="header-relative" class="header-nav-prog">
+    <nav id="navbar">
+      <ul id="article-nav-items" class="nav-items">
+        <li id="logo" style="float:left"><a href="index.html" id="desktop-name">julie lely</a></li>
+        <li id="other" class="other-items"><a href="https://drive.google.com/drive/folders/1age4p6W6hQMEnJ5W70dl-IMmnl5dLXz1?usp=sharing" target="_blank">MORE</a></li>
+        <li class="other-items"><a href="about.html">ABOUT</a></li>
+        <li class="other-items"><a href="index.html">PROJECTS</a></li>
+      </ul>
+    </nav>
+
+    <div class="progress-container">
+      <div class="fixed-progress-bar" id="myBar"></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="article-background">
+      <article id="course-container" class="content-container">
+        <!-- <div class="article-header">
+          <span class="project-topic">Passion Project | Wellesley Students</span>
+          <span class="project-date">September 18-20, 2020</span>
+        </div> -->
+        <h1 id="course-title" class="article-title">Wellesley Course Browser</h1>
+        <!-- <h2 id="course-subheader" class="article-subheader">A website redesign</h2> -->
+        <h3 class="article-description">This redesigned course browser offers students with features such
+          as a schedule builder, "Rate-My-Professor," and degree progress.
+        </h3>
+        <div class="image-container">
+          <img src="images/coursebrowser/preview.jpg" alt="Layout of Course Browser">
+          <!-- <img id="award" src="images/bloom/award.png" alt="Runner-up award"> -->
+        </div>
+        <div class="article-body-text">
+          <section class="content-background">
+            <p id="background-title" class="course-main-header">Background</p>
+            <div id="background-flex">
+              <div class="background-course-col">
+                <h3 class="course-main-header">Role</h3>
+                <p>Designed and developed the distribution feature</p>
+              </div>
+              <div class="background-course-col">
+                <h3 class="course-main-header">Team</h3>
+                <p>2 designers and 2 designers and developers</p>
+              </div>
+              <div class="background-course-col">
+                <h3 class="course-main-header">Tools</h3>
+                <p>Figma<br>Firebase<br>HTML/JS/CSS</p>
+              </div>
+              <div class="background-course-col">
+                <h3 class="course-main-header">Timeline</h3>
+                <p>4 weeks</p>
+              </div>
+              <div id="course-website" class="background-course-col">
+                <h3 class="course-main-header">Link</h3>
+                <a class="course-button" href="https://wellesley-course-browser.web.app/" target="_blank">Live Website</a>
+              </div>
+            </div>
+            <ul id="background-ul">
+              <li><strong>My Role:</strong> Designed/developed the distribution feature</li>
+              <li><strong>Team:</strong> 2 designers and 2 designers/developers</li>
+              <li><strong>Timeline:</strong> 4 weeks</li>
+              <li><strong>Tools:</strong> Figma, Firebase, HTML/CSS/JS</li>
+              <li><strong>Live Website: </strong><a href="https://wellesley-course-browser.web.app/" target="_blank">Redesigned Course Browser</a></li>
+            </ul>
+          </section>
+          <div class="line-divider"> </div>
+          <section class="preview">
+            <p class="course-main-header">Preview</p>
+            <p class="main-subheader">Visualize your degree progress<br>in one place<br>
+              </p>
+              <img class="img-shadow" src="images/coursebrowser/add-class.gif" alt="Course browser user journey">
+          </section>
+          <section class="introduction">
+            <p class="course-main-header">Introduction</p>
+            <p class="main-subheader">Wellesley's course browser</p>
+            <img class="img-shadow" src="images/coursebrowser/current-coursebrowser.jpg" alt="Wellesley course browser">
+            <p>Wellesley’s course browser and Workday both allow students to
+              see available classes. While students mostly use the course
+              browser to search for classes, it has an <strong>outdated user
+              interface </strong>(as shown in the screenshot above), is <strong>not user-friendly</strong> and <strong>lacks additional tools</strong> to help students plan out their
+              schedules.
+            </p>
+          </section>
+          <section>
+            <p class="course-main-header">The Problem</p>
+            <p class="main-subheader">How do create an efficient experience for<br>
+               students looking to register for classes?</p>
+            <p> Twice a year, Wellesley students flock to our course browser to search for
+            classes to take. Since Wellesley is a liberal arts college, students must
+            take specific classes to fulfill various requirements, such as the Foreign Language Requirement,
+            Humanities Distribution, and more. However, there is no easy way to keep track of this progress.
+            <strong>How can we provide students with intuitive, clear, and visually appealing tools to help
+              students search for classes and quantify their degree progress?</strong>
+            </p>
+          </section>
+          <section class="ideation">
+            <p class="course-main-header">Ideation & User Analysis</p>
+            <p class="main-subheader">Streamlining degree progress resources</p>
+            <p>In order for a student to successfully obtain their degree at Wellesley,
+              they must take specific classes to fulfill all three “Distribution Area” requirements,
+              in addition to other degree requirements such as the Foreign Language and PE requirement.</p>
+            <img id="distribution-table" src="images/coursebrowser/distribution_areas.jpg" alt="Distribution area illustrations">
+            <p>After talking to 4 students about Wellesley’s degree requirements, students
+              shared the same frustrations about the lack of efficient tools: </p>
+
+            <div class="pain-points-section">
+              <img id="quotes-img" src="images/coursebrowser/quotes.jpg" alt="">
+              <div class="pain-points-content">
+                <p class="pain-point-title"><strong>Pain Points:</strong></p>
+                <div class="pain-points-text">
+                  <div class="circle-pain-points"><div id="course-circle-1" class="circle">1</div></div>
+                  <p class="pain-points-p">Uncertainty around what <strong>
+                    <span class="blue-span">classes</span> they need to take
+                  </strong> and what <strong><span class="blue-span">distributions</span>
+                  need to be filled</strong></p>
+                </div>
+                <div class="pain-points-text">
+                  <div class="circle-pain-points"><div id="course-circle-1" class="circle">2</div></div>
+                  <p class="pain-points-p"><strong>No centralized website</strong> to keep track of degree progress</p>
+                </div>
+                <div class="pain-points-text">
+                  <div class="circle-pain-points"><div id="course-circle-1" class="circle">3</div></div>
+                  <p class="pain-points-p">Unaware of other degree requirements and the exact ways to fulfill them</p>
+                </div>
+                <p class="pain-point-title"><strong>tl;dr: <span class="blue-span">super duper tedious</span> </strong></p>
+              </div>
+            </div>
+
+            <p><strong>How a Wellesley Student determines their degree progress</strong></p>
+            <img id="distribution-painpoints" src="images/coursebrowser/steps.jpg" alt="Distribution quotes">
+            <p>The five (plus) step process involves many flaws, such as <strong>poor user
+              engagement</strong> and <strong>outdated UI</strong>. Additionally, the user’s path
+              involves various different screens and takes more than three clicks
+              to get to their end goal, which is to find their degree progress and figure
+              out what classes to take next.</p>
+            <p><strong>Insights:</strong>
+              <div class="coursebrowser-insights">
+                <div class="course-insights">
+                  <p>There is <span class="blue-span"><strong>no all-in-one
+                    solution</strong></span> to track degree progress, so
+                    students must rely on multiple resources</p>
+                </div>
+                <div class="course-insights">
+                  <p>Degree requirements are <span class="blue-span"><strong>difficult
+                    to keep track of</strong></span> given the lack of resources
+                    and various number of requirements</p>
+                </div>
+              </div>
+            <!-- <br>If students could describe their experience with navigating
+            their degree progress, it would be: <strong>tedious</strong>, <strong>confusing</strong>, and <strong>unclear</strong> -->
+          </p>
+          </section>
+          <section class="product-decisions">
+            <p class="course-main-header">Product Decisions</p>
+            <p class="main-subheader">What features would be the most<br>useful to users?</p>
+            <img class="img-shadow" src="images/coursebrowser/distributions-page.jpg" alt="Distributions page">
+            <p>We decided to include a <strong>distribution requirements page</strong> that
+              would allow students to enter in their courses and have the website
+              automatically show their progress for various degree requirements.
+              <br><br>
+              This would be integrated in the course browser with other features
+              such as “Rate-My-Professor” and a schedule builder. With the combination of these key features,
+              we aimed to <strong>reduce bounce rates</strong> from our course browser and
+              <strong>streamline the schedule planning process to improve user engagement</strong>. </p>
+          </section>
+          <section class="product-decisions">
+            <p class="course-main-header">Interaction Design & Iterations</p>
+            <p class="main-subheader">A simple and efficient experience</p>
+            <div class="course-mockups">
+              <img id="course-flow-1" src="images/coursebrowser/flow-1.jpg" alt="Mockup">
+              <!-- <img src="images/coursebrowser/002.jpg" alt="Mockup"> -->
+              <!-- <img src="images/coursebrowser/003.jpg" alt="Mockup"> -->
+            </div>
+            <p>The most crucial and hardest interaction was adding classes.
+            Because I was in charge of designing and coding the distributions
+            feature, I was well aware of the cost of each design, as well as it’s difficulty development wise.
+            <br><br>
+            In our first iteration, we designed a sidebar that allowed students
+            to add classes to the “main distribution” and
+            “general" requirements separately, since some requirements
+            were difficult to sort and detect in the back end. <strong>After conducting usability tests with
+            4 different students, all students experienced similiar difficulties</strong>.
+          </p>
+          <img class="img-shadow" id="course-flow-1" src="images/coursebrowser/errors.jpg" alt="Mockup">
+
+          <div id="solution-section">
+            <p>We decided to <strong>combine the main and general distribution forms</strong> and creating a
+              <strong>manual add</strong> feature that serves as a <strong>low-cost solution to
+              catching the bugs</strong> from the removal of the “general distribution”
+              section. Additionally, we made the following adjustments based on user feedback: </p>
+            <div id="solution-points">
+              <h1 id="onboarding-sol" class="selected-solution" data-selected="yes" data-point="onboarding">Onboarding</h1>
+              <h1 id="tooltip-sol" class="solutions-header-title" data-selected="no" data-point="tooltip">Tooltip</h1>
+              <h1 id="constraint-sol" class="solutions-header-title" data-selected="no" data-point="constraints">Constraints</h1>
+            </div>
+
+            <div id="solution-explainations">
+              <p id="onboarding-exp" class="" data-point="onboarding"><strong>WHY:</strong> Onboarding questionnaire to cover more complicated
+                degree requirements. For example, there are various ways to
+                 fulfill the foreign language requirement</p>
+              <p id="tooltip-exp" class="solution-hide" data-point="tooltip"><strong>WHY:</strong> Bring attention to the sidebar and make its function clear to
+                  the user (with smooth transitions)</p>
+              <p id="onboarding-constraints" class="solution-hide" data-point="constraints"><strong>WHY:</strong> Disabling buttons and forms to guide the user into filling out
+                  the required inputs</p>
+            </div>
+
+            <div class="img-shadow" id="solution-gifs">
+              <img id="onboarding-gif" data-point="onboarding" src="images/coursebrowser/questions.gif" alt="Onboarding questionnaire">
+              <img id="tooltip-gif" data-point="tooltip" class="solution-hide" src="images/coursebrowser/tooltip.gif" alt="Tooltip feature">
+              <img id="onboarding-gif" data-point="constraints" class="solution-hide" src="images/coursebrowser/disabled.gif" alt="Form dissabling feature">
+            </div>
+         </div>
+
+       </section>
+       <section class="product-decisions">
+         <p class="course-main-header">Visual Design & Iterations</p>
+         <p class="main-subheader">Clean, user-friendly, and intuitive</p>
+
+            <section class="interaction-container">
+              <div id="first-task" class="design-content">
+                <img class="img-shadow" src="images/coursebrowser/loading.gif" alt="Preview of task screen" class="inline-photo-left show-on-scroll">
+                <div class="circle-and-text-container inline-photo-right show-on-scroll">
+                  <div class="circle-and-text">
+                    <div>
+                      <div class="design-circles">1</div>
+                    </div>
+                    <div class="decision-text">
+                      <h4 class="design-decisions-header ">Feedback</h4>
+                      <p class="task-body">Provide feedback about the state of
+                        the automated add and lets the user know that the
+                        back-end is doing its thing</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="interaction-container">
+              <div id="hierarcht-img" class="design-content">
+                <img class="img-shadow" src="images/coursebrowser/hierarchy.png" alt="Preview of community screen" class="inline-photo-left show-on-scroll">
+                <div class="circle-and-text-container inline-photo-right show-on-scroll">
+                  <div class="circle-and-text">
+                    <div>
+                      <div class="design-circles">2</div>
+                    </div>
+                    <div class="decision-text">
+                      <h4 class="design-decisions-header ">Content Hierarchy</h4>
+                      <p class="task-body">Prioritizing the main distribution area
+                        at the top, which is the core of degree requirements</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="interaction-container">
+              <div class="design-content">
+                <img class="img-shadow" src="images/coursebrowser/mapping.jpg" alt="Preview of community screen" class="inline-photo-left show-on-scroll">
+                <div class="circle-and-text-container inline-photo-right show-on-scroll">
+                  <div class="circle-and-text">
+                    <div>
+                      <div class="design-circles">3</div>
+                    </div>
+                    <div class="decision-text">
+                      <h4 class="design-decisions-header ">Mapping</h4>
+                      <p class="task-body">Mapping manual add to the representation on the requirement cards</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="alignment-section" class="interaction-container">
+              <div class="design-content">
+                <img class="img-shadow" src="images/coursebrowser/alignment.jpg" alt="Preview of community screen" class="inline-photo-left show-on-scroll">
+                <div class="circle-and-text-container inline-photo-right show-on-scroll">
+                  <div class="circle-and-text">
+                    <div>
+                      <div class="design-circles">4</div>
+                    </div>
+                    <div class="decision-text">
+                      <h4 class="design-decisions-header ">Alignment</h4>
+                      <p class="task-body"><strong>Explicit relatedness</strong>
+                        of the main distribution requirements, since students
+                        must take three classes in three different distribution areas</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <p><br>We went through various iterations of the manual add feature
+               and ended up choosing choice 3 (below) because of its simple and intuitive
+               layout. We tried our best to minimize the amount of steps users
+              would have to perform to manually add a class. While the second
+              design has less steps, it lacks flexibility and customization that
+              the third design provides</p>
+            <img src="images/coursebrowser/sidebar.jpg" alt="Design iterations">
+          </section>
+          <section class="takeaways">
+            <p class="course-main-header"> Takeaways & Next Steps</p>
+            <p class="main-subheader">Positive user feedback</p>
+            <p>After sharing the live site to the
+              Wellesley sophomore and junior Facebook groups for beta testing,
+              we currently have <strong>225 users</strong> and expect to
+              have more after releasing it to freshman and seniors.
+              The team released a feedback form, and most of the distribution
+              feature feedback was positive. Student testimonials include:
+            </p>
+            <ul>
+              <li>“Distributions feature is extremely helpful. <strong>It helps me
+                map out the courses I need to take</strong>. Specifically, I like the
+                follow up option/question asking me to add additional courses to
+                the language requirement part.”</li>
+              <li>“...it was <strong>visually easy to see what I was missing</strong> and I appreciate that it saves.”</li>
+              <li>“It's a great way of visualizing it that makes more sense than the current audit form Wellesley provides.”</li>
+              <li>“[The distribution feature is] not available in other Wellesley resources (usually have to do by hand).”</li>
+            </ul>
+            <p class="main-subheader">Beyond the MVP</p>
+            <p>Some features that I hope to implement in the future is
+              providing users with recommonded courses and major progress. Additionally,
+            students wanted to see an edit feature to allow them to delete individual classes from
+            the distributions page. To address this issue, we decided to add a reset all button as a temporary solution.</p>
+          </section>
+
+        </div>
+      </article>
+    </div>
+  </main>
+  <footer class="footer-container footer-article-container ">
+    <div class="footer-content footer-article-adj">
+      <div class="footer-col1">
+        <p id="spontaneous">be spontaneous.</p>
+        <p id="love-code">coded with ♡ by Julie Lely</p>
+        <div class="footer-links">
+          <a href="index.html"><span class="underline">projects</span>&#160;<strong>•</strong>&#160;</a>
+          <a href="about.html"><span class="underline">about</span>&#160;<strong>•</strong>&#160;</a>
+          <a href="files/LELY_JULIE.pdf"><span class="underline">resume</span></a>
+        </div>
+      </div>
+      <div class="footer-col2">
+        <p> </p>
+        <a class="button button-figma" href="mailto:julielely@gmail.com" target="_blank">contact me</a>
+        <p class="footer-filler"> </p>
+        <div class="footer-links social-links">
+          <a id="email">julielely@gmail.com</a>
+          <a class="social-icons" href="https://www.linkedin.com/in/julielely/" target="_blank"><img src="images/socials/linkedin.png" alt="linkedin"></a>
+          <a class="social-icons" href="https://github.com/julielely" target="_blank"><img src="images/socials/github.png" alt="github"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
+  <script src="javascripts/show-on-scroll.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+  $("#solution-points h1").on("click", function(event) {
+    var clickee = event.target;
+    var selectedPoint = $(clickee).data("point");
+    var $selected = $("#solution-points").find(".selected-solution");
+    var currentPoint = $selected.data("point");
+    if($(clickee).data('selected') == "yes"){
+      // do nothing
+    }
+    else {
+      console.log("else branch!")
+      $selected.removeClass().addClass("solutions-header-title");
+      $(clickee).removeClass().addClass("selected-solution");
+      $selected.data("selected", "no");
+      $(clickee).data("selected", "yes");
+
+      $("#solution-explainations").find("[data-point='" + selectedPoint + "']").removeClass();
+      $("#solution-gifs").find("[data-point='" + selectedPoint + "']").removeClass();
+
+      $("#solution-explainations").find("[data-point='" + currentPoint + "']").addClass("solution-hide");;
+      $("#solution-gifs").find("[data-point='" + currentPoint + "']").addClass("solution-hide");;
+    }
+  });
+
+
+      function imageAdjust() {
+        winWidth = $(window).width();
+        $("#split-two").removeClass();
+        $("#split-two div").removeClass();
+        $("#split-two div p").removeClass();
+
+        if(winWidth >= 1100) {
+          $("#background-flex").css("display", "flex");
+          $("#background-ul").css("display", "none");
+          $("#background-title").css("display", "none");
+          $(".line-divider").css("display", "block");
+        }
+        else {
+          $("#background-flex").css("display", "none");
+          $("#background-ul").css("display", "inline-block");
+          $("#background-title").css("display", "inline");
+          $(".line-divider").css("display", "none");
+        }
+      }
+      imageAdjust();
+
+      $(window).resize(function () {
+        imageAdjust();
+      });
+
+  </script>
+</body>
+
+</html>
