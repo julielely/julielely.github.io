@@ -1094,6 +1094,14 @@ nav li a {
   background-color: #1A6CDA;
 }
 
+.key-points {
+  margin-top: 0px
+}
+
+.key-header {
+  margin-bottom: 10px;
+}
+
 /* HelpUX */
 #helpUX {
   font-family: "Poppins";
