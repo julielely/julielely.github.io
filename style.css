@@ -594,6 +594,16 @@ header {
   margin-bottom: 26px;
 }
 
+@media only screen and (min-width: 2000px) {
+  body .content-container {
+    width: 45%;
+  }
+
+  body .home-container, body .intro-box {
+    width: 64%
+  }
+}
+
 @media only screen and (min-width: 800px) {
 
   /*HEADER*/
@@ -631,9 +641,21 @@ nav li a {
   }
 }
 
+@media only screen and (max-width: 699px) {
+  .main-text {
+    padding: 20px 80px;
+  }
+  body #julie-title {
+    font-size: 54px;
+  }
+}
 @media only screen and (min-width: 700px) {
   .main-text {
-    padding: 20px 20vw;
+    padding: 20px 16vw;
+  }
+
+  #contact {
+    margin-bottom: 40px;
   }
 
   body #julie-title {
@@ -1178,7 +1200,7 @@ figure {
 
 .content-container {
   margin: 90px auto;
-  width: 66%;
+  width: 60%;
   text-align: left;
 }
 
@@ -1885,7 +1907,7 @@ img {
   }
 }
 
-@media only screen and (min-width: 1800px){
+@media only screen and (min-width: 2000px){
   .home-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
