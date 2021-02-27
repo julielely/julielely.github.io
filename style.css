@@ -602,6 +602,30 @@ header {
   body .home-container, body .intro-box {
     width: 64%
   }
+
+  body #julie-title {
+    font-size: 4vw;
+  }
+
+  body .main-text {
+    padding: 60px 6vw 0px 12vw;
+  }
+
+  body .top-content {
+    width: 60%;
+  }
+
+  body .main-content {
+    width: 60%;
+  }
+
+  body #tech {
+    display: none;
+  }
+
+  body #exp {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 800px) {
@@ -1667,7 +1691,7 @@ img {
 
   body #julie-title {
     text-align: left;
-    font-size: 6.2vw;
+    font-size: 4vw;
   }
 
   body #definition {
