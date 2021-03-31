@@ -933,6 +933,12 @@ nav li a {
   align-items: center;
 }
 
+.google-points-text {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
 .pain-points-p {
   line-height: 20px;
   /* margin: 14px auto; */
@@ -2003,8 +2009,10 @@ img {
 
 .google-insights {
   font-weight: 600;
-  margin-bottom: 0px;
+  margin-bottom: 6px;
   font-size: 20px;
+  margin-top: 0px;
+  line-height: 20px;
 }
 
 .google-insights-content {
@@ -2031,9 +2039,14 @@ img {
   color: #4A85E9;
   font-weight: bold;
 }
+
 .emoji-img {
   width: 40px;
-  margin-right: 20px;
+  margin-right: 24px;
+}
+
+#emoji-5 {
+  margin-right: 32px;
 }
 
 .margin-top-adjustment {
