@@ -1299,12 +1299,16 @@ figure {
   word-spacing: -3px;
 }
 
-.task-header {
+.task-header, .google-task-header {
   font-family: "Roboto Mono";
   font-size: 24px;
   font-weight: 700;
   text-align: left;
   margin: 0px;
+}
+
+.google-task-header {
+  font-family: 'Inter';
 }
 
 .image-container {
@@ -1419,7 +1423,8 @@ img {
 }
 
 .google-main-header {
-  color: #1D386A;
+  color: #4A85E9;
+  margin-top: 30px;
 }
 
 .article-body-text {
@@ -1994,4 +1999,47 @@ img {
   #projectus {
     font-size: 42px;
   }
+}
+
+.google-insights {
+  font-weight: 600;
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+
+.google-insights-content {
+    margin-top: 0px;
+    margin-bottom: 14px;
+}
+
+.google-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  color: #fff;
+  background-color: #1D386A;
+  margin-right: 22px;
+}
+
+.google-quotes {
+  margin-left: 24px;
+}
+
+.blue-text {
+  color: #4A85E9;
+  font-weight: bold;
+}
+.emoji-img {
+  width: 40px;
+  margin-right: 20px;
+}
+
+.margin-top-adjustment {
+  margin-top: 0px;
+}
+
+#google-competitive-img {
+  width: 80%;
 }
