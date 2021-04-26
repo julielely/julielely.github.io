@@ -1160,6 +1160,8 @@ nav li a {
 #google-button {
   background: #1D386A;
   border: 1px solid #1D386A;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 #course-website h3 {
