@@ -14,47 +14,34 @@
 
 <body>
   <header id="header-relative" class="header-nav-prog">
-    <nav id="navbar">
-      <ul id="article-nav-items" class="nav-items">
-        <li id="logo" style="float:left"><a href="index.html" id="desktop-name">julie lely</a></li>
-        <li id="other" class="other-items"><a href="https://drive.google.com/drive/folders/1age4p6W6hQMEnJ5W70dl-IMmnl5dLXz1?usp=sharing" target="_blank">MORE</a></li>
-        <li class="other-items"><a href="about.html">ABOUT</a></li>
-        <li class="other-items"><a href="index.html">PROJECTS</a></li>
-      </ul>
+    <nav>
+      <a href="index.html"><img class="smiley-logo rotate" src="images/stickers/smiley.png" alt=""></a>
+      <div class="nav-options">
+        <a href="index.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="#">More</a>
+      </div>
     </nav>
 
     <div class="progress-container">
-      <div class="google-progress-bar" id="myBar"></div>
+      <div class="fixed-progress-bar" id="myBar"></div>
     </div>
   </header>
 
   <main>
     <div class="article-background">
       <article id="course-container" class="content-container">
-        <!-- <div class="article-header">
-          <span class="project-topic">Passion Project | Wellesley Students</span>
-          <span class="project-date">September 18-20, 2020</span>
-        </div> -->
-        <!-- <h1 id="google-title" class="article-title">2021 Google Design Exercise</h1>
-        <h3 class="article-description">Designing a platform to help students transition to college
-          life and get their questions answered.
-        </h3> -->
         <div class="image-container">
           <img src="images/google/mockup.jpg" alt="Layout of Course Browser">
-          <!-- <img id="award" src="images/bloom/award.png" alt="Runner-up award"> -->
         </div>
         <div class="article-body-text">
-          <section class="content-background">
-            <p id="background-title" class="google-main-header">Background</p>
-            <div id="background-flex">
+          <section style="margin-bottom: 12px;" class="content-background">
+            <p class="google-main-header background-title">Background</p>
+            <div class="background-flex">
               <div class="background-course-col">
                 <h3 class="google-main-header">Role</h3>
                 <p>Research, design, and prototype mobile application</p>
               </div>
-              <!-- <div class="background-course-col">
-                <h3 class="google-main-header">Team</h3>
-                <p>2 designers and 2 designers and developers</p>
-              </div> -->
               <div class="background-course-col">
                 <h3 class="google-main-header">Tools</h3>
                 <p>Figma</p>
@@ -68,11 +55,11 @@
                 <a id="google-button" class="course-button" href="https://www.figma.com/proto/p9AkJQWTW2RKT6sGwGJcBE/Google-Design-Challenge?node-id=23%3A2608&viewport=-4575%2C500%2C1&scaling=scale-down&page-id=23%3A0" target="_blank">Figma Prototype</a>
               </div>
             </div>
-            <ul id="background-ul">
-              <li><strong>My Role:</strong>Research, design, and prototype mobile application</li>
-              <li><strong>Timeline:</strong>7 days</li>
+            <ul class="background-ul">
+              <li><strong>My Role: </strong>Research, design, and prototype</li>
+              <li><strong>Timeline: </strong>7 days</li>
               <li><strong>Tools:</strong> Figma</li>
-              <li><strong>Prototype:</strong><a href="https://www.figma.com/proto/p9AkJQWTW2RKT6sGwGJcBE/Google-Design-Challenge?node-id=23%3A2608&viewport=-4575%2C500%2C1&scaling=scale-down&page-id=23%3A0" target="_blank">Redesigned Course Browser</a></li>
+              <li><strong>Prototype: </strong><a href="https://www.figma.com/proto/p9AkJQWTW2RKT6sGwGJcBE/Google-Design-Challenge?node-id=23%3A2608&viewport=-4575%2C500%2C1&scaling=scale-down&page-id=23%3A0" target="_blank">Redesigned Course Browser</a></li>
             </ul>
           </section>
           <div class="line-divider"></div>
@@ -128,7 +115,6 @@
               I discovered four common themes: </p>
             <div class="pain-points-section">
               <div class="pain-points-content">
-                <p class="google-insights margin-top-adjustment">Takeaways:</p>
                 <div class="google-points-text">
                   <img class="emoji-img" src="images/google/emoji-1.png" alt="emoji">
                   <div>
@@ -182,12 +168,9 @@
               explore Ladder.to and Elpha, two online communities/forums that
               allow people to ask questions or share resources related to career advancement </p>
             <img id="google-competitive-img" src="images/google/competitive.jpg" alt="Competitive analysis">
-            <!-- <p><strong>Insights:</strong></p>
-            <img src="images/google/insights-2.jpg" alt="Insights"> -->
-
             <div class="pain-points-section">
               <div class="pain-points-content">
-                <p class="google-insights margin-top-adjustment">Takeaways:</p>
+                <p class="google-insights margin-top-adjustment">Main takeaways:</p>
                 <div class="google-points-text">
                   <img id="emoji-5" class="emoji-img" src="images/google/emoji-5.png" alt="emoji">
                   <div>
@@ -365,11 +348,8 @@
              <img src="images/google/home.gif" alt="Preview of task screen" class="inline-photo-left show-on-scroll">
              <div class="circle-and-text-container inline-photo-right show-on-scroll">
                <div class="circle-and-text">
-                 <div>
-                   <div class="circle">1</div>
-                 </div>
                  <div class="task-text">
-                   <h4 class="google-task-header">Q&As in one place</h4>
+                   <p class="google-task-header">Q&As in one place</p>
                    <p class="task-body">The home screen is a feed of questions and comments/answers
                    posted by students. <strong>Filters afford students both flexibility and control </strong> over what they see. During my
                    first year, I found academic/dorm questions helpful, so I would definitely take advantage of this feature.</p>
@@ -383,11 +363,8 @@
              <img  src="images/google/discussion.gif" alt="Preview of community screen" class="inline-photo-right show-on-scroll">
              <div class="circle-and-text-container inline-photo-left show-on-scroll">
                <div class="circle-and-text">
-                 <div>
-                   <div class="circle">2</div>
-                 </div>
                  <div class="task-text">
-                   <h4 class="google-task-header">Relevant Discussions</h4>
+                   <p class="google-task-header">Relevant Discussions</p>
                    <p class="task-body">Specific Wellesley events, such as course registration or first-year/transfer orientation, generate
                    a large influx of logistical questions. This discussion feature gives students a space to ask away about these
                    specific, impactful events.</p>
@@ -401,11 +378,8 @@
              <img src="images/google/mentor.png" alt="Preview of community screen" class="inline-photo-left show-on-scroll">
              <div class="circle-and-text-container inline-photo-right show-on-scroll">
                <div class="circle-and-text">
-                 <div>
-                   <div class="circle">3</div>
-                 </div>
                  <div class="task-text">
-                   <h4 class="google-task-header">Mentorship</h4>
+                   <p class="google-task-header">Mentorship</p>
                    <p class="task-body">Some underclassmen struggle with finding mentors, while upperclassmen
                    who want to help go unnoticed. This feature aims to make those who want to help accessible to students
                    who have questions or want guidance. </p>
@@ -419,11 +393,8 @@
              <img  src="images/google/filter.gif" alt="Preview of community screen" class="inline-photo-right show-on-scroll">
              <div class="circle-and-text-container inline-photo-left show-on-scroll">
                <div class="circle-and-text">
-                 <div>
-                   <div class="circle">4</div>
-                 </div>
                  <div class="task-text">
-                   <h4 class="google-task-header">Filters</h4>
+                   <p class="google-task-header">Filters</p>
                    <p class="task-body">The filter interaction is meant to be simple, straightforward, and intuitive.
                    Students can filter by four of the following topics: <strong>academic, dorm, campus, or organizations</strong></p>
                  </div>
@@ -474,29 +445,28 @@
       </article>
     </div>
   </main>
-  <footer class="footer-container footer-article-container ">
-    <div class="footer-content footer-article-adj">
+
+  <footer>
+    <div class="footer-container">
       <div class="footer-col1">
-        <p id="spontaneous">be spontaneous.</p>
-        <p id="love-code">coded with ♡ by Julie Lely</p>
+        <h3 id="spontaneous">Be spontaneous.</h3>
+        <p class="footer-text">Coded with ♥ by Julie Lely</p>
+      </div>
+      <div class="footer-col2">
         <div class="footer-links">
           <a href="index.html"><span class="underline">projects</span>&#160;<strong>•</strong>&#160;</a>
           <a href="about.html"><span class="underline">about</span>&#160;<strong>•</strong>&#160;</a>
           <a href="files/LELY_JULIE.pdf"><span class="underline">resume</span></a>
         </div>
-      </div>
-      <div class="footer-col2">
-        <p> </p>
-        <a class="button button-figma" href="mailto:julielely@gmail.com" target="_blank">contact me</a>
-        <p class="footer-filler"> </p>
-        <div class="footer-links social-links">
-          <a id="email">julielely@gmail.com</a>
+        <div class="social-links">
+          <a class="footer-text" id="email">julielely@gmail.com</a>
           <a class="social-icons" href="https://www.linkedin.com/in/julielely/" target="_blank"><img src="images/socials/linkedin.png" alt="linkedin"></a>
           <a class="social-icons" href="https://github.com/julielely" target="_blank"><img src="images/socials/github.png" alt="github"></a>
         </div>
       </div>
     </div>
   </footer>
+
   </div>
   <script src="javascripts/show-on-scroll.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -525,25 +495,25 @@
   });
 
 
-      function imageAdjust() {
-        winWidth = $(window).width();
-        $("#split-two").removeClass();
-        $("#split-two div").removeClass();
-        $("#split-two div p").removeClass();
+    function imageAdjust() {
+      winWidth = $(window).width();
+      $("#split-two").removeClass();
+      $("#split-two div").removeClass();
+      $("#split-two div p").removeClass();
 
-        if(winWidth >= 1100) {
-          $("#background-flex").css("display", "flex");
-          $("#background-ul").css("display", "none");
-          $("#background-title").css("display", "none");
-          $(".line-divider").css("display", "block");
-        }
-        else {
-          $("#background-flex").css("display", "none");
-          $("#background-ul").css("display", "inline-block");
-          $("#background-title").css("display", "inline");
-          $(".line-divider").css("display", "none");
-        }
+      if(winWidth >= 1100) {
+        $(".background-flex").css("display", "flex");
+        $(".background-ul").css("display", "none");
+        $(".background-title").css("display", "none");
+        $(".line-divider").css("display", "block");
       }
+      else {
+        $(".background-flex").css("display", "none");
+        $(".background-ul").css("display", "inline-block");
+        $(".background-title").css("display", "inline");
+        $(".line-divider").css("display", "none");
+      }
+    }
       imageAdjust();
 
       $(window).resize(function () {

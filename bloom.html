@@ -13,31 +13,31 @@
 </head>
 
 <body>
-  <header class="header-nav-prog">
-    <nav id="navbar">
-      <ul id="article-nav-items" class="nav-items">
-        <li id="logo" style="float:left"><a href="index.html" id="desktop-name">julie lely</a></li>
-        <li id="other" class="other-items"><a href="https://drive.google.com/drive/folders/1age4p6W6hQMEnJ5W70dl-IMmnl5dLXz1?usp=sharing" target="_blank">MORE</a></li>
-        <li class="other-items"><a href="about.html">ABOUT</a></li>
-        <li class="other-items"><a href="index.html">PROJECTS</a></li>
-      </ul>
+  <header id="header-relative" class="header-nav-prog">
+    <nav>
+      <a href="index.html"><img class="smiley-logo rotate" src="images/stickers/smiley.png" alt=""></a>
+      <div class="nav-options">
+        <a href="index.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="#">More</a>
+      </div>
     </nav>
 
     <div class="progress-container">
-      <div class="progress-bar" id="myBar"></div>
+      <div class="fixed-progress-bar" id="myBar"></div>
     </div>
   </header>
 
   <main>
     <div class="article-background">
       <article class="content-container">
-        <div class="article-header">
+        <!-- <div class="article-header">
           <span class="project-topic">Designathon | Just Design By UC Santa Barbra and Davis</span>
           <span class="project-date">September 18-20, 2020</span>
-        </div>
-        <h1 class="article-title">Bloom</h1>
-        <h2 class="article-subheader">sustainability activism</h2>
-        <h3 class="article-description">Climate change feels invisible, blameless, and overwhelming. Bloom
+        </div> -->
+        <h1 class="article-title" style="margin-bottom: 20px;">Bloom</h1>
+        <!-- <h2 class="article-subheader">sustainability activism</h2> -->
+        <h3 class="article-descrip" style="padding-bottom: 24px;">Climate change feels invisible, blameless, and overwhelming. Bloom
           makes it visible and personal. Grow and care for your own tree in
           our app by completing tasks that will care in turn for the world.
         </h3>
@@ -47,8 +47,8 @@
         </div>
         <div class="article-body-text">
           <section class="content-background">
-            <p id="background-title" class="article-main-header">Background</p>
-            <div id="background-flex">
+            <p class="background-title" class="article-main-header">Background</p>
+            <div class="background-flex">
               <!-- <div class="background-col">
                 <h3 class="article-main-header">Bloom TL;DR</h3>
                 <p>A mobile app that encourages users to adopt sustainable habits</p>
@@ -70,7 +70,7 @@
                 <p>48 hours</p>
               </div>
             </div>
-            <ul id="background-ul">
+            <ul class="background-ul">
               <li><strong>Bloom TL;DR:</strong> A mobile app that encourages users to adopt sustainable habits</li>
               <li><strong>My Role:</strong> Lead designer, established overall branding and directed high fidelity prototyping</li>
               <li><strong>Team:</strong> Arina Romanova, Chintan Jani, and Nicole Lopez</li>
@@ -153,7 +153,7 @@
                       <div class="circle">1</div>
                     </div>
                     <div class="task-text">
-                      <h4 class="task-header">tasks</h4>
+                      <p class="task-header">tasks</p>
                       <p class="task-body">Introduce tasks of <strong>varying durations</strong>
                         (daily, weekly, yearly) and <strong>type of habit</strong> (transportation,
                         water usage, etc), depending on what the user is
@@ -172,7 +172,7 @@
                       <div class="circle">2</div>
                     </div>
                     <div class="task-text">
-                      <h4 class="task-header">community</h4>
+                      <p class="task-header">community</p>
                       <p class="task-body">Create a community that incentivizes
                         behavioral changes through <strong>leaderboards</strong>,
                         <strong>badges</strong>, and <strong>community progress</strong>
@@ -191,7 +191,7 @@
                       <div class="circle">3</div>
                     </div>
                     <div class="task-text">
-                      <h4 class="task-header">news</h4>
+                      <p class="task-header">news</p>
                       <p class="task-body">Inform people about events related to
                         climate change and a variety of other articles that
                         <strong>promote sustainable habits</strong> and <strong>
@@ -265,70 +265,53 @@
       </article>
     </div>
   </main>
-  <footer class="footer-container footer-article-container ">
-    <div class="footer-content footer-article-adj">
+
+  <footer>
+    <div class="footer-container">
       <div class="footer-col1">
-        <p id="spontaneous">be spontaneous.</p>
-        <p id="love-code">coded with ♡ by Julie Lely</p>
+        <h3 id="spontaneous">Be spontaneous.</h3>
+        <p class="footer-text">Coded with ♥ by Julie Lely</p>
+      </div>
+      <div class="footer-col2">
         <div class="footer-links">
           <a href="index.html"><span class="underline">projects</span>&#160;<strong>•</strong>&#160;</a>
           <a href="about.html"><span class="underline">about</span>&#160;<strong>•</strong>&#160;</a>
           <a href="files/LELY_JULIE.pdf"><span class="underline">resume</span></a>
         </div>
-      </div>
-      <div class="footer-col2">
-        <p> </p>
-        <a class="button button-figma" href="mailto:julielely@gmail.com" target="_blank">contact me</a>
-        <p class="footer-filler"> </p>
-        <div class="footer-links social-links">
-          <a id="email">julielely@gmail.com</a>
+        <div class="social-links">
+          <a class="footer-text" id="email">julielely@gmail.com</a>
           <a class="social-icons" href="https://www.linkedin.com/in/julielely/" target="_blank"><img src="images/socials/linkedin.png" alt="linkedin"></a>
           <a class="social-icons" href="https://github.com/julielely" target="_blank"><img src="images/socials/github.png" alt="github"></a>
         </div>
       </div>
     </div>
   </footer>
+
   </div>
   <script src="javascripts/show-on-scroll.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>
 
 
-    function imageAdjust() {
-      winWidth = $(window).width();
-      $("#split-two").removeClass();
-      $("#split-two div").removeClass();
-      $("#split-two div p").removeClass();
+  function imageAdjust() {
+    winWidth = $(window).width();
+    $("#split-two").removeClass();
+    $("#split-two div").removeClass();
+    $("#split-two div p").removeClass();
 
-      if(winWidth >= 1100) {
-        $("#background-flex").css("display", "flex");
-        $("#background-ul").css("display", "none");
-        $("#background-title").css("display", "none");
-        $(".line-divider").css("display", "block");
-      }
-      else {
-        $("#background-flex").css("display", "none");
-        $("#background-ul").css("display", "inline-block");
-        $("#background-title").css("display", "inline");
-        $(".line-divider").css("display", "none");
-      }
-
-      // if (winWidth >= 1175 && winWidth <= 1350) {
-      //   $("#bloom-nav-img img").attr("src", "images/bloom/bloom-short.png");
-      //
-      //   $("#split-two").addClass("split-two-horizontal");
-      //   $("#split-two div").addClass("split-column-horizontal");
-      //   $("#access-text p").addClass("bloom-text-adj");
-      //   $("#bloom-nav-img").css("order", 0);
-      // }
-      // else {
-      //   $("#bloom-nav-img img").attr("src", "images/bloom/bloom-long.png");
-      //
-      //   $("#split-two").addClass("split-two-vertical");
-      //   $("#split-two div").addClass("split-column-vertical");
-      //   $("#bloom-nav-img").css("order", 2);
-      // }
+    if(winWidth >= 1100) {
+      $(".background-flex").css("display", "flex");
+      $(".background-ul").css("display", "none");
+      $(".background-title").css("display", "none");
+      $(".line-divider").css("display", "block");
     }
+    else {
+      $(".background-flex").css("display", "none");
+      $(".background-ul").css("display", "inline-block");
+      $(".background-title").css("display", "inline");
+      $(".line-divider").css("display", "none");
+    }
+  }
     imageAdjust();
 
     $(window).resize(function () {
