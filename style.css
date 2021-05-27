@@ -60,7 +60,7 @@ h4 {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 150%;
 }
 
@@ -130,9 +130,13 @@ nav {
 }
 
 .home-header {
-  margin-bottom: 100px;
+  /* height: 95vh; */
+  margin-bottom: 150px;
 }
 
+.home-main-content {
+  margin-top: -60px;
+}
 .home-subheader * {
   font-family: "Inter";
   font-size: 18px;
@@ -152,6 +156,27 @@ nav {
   margin-bottom: 20px;
 }
 
+.floating-text {
+  font-family: "Inter";
+  font-size: 16px;
+  margin-top: 36px;
+}
+
+.floating {
+    text-transform: uppercase;
+    animation-name: floating;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    /* margin-top: -5px; */
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 6px); }
+    100%   { transform: translate(0, -0px); }
+}
+
 .switch-light {
   width: 100%;
   text-align: right;
@@ -159,7 +184,7 @@ nav {
 }
 
 .switch-light img {
-  width: 100px;
+  width: 110px;
 }
 
 .switch-light h4 {
