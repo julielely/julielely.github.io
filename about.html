@@ -25,13 +25,16 @@
             looking to create positive, intuitive, and beautiful experiences
             for people! I’m particularly interested in designing for
             <strong>B2C companies</strong>, as I love
-            working on products that people can use and interact with daily
+            working on projects that people can use and interact with daily
             and/or casually. <br><br>
 
             I found my dream occupation after I took a Human-Computer Interaction
             class the summer of my sophomore year. I entered that class as a
             computer science major and walked away as a designer with big ideas,
             visions, and aspirations.</p>
+
+            <h4 class="floating floating-text">&#8595;</h4>
+
         </div>
         <div class="about-col2">
           <img id="polaroid" src="images/about/polaroid.png" alt="Image of me">
@@ -39,7 +42,7 @@
 
       </section>
 
-      <div class="currently-container">
+      <section class="currently-container more-info-containers">
         <h4>In my free time, you can find me:</h4>
         <!-- <img id="currently-img" src="images/about/currently.png" alt="Current things I'm doing!"> -->
         <div class="currently-imgs">
@@ -62,12 +65,12 @@
             <img class="currently-stickers" src="images/about/netflix-sticker.png" alt="">
           </div>
         </div>
-      </div>
+      </section>
       <!-- <div class="switch-light">
         <img id="switch" src="images/light-switch.png" alt="">
       </div> -->
 
-      <section>
+      <section class="more-info-containers">
         <div class="brand-header">
           <h2 style="margin-bottom: 0px; margin-top: 60px;">My brand</h2>
           <p style="margin-top: 0px;">A glimpse into my website and brand</p>
@@ -109,7 +112,7 @@
             <!-- link -->
             <section class="figma-file">
               <h4>Website Blueprint</h4>
-              <a class="button" href="https://www.figma.com/file/4JOosEBsBgXRnj5nAsbKS7/Julie-s-Personal-Website?node-id=905%3A2" target="_blank">
+              <a class="button" href="https://www.figma.com/file/nsEJ3q8pGf4JJxmy7pSUvy/Personal-Website?node-id=0%3A1">
                 Figma File
               </a>
             </section>
@@ -162,13 +165,13 @@
       <div class="footer-container">
         <div class="footer-col1">
           <h3 id="spontaneous">Be spontaneous.</h3>
-          <p class="footer-text">Coded with ♥ by Julie Lely</p>
+          <p class="footer-text">Designed and coded with ♥ by Julie Lely</p>
         </div>
         <div class="footer-col2">
           <div class="footer-links">
             <a href="index.html"><span class="underline">projects</span>&#160;<strong>•</strong>&#160;</a>
             <a href="about.html"><span class="underline">about</span>&#160;<strong>•</strong>&#160;</a>
-            <a href="files/LELY_JULIE.pdf" target="_blank"><span class="underline">resume</span></a>
+            <a href="files/LELY_JULIE.pdf"><span class="underline">resume</span></a>
           </div>
           <div class="social-links">
             <a class="footer-text" id="email">julielely@gmail.com</a>
@@ -180,12 +183,32 @@
     </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
         console.log("run");
-        gsap.from(".about-section", {duration: 0.6, y:-6});
-      });
+        gsap.from(".about-section", {duration: 0.6, y:6});
+    });
+
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.utils.toArray('.more-info-containers').forEach(box => {
+    gsap.fromTo(box, {
+          autoAlpha: 0,
+          y: 50
+        }, {
+        scrollTrigger: {
+          start: "top center",
+          trigger: box,
+          once: true
+        },
+          duration: 1,
+          autoAlpha: 1,
+          y: 0
+        });
+    });
+
+
     var mode = true;
 
     function setMode() {
@@ -194,7 +217,6 @@
       var minutes = currentDate.getMinutes();
       if (hours >= 18 || hours <= 6) {
         darkMode();
-
       }
       else {
         lightMode();
@@ -207,10 +229,17 @@
       var minutes = currentDate.getMinutes();
       // Format hours
       ampm = "AM"
-      if (hours > 12) {
+      if ( hours == 0 ) {
+        hours = 12;
+      }
+      else if ( hours == 12 ){
+        ampm = "PM"
+      }
+      else if (hours > 12) {
         hours -= 12;
         ampm = "PM"
       }
+
       if (minutes < 10) { minutes = "0" + minutes; }
       $("#current-time").html(hours + ":" + minutes + " " + ampm);
     }
@@ -257,7 +286,6 @@
     $("#switch").on("click", function(event) {
       if (mode) {
         darkMode();
-        
       }
       else {
         lightMode();
@@ -276,6 +304,8 @@
           });
       }
     });
+
+
   </script>
   </body>
 </html>

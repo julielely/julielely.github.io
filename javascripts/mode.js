@@ -18,10 +18,17 @@ function showDate() {
   var minutes = currentDate.getMinutes();
   // Format hours
   ampm = "AM"
-  if (hours > 12) {
+  if ( hours == 0 ) {
+    hours = 12;
+  }
+  else if ( hours == 12 ){
+    ampm = "PM"
+  }
+  else if (hours > 12) {
     hours -= 12;
     ampm = "PM"
   }
+
   if (minutes < 10) { minutes = "0" + minutes; }
   $("#current-time").html(hours + ":" + minutes + " " + ampm);
 }
@@ -47,25 +54,6 @@ function lightMode() {
   $(".project-image").css("border", "0px");
   mode = true;
 }
-
-// ORIGINAL
-// function darkMode() {
-//   $("#switch").attr("src","images/dark-switch.png")
-//   $("body").css({"background-color":"#172741", "color":"#FFF"});
-//   $(".project-cards").css({"background-color":"#FFF", "color":"#172741"});
-//   $(".button").css({"background-color":"#172741", "color":"#FFF"});
-//   $(".project-image").css("border", "1px solid #E0E0E0");
-//   mode = false;
-// }
-
-// function lightMode() {
-//   $("#switch").attr("src","images/light-switch.png")
-//   $("body").css({"background-color":"#FFF", "color":"#172741"});
-//   $(".project-cards").css({"background-color":"#172741", "color":"#FFF"});
-//   $(".button").css({"background-color":"#FFF", "color":"#172741"})
-//   $(".project-image").css("border", "0px");
-//   mode = true;
-// }
 
 $("#switch").on("click", function(event) {
   if (mode) {
