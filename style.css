@@ -60,7 +60,7 @@ h4 {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 150%;
 }
 
@@ -105,7 +105,7 @@ nav {
   display: flex;
   align-items: center;
   color: inherit;
-  line-height: 24px;
+  line-height: 30px;
 }
 
 /* NAV Rotation */
@@ -130,13 +130,9 @@ nav {
 }
 
 .home-header {
-  /* height: 95vh; */
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
-.home-main-content {
-  margin-top: -60px;
-}
 .home-subheader * {
   font-family: "Inter";
   font-size: 18px;
@@ -156,27 +152,6 @@ nav {
   margin-bottom: 20px;
 }
 
-.floating-text {
-  font-family: "Inter";
-  font-size: 16px;
-  margin-top: 36px;
-}
-
-.floating {
-    text-transform: uppercase;
-    animation-name: floating;
-    animation-duration: 1.6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    /* margin-top: -5px; */
-}
-
-@keyframes floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 6px); }
-    100%   { transform: translate(0, -0px); }
-}
-
 .switch-light {
   width: 100%;
   text-align: right;
@@ -184,7 +159,7 @@ nav {
 }
 
 .switch-light img {
-  width: 110px;
+  width: 100px;
 }
 
 .switch-light h4 {
@@ -206,12 +181,12 @@ nav {
   border-radius: 6px;
 
   transition: background-color 0.3s ease;
-  transition: .5s ease-out;
+  transition: .3s ease-out;
 }
 
 .project-cards:hover {
   box-shadow: 2px 4px 6px rgb(0 0 0 / 25%);
-  transform: translate(0px, -4px);
+  transform: translate(0px, -2px);
 }
 
 .project-image-frame {
@@ -230,8 +205,12 @@ nav {
   width: 100%;
 }
 
-.project-container > div:first-child {
+.project-container > div {
   margin-bottom: 36px;
+}
+
+.project-container > div:last-child {
+  margin-bottom: 0;
 }
 
 .project-card-row {
@@ -290,11 +269,23 @@ nav {
 
 .coursebrowser-stickers * {
   position: absolute;
-  right: -28px;
+  right: -23px;
   top: -25px;
-  width: 260px;
+  width: 246px;
+}
+#yahoo-proto {
+  position: absolute;
+  left: -10px;
+  bottom: -10px;
+  width: 125px;
 }
 
+#yahoo-id {
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  width: 180px;
+}
 #startup-20 {
   position: absolute;
   right: -20px;
@@ -409,7 +400,6 @@ footer {
 .about-section {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 100px;
 }
 
 /* .about-col1 { width: 60%; } */
@@ -426,9 +416,7 @@ footer {
   transform: rotate(3deg);
 }
 
-.currently-container {
-  margin-bottom: 100px;
-}
+.currently-container { margin-top: 50px; }
 
 #currently-img {
   width: 100%;
@@ -471,42 +459,57 @@ footer {
   transition: transform .4s ease-in-out;
 }
 
+.currently-learning {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
 .currentlyimg-learning * {
-  width: 160px;
-  margin-left: 30px;
+  width: 150px;
+  /* margin-left: 30px; */
 }
 
 .currentlyimg-learning .currently-stickers {
-  top: 0px;
+  /* top: 0px;
   left: -38px;
+  width: 148px; */
+  bottom: 0px;
+  left: 5px;
   width: 148px;
 }
 
 .currentlyimg-reading * {
   width: 120px;
-  margin-left: 38px;
+  /* margin-left: 38px; */
 }
 
 .currentlyimg-reading .currently-stickers {
-  bottom: -15px;
+  /* bottom: -15px;
   left: -33px;
-  width: 175px;
+  width: 175px; */
+  bottom: -10px;
+  left: -30px;
+  width: 135px;
 }
 
 .currentlyimg-cobble * {
   width: 160px;
-  margin-left: 100px;
+  /* margin-left: 100px; */
 }
 
 .currentlyimg-cobble .currently-stickers {
-  bottom: -10px;
+  /* bottom: -10px;
   left: -52px;
+  width: 118px; */
+  bottom: -40px;
+  left: 20px;
   width: 118px;
 }
 
 .currentlyimg-netflix * {
   width: 140px;
-  margin-left: 30px;
+  /* margin-left: 30px; */
 }
 
 .currentlyimg-netflix .currently-stickers {
@@ -582,7 +585,7 @@ article section {
   background: #2F80ED;
   width: 0%;
 
-  z-index: -1;
+  z-index: 999;
   position: fixed;
   top: 0;
 }
@@ -651,6 +654,8 @@ article section {
 .background-col, .background-course-col{ width: 18%; }
 
 .background-course-col p { margin-top: 5px; }
+
+.background-course-col h3 { color: var(--navy); }
 
 .line-divider {
   border-top: 1px solid rgba(0, 0, 0, 0.3);
@@ -942,6 +947,17 @@ article section {
 .task-header { transform: translateY(-8px); }
 
 /* Course Browser */
+.background-button {
+  padding: 5px 12px;
+  margin-top: 14px;
+  border-radius: 6px;
+  background-color: var(--navy);
+  color: white;
+}
+
+.background-button:hover {
+  background-color: #2f436a;
+}
 #course-browser {
   font-family: "Open Sans";
   font-weight: 600;
@@ -1199,7 +1215,7 @@ article section {
 
 /* END */
 
-@media screen and (max-width: 1265px) {
+@media screen and (max-width: 1100px) {
   .project-card-row { flex-direction: column; }
 
   .project-card-row  > div:first-child {
@@ -1239,7 +1255,7 @@ article section {
 /* About Page */
 @media screen and (max-width: 1250px) {
   .currentlyimg-cobble * {
-    margin-left: 50px;
+    /* margin-left: 50px; */
   }
   .about-col2 { display: none; }
 }
@@ -1261,22 +1277,6 @@ article section {
 }
 
 @media screen and (max-width: 650px) {
-  .main-container { width: 90%; }
-  .footer-container { width: 90%; }
-
-  nav {
-    margin: auto;
-    width: 90%;
-    padding: 36px 0px;
-  }
-
-  .header-nav-prog nav {
-    width: 90%;
-    padding: 36px 0px 0px 0px;
-  }
-}
-
-@media screen and (max-device-width: 680px) {
   .main-container { width: 90%; }
   .footer-container { width: 90%; }
 

@@ -25,7 +25,7 @@
             looking to create positive, intuitive, and beautiful experiences
             for people! I’m particularly interested in designing for
             <strong>B2C companies</strong>, as I love
-            working on projects that people can use and interact with daily
+            working on products that people can use and interact with daily
             and/or casually. <br><br>
 
             I found my dream occupation after I took a Human-Computer Interaction
@@ -39,12 +39,12 @@
 
       </section>
 
-      <section class="currently-container">
+      <div class="currently-container">
         <h4>In my free time, you can find me:</h4>
         <!-- <img id="currently-img" src="images/about/currently.png" alt="Current things I'm doing!"> -->
         <div class="currently-imgs">
           <div class="currentlyimg-learning">
-            <img src="images/about/korean.png" alt="">
+            <img id="korean-img" src="images/about/korean.png" alt="">
             <img class="currently-stickers" src="images/about/learning-sticker.png" alt="">
           </div>
           <div class="currentlyimg-reading">
@@ -53,7 +53,7 @@
           </div>
           <a href="https://cobble.page/" target="_blank">
             <div class="currentlyimg-cobble">
-              <img src="images/about/cobble.png" alt="">
+              <img id="cobble-img" src="images/about/cobble.png" alt="">
               <img class="currently-stickers" src="images/about/startup-sticker.png" alt="">
             </div>
           </a>
@@ -62,7 +62,7 @@
             <img class="currently-stickers" src="images/about/netflix-sticker.png" alt="">
           </div>
         </div>
-      </section>
+      </div>
       <!-- <div class="switch-light">
         <img id="switch" src="images/light-switch.png" alt="">
       </div> -->
@@ -109,7 +109,7 @@
             <!-- link -->
             <section class="figma-file">
               <h4>Website Blueprint</h4>
-              <a class="button" href="https://www.figma.com/file/nsEJ3q8pGf4JJxmy7pSUvy/Personal-Website?node-id=0%3A1">
+              <a class="button" href="https://www.figma.com/file/4JOosEBsBgXRnj5nAsbKS7/Julie-s-Personal-Website?node-id=905%3A2" target="_blank">
                 Figma File
               </a>
             </section>
@@ -151,8 +151,9 @@
       <div class="switch-light" style="text-align: left; margin-top: 36px;">
         <h4 id="current-time"></h4>
         <img id="switch" src="images/light-switch.png" alt="">
-        <h4 style="width: 300px; margin-top: 8px;">I decided to add a switch to make my website more interactive and
-          flexible (also wanted to exercise my JavaScript skills)</h4>
+        <h4 style="width: 300px; margin-top: 8px; text-transform: none; font-weight: normal; font-size: 12px;">
+          I decided to add a switch to make the website more interactive, fun, and
+          flexible!</h4>
       </div>
 
     </div>
@@ -161,13 +162,13 @@
       <div class="footer-container">
         <div class="footer-col1">
           <h3 id="spontaneous">Be spontaneous.</h3>
-          <p class="footer-text">Designed and coded with ♥ by Julie Lely</p>
+          <p class="footer-text">Coded with ♥ by Julie Lely</p>
         </div>
         <div class="footer-col2">
           <div class="footer-links">
             <a href="index.html"><span class="underline">projects</span>&#160;<strong>•</strong>&#160;</a>
             <a href="about.html"><span class="underline">about</span>&#160;<strong>•</strong>&#160;</a>
-            <a href="files/LELY_JULIE.pdf"><span class="underline">resume</span></a>
+            <a href="files/LELY_JULIE.pdf" target="_blank"><span class="underline">resume</span></a>
           </div>
           <div class="social-links">
             <a class="footer-text" id="email">julielely@gmail.com</a>
@@ -178,8 +179,13 @@
       </div>
     </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript">
+    $(document).ready(function() {
+        console.log("run");
+        gsap.from(".about-section", {duration: 0.6, y:-6});
+      });
     var mode = true;
 
     function setMode() {
@@ -188,6 +194,7 @@
       var minutes = currentDate.getMinutes();
       if (hours >= 18 || hours <= 6) {
         darkMode();
+
       }
       else {
         lightMode();
@@ -212,31 +219,37 @@
     setMode();
 
     function darkMode() {
+      $("#cobble-img").attr("src", "images/about/cobble-w.png");
+      $("#korean-img").attr("src", "images/about/korean-w.png");
+
       $("#switch").attr("src","images/dark-switch.png")
       $("body").css({"background-color":"#172741", "color":"#FFF"});
       $(".project-cards").css({"background-color":"#FFF", "color":"#172741"});
       $(".button").css({"background-color":"#172741", "color":"#FFF"});
       $(".project-image").css("border", "1px solid #E0E0E0");
-      $(".currently-imgs").css({
-        "padding":"46px 36px",
-        "background-color":"#F6F9FF",
-        "border-radius":"10px"
-      });
+      // $(".currently-imgs").css({
+      //   "padding":"46px 0px",
+      //   // "background-color":"#F6F9FF",
+      //   "border-radius":"10px"
+      // });
       $(".brand-section").css("color", "var(--navy)");
       mode = false;
     }
 
     function lightMode() {
+      $("#cobble-img").attr("src", "images/about/cobble.png");
+      $("#korean-img").attr("src", "images/about/korean.png");
+
       $("#switch").attr("src","images/light-switch.png")
       $("body").css({"background-color":"#FFF", "color":"#172741"});
       $(".project-cards").css({"background-color":"#172741", "color":"#FFF"});
       $(".button").css({"background-color":"var(--navy)", "color":"#FFF"});
       $(".project-image").css("border", "0px");
-      $(".currently-imgs").css({
-        "padding":"0",
-        "background-color":"transparent",
-        "border-radius":"0px"
-      })
+      // $(".currently-imgs").css({
+      //   "padding":"0",
+      //   // "background-color":"transparent",
+      //   "border-radius":"0px"
+      // });
       $(".brand-section").css("color", "#000");
       mode = true;
     }
@@ -244,6 +257,7 @@
     $("#switch").on("click", function(event) {
       if (mode) {
         darkMode();
+        
       }
       else {
         lightMode();
@@ -262,8 +276,6 @@
           });
       }
     });
-
-
   </script>
   </body>
 </html>
