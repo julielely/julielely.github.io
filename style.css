@@ -476,12 +476,12 @@ footer {
 
 /* About: Brand Section */
 .brand-section {
-  background-color: #F6F9FF;
+  /* background-color: #F6F9FF; */
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 46px;
+      padding: 24px 0px;
 }
 
 .brand-col1, .brand-col2 { width: 45%; }

@@ -73,7 +73,7 @@
 
       <section class="more-info-containers">
         <div class="brand-header">
-          <h2 style="margin-bottom: 0px; margin-top: 60px;">My brand</h2>
+          <h2 style="margin-bottom: 0px; margin-top: 74px;">My brand</h2>
           <p style="margin-top: 0px;">A glimpse into my website and brand</p>
         </div>
 
@@ -255,14 +255,11 @@
       $("#switch").attr("src","images/dark-switch.png")
       $("body").css({"background-color":"#172741", "color":"#FFF"});
       $(".project-cards").css({"background-color":"#FFF", "color":"#172741"});
-      $(".button").css({"background-color":"#172741", "color":"#FFF"});
+      $(".button").css({"background-color":"#243558", "color":"white"});
       $(".project-image").css("border", "1px solid #E0E0E0");
-      // $(".currently-imgs").css({
-      //   "padding":"46px 0px",
-      //   // "background-color":"#F6F9FF",
-      //   "border-radius":"10px"
-      // });
-      $(".brand-section").css("color", "var(--navy)");
+      $(".brand-font-pair > p.body").css("color", "#a7a6a6");
+      $(".color-blocks > p.body").css("color", "#a7a6a6");
+      $(".brand-section").css("color", "#FFF");
       mode = false;
     }
 
@@ -275,11 +272,8 @@
       $(".project-cards").css({"background-color":"#172741", "color":"#FFF"});
       $(".button").css({"background-color":"var(--navy)", "color":"#FFF"});
       $(".project-image").css("border", "0px");
-      // $(".currently-imgs").css({
-      //   "padding":"0",
-      //   // "background-color":"transparent",
-      //   "border-radius":"0px"
-      // });
+      $(".brand-font-pair > p.body").css("color", "#656B75");
+      $(".color-blocks > p.body").css("color", "#656B75");
       $(".brand-section").css("color", "#000");
       mode = true;
     }
@@ -301,7 +295,7 @@
       }
       else {
         $(this).css({"background-color":"#d5e5ff", "color":"var(--navy)"}).mouseout(function(){
-                  $(this).css({"background-color":"var(--navy)", "color":"#FFF"});
+                  $(this).css({"background-color":"#243558", "color":"white"});
           });
       }
     });

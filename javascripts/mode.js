@@ -25,6 +25,7 @@ function showDate() {
     ampm = "PM"
   }
   else if (hours > 12) {
+    console.log("last branch ran");
     hours -= 12;
     ampm = "PM"
   }
