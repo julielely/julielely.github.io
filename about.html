@@ -289,13 +289,13 @@
 
     $(".button").hover(function() {
       if (mode) {
-        $(this).css({"background-color":"#d5e5ff", "color":"var(--navy)"}).mouseout(function(){
-                  $(this).css({"background-color":"var(--navy)", "color":"#FFF"});
+        $(this).css({"background-color":"#d5e5ff", "color":"var(--navy)", "box-shadow":"none"}).mouseout(function(){
+                  $(this).css({"background-color":"var(--navy)", "color":"#FFF", "box-shadow":"rgb(0 0 0 / 20%) 2px 2px 14px"});
           });
       }
       else {
-        $(this).css({"background-color":"#d5e5ff", "color":"var(--navy)"}).mouseout(function(){
-                  $(this).css({"background-color":"#243558", "color":"white"});
+        $(this).css({"background-color":"#d5e5ff", "color":"var(--navy)", "box-shadow":"none"}).mouseout(function(){
+                  $(this).css({"background-color":"#243558", "color":"white", "box-shadow":"rgb(0 0 0 / 20%) 2px 2px 14px"});
           });
       }
     });

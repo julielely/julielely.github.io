@@ -75,13 +75,13 @@ else {
 }
 $(".button").hover(function() {
   if (mode) { //If light mode
-    $(this).css({"background-color":"#d5e5ff", "color":"var(--navy)"}).mouseout(function(){
-              $(this).css({"background-color":"#FFF", "color":"var(--navy)"});
+    $(this).css({"background-color":"#d5e5ff", "color":"var(--navy)", "box-shadow":"none"}).mouseout(function(){
+              $(this).css({"background-color":"#FFF", "color":"var(--navy)", "box-shadow":"rgb(0 0 0 / 20%) 2px 2px 14px"});
       });
   }
   else {
-    $(this).css({"background-color":"var(--navy)", "color":"white"}).mouseout(function(){
-              $(this).css({"background-color":"var(--blue)", "color":"var(--navy)"});
+    $(this).css({"background-color":"var(--navy)", "color":"white", "box-shadow":"none"}).mouseout(function(){
+              $(this).css({"background-color":"var(--blue)", "color":"var(--navy)", "box-shadow":"rgb(0 0 0 / 20%) 2px 2px 14px"});
       });
   }
 });
