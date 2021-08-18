@@ -152,6 +152,87 @@
         </section>
       </section>
 
+      <section class="more-info-containers">
+        <div class="brand-header">
+          <h2 style="margin-bottom: 0px; margin-top: 74px;">My brain</h2>
+          <p style="margin-top: 0px;">How I go about bridging design and code</p>
+        </div>
+
+        <section class="process-section">
+          <div class="process-container">
+            <div class="process-card-row">
+
+              <div class="process-cards">
+                <div class="process-card-content">
+                  <div class="process-image-frame">
+                    <img class="process-image" src="images/about/figma-design.png" alt="">
+                    <div class="stickers-20">
+                      <img id="smiley-figma" src="images/stickers/smiley-figma.png" alt="">
+                    </div>
+                  </div>
+                  <div class="process-card-header">
+                    <h4>Figma, Goodnotes (iPad)</h4>
+                    <h3>1. Ideate & Design</h3>
+                  </div>
+                  <p class="card-body">
+                    I start with sketches and then move to Figma to bring my vision to life.
+                    I'll iterate on designs until I feel like I have a solid MVP for development.
+                  </p>
+                </div>
+
+                <a class="process-button" href="https://www.figma.com/file/4JOosEBsBgXRnj5nAsbKS7/Julie-s-Personal-Website?node-id=905%3A2" target="_blank">Figma Example</a>
+
+              </div>
+
+              <div class="process-cards">
+                <div class="process-card-content">
+                  <div class="process-image-frame">
+                    <img id="inspect-image" class="process-image" src="images/about/inspect.png" alt="">
+                    <div class="stickers-20">
+                      <img id="design-translate" src="images/stickers/design-translate.png" alt="">
+                    </div>
+                  </div>
+                  <div class="process-card-header">
+                    <h4>Figma, zeplin</h4>
+                    <h3>2. Inspect</h3>
+                  </div>
+                  <p class="card-body">After designing, I use the Figma “Inspect” 
+                    tool and extract key attributes like color, 
+                    size, shadow, etc.</p>
+                </div>
+
+                <a class="process-button" href="https://help.figma.com/hc/en-us/articles/360055203533-Use-the-Inspect-panel" target="_blank">Inspect Tool</a>
+
+              </div>
+
+              <div class="process-cards">
+                <div class="process-card-content">
+                  <div class="process-image-frame">
+                    <img class="process-image" src="images/about/code.png" alt="">
+                    <div class="stickers-20">
+                      <img id="star-sticker" src="images/stickers/blue-star.png" alt="">
+                      <img id="startup-20" style="width: 90px;" src="images/stickers/magic.png" alt="">
+                    </div>
+                  </div>
+                  <div class="process-card-header">
+                    <h4>visual studio code, atom</h4>
+                    <h3>3. Code/Iterate Away</h3>
+                  </div>
+                  <p class="card-body">
+                    While Figma’s inspect tool is great, it isn’t perfect. 
+                    I visualize the layout of my design, 
+                    translate everything into code, and add some motion-design-magic ✨ 
+                  </p>
+                </div>
+                <a class="process-button" href="https://github.com/julielely/julielely.github.io" target="_blank">Github</a>
+              </div>
+
+            </div>
+          </div>
+
+        </section>
+      </section>
+
       <div class="switch-light" style="text-align: left; margin-top: 36px;">
         <h4 id="current-time"></h4>
         <img id="switch" src="images/light-switch.png" alt="">
@@ -190,6 +271,10 @@
     $(document).ready(function() {
         console.log("run");
         gsap.from(".about-section", {duration: 0.6, y:6});
+        $(window).resize(function() {
+          var frameWidth = $("#inspect-image").width();
+          $("#design-translate").css("right", (frameWidth/2)-83);
+        });
     });
 
     gsap.registerPlugin(ScrollTrigger);
@@ -245,12 +330,15 @@
 
       $("#switch").attr("src","images/dark-switch.png")
       $("body").css({"background-color":"#172741", "color":"#FFF"});
-      $(".project-cards").css({"background-color":"#FFF", "color":"#172741"});
-      $(".button").css({"background-color":"#243558", "color":"white"});
-      $(".project-image").css("border", "1px solid #E0E0E0");
-      $(".brand-font-pair > p.body").css("color", "#a7a6a6");
-      $(".color-blocks > p.body").css("color", "#a7a6a6");
+      $(".process-cards").css({"background-color":"var(--midnight)", "color":"#FFF", "box-shadow": "0px 4px 16px rgba(0, 0, 0, 0.2)"});
+      $(".button").css({"background-color":"var(--blue)", "color":"var(--navy)"});
+      $(".process-button").css({"background-color":"var(--blue)", "color":"var(--navy)", "box-shadow":"rgb(0 0 0 / 20%) 2px 2px 14px"});
+      $(".brand-font-pair > p.body").css("color", "#A2B3CD");
+      $(".color-blocks > p.body").css("color", "#A2B3CD");
       $(".brand-section").css("color", "#FFF");
+
+      var frameWidth = $("#inspect-image").width();
+      $("#design-translate").css("right", (frameWidth/2)-83);
       mode = false;
     }
 
@@ -260,12 +348,15 @@
 
       $("#switch").attr("src","images/light-switch.png")
       $("body").css({"background-color":"#FFF", "color":"#172741"});
-      $(".project-cards").css({"background-color":"#172741", "color":"#FFF"});
-      $(".button").css({"background-color":"var(--navy)", "color":"#FFF"});
-      $(".project-image").css("border", "0px");
+      $(".process-cards").css({"background-color":"#172741", "color":"#FFF"});
+      $(".button").css({"background-color":"var(--navy)", "color":"white"});
+      $(".process-button").css({"background-color":"white", "color":"var(--navy)", "box-shadow":"rgb(0 0 0 / 20%) 2px 2px 14px"});
       $(".brand-font-pair > p.body").css("color", "#656B75");
       $(".color-blocks > p.body").css("color", "#656B75");
       $(".brand-section").css("color", "#000");
+
+      var frameWidth = $("#inspect-image").width();
+      $("#design-translate").css("right", (frameWidth/2)-83);
       mode = true;
     }
 
@@ -286,7 +377,20 @@
       }
       else {
         $(this).css({"background-color":"#d5e5ff", "color":"var(--navy)", "box-shadow":"none"}).mouseout(function(){
-                  $(this).css({"background-color":"#243558", "color":"white", "box-shadow":"rgb(0 0 0 / 20%) 2px 2px 14px"});
+                  $(this).css({"background-color":"var(--midnight)", "color":"white", "box-shadow":"rgb(0 0 0 / 20%) 2px 2px 14px"});
+          });
+      }
+    });
+
+    $(".process-button").hover(function() {
+      if (mode) {
+        $(this).css({"background-color":"var(--blue)", "color":"var(--navy)", "box-shadow":"none"}).mouseout(function(){
+                  $(this).css({"background-color":"white", "color":"var(--navy)", "box-shadow":"rgb(0 0 0 / 20%) 2px 2px 14px"});
+          });
+      }
+      else {
+        $(this).css({"background-color":"var(--navy)", "color":"white", "box-shadow":"none"}).mouseout(function(){
+                  $(this).css({"background-color":"var(--blue)", "color":"var(--navy)", "box-shadow":"rgb(0 0 0 / 20%) 2px 2px 14px"});
           });
       }
     });

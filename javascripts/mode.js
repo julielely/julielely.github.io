@@ -30,7 +30,7 @@ setMode();
 function darkMode() {
   $("#switch").attr("src","images/dark-switch.png")
   $("body").css({"background-color":"#172741", "color":"#FFF"});
-  $(".project-cards").css({"background-color":"#243558", "color":"#FFF", "box-shadow": "0px 4px 16px rgba(0, 0, 0, 0.2)"});
+  $(".project-cards").css({"background-color":"var(--midnight)", "color":"#FFF", "box-shadow": "0px 4px 16px rgba(0, 0, 0, 0.2)"});
   // $(".button").css({"background-color":"#C4DDFD", "color":"#172741"});
   $(".button").css({"background-color":"var(--blue)", "color":"var(--navy)"});
   $(".disabled-button").css({"background-color": "var(--navy)"});
@@ -42,7 +42,7 @@ function lightMode() {
   $("body").css({"background-color":"#FFF", "color":"#172741"});
   $(".project-cards").css({"background-color":"#172741", "color":"#FFF"});
   $(".button").css({"background-color":"#FFF", "color":"#172741"})
-  $(".disabled-button").css({"background-color": "#243558"});
+  $(".disabled-button").css({"background-color": "var(--midnight)"});
   mode = true;
 }
 
