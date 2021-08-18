@@ -304,8 +304,10 @@ nav {
 } */
 
 .disabled-button {
-  background-color: #d5e5ff;
-  color: var(--navy);
+  /* background-color: #d5e5ff;
+  color: var(--navy); */
+  background-color: var(--navy);
+  color: #7e899a;
   pointer-events: none;
 }
 
