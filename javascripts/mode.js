@@ -34,7 +34,6 @@ function darkMode() {
   // $(".button").css({"background-color":"#C4DDFD", "color":"#172741"});
   $(".button").css({"background-color":"var(--blue)", "color":"var(--navy)"});
   $(".disabled-button").css({"background-color": "var(--navy)"});
-  $(".project-image").css("border", "1px solid #E0E0E0");
   mode = false;
 }
 
@@ -44,7 +43,6 @@ function lightMode() {
   $(".project-cards").css({"background-color":"#172741", "color":"#FFF"});
   $(".button").css({"background-color":"#FFF", "color":"#172741"})
   $(".disabled-button").css({"background-color": "#243558"});
-  $(".project-image").css("border", "0px");
   mode = true;
 }
 
