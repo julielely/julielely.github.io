@@ -129,8 +129,8 @@ nav {
 /* Main Content */
 .main-container, .home-header, .home-main-content {
   margin: auto;
-  width: 65%;
-  max-width: 960px;
+  width: 70%;
+  max-width: 1100px;
 }
 
 .introduction-container {
@@ -150,12 +150,11 @@ nav {
   padding-top: 46px;
 } */
 
-.home-main-content {
+/* .home-main-content {
   margin: auto;
   width: 65%;
   max-width: 960px;
-  /* margin-top: -60px; */
-}
+} */
 
 .home-subheader * {
   font-family: "Inter";
@@ -440,7 +439,7 @@ footer {
 
 .footer-container {
   margin: auto;
-  width: 65%;
+  width: 70%;
   padding: 36px 0px;
 
   /* padding: 60px 90px; */
@@ -1342,7 +1341,7 @@ article section {
 
 @media screen and (min-width: 1800px) {
   nav {
-    width: 65%;
+    width: 70%;
     margin: auto;
   }
 
@@ -1354,13 +1353,13 @@ article section {
 }
 
 /* About Page */
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1200px) {
   /* .currentlyimg-cobble * {
     margin-left: 50px;
   } */
   .about-col2 { display: none; }
   .process-card-row > * {
-    width: fit-content;
+    width: auto;
     height: 365px;
     margin-bottom: 30px;
   }
