@@ -129,7 +129,7 @@ nav {
 /* Main Content */
 .main-container, .home-header, .home-main-content {
   margin: auto;
-  width: 70%;
+  width: 68%;
   max-width: 1100px;
 }
 
@@ -439,7 +439,7 @@ footer {
 
 .footer-container {
   margin: auto;
-  width: 70%;
+  width: 68%;
   padding: 36px 0px;
 
   /* padding: 60px 90px; */
@@ -1315,7 +1315,7 @@ article section {
 
 /* END */
 
-@media screen and (max-width: 1265px) {
+@media screen and (max-width: 1100px) {
   .project-card-row { flex-direction: column; }
 
   .project-card-row  > div:first-child {
@@ -1341,7 +1341,7 @@ article section {
 
 @media screen and (min-width: 1800px) {
   nav {
-    width: 70%;
+    width: 68%;
     margin: auto;
   }
 
