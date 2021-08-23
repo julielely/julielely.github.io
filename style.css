@@ -68,8 +68,8 @@ h4 {
 p, li {
   font-family: "Inter";
   font-weight: normal;
-  font-size: 17px;
-  line-height: 180%;
+  font-size: 16px;
+  line-height: 32px;
 }
 
 /* NAV */
@@ -211,7 +211,8 @@ nav {
 }
 
 /* Project Cards */
-.project-cards, .process-cards {
+.project-cards, .process-cards,
+.yahoo-process-cards {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -228,16 +229,16 @@ nav {
   transition: .5s ease-out;
 }
 
-.process-cards {
-  height: 445px;
-}
+.process-cards { height: 445px; }
+.yahoo-process-cards {height: 190px; }
 
 .project-cards:hover {
   box-shadow: 2px 4px 6px rgb(0 0 0 / 25%);
   transform: translate(0px, -4px);
 }
 
-.project-image-frame, .process-image-frame {
+.project-image-frame, .process-image-frame,
+.yahoo-process-image-frame {
   position: relative;
   background-color: #FFF;
   margin-bottom: 16px;
@@ -245,7 +246,8 @@ nav {
   text-align: center;
 }
 
-.project-image, .process-image {
+.project-image, .process-image,
+.yahoo-process-image {
   border-radius: 6px;
   object-fit: cover;
   height: 285px;
@@ -253,7 +255,7 @@ nav {
   width: 100%;
 }
 
-.process-image {
+.process-image, .yahoo-process-image {
   height: 150px;
 }
 
@@ -262,18 +264,25 @@ nav {
   height: 150px;
 }
 
+.yahoo-process-image-frame {
+  height: 0px;
+}
+
 .project-container > div, 
-.process-container > div {
+.process-container > div, 
+.yahoo-process-container > div {
   margin-bottom: 36px;
 }
 
 .project-container > div:last-child,
-.process-container > div:last-child {
+.process-container > div:last-child,
+.yahoo-process-container > div:last-child {
   margin-bottom: 0px;
 }
 
 .project-card-row,
-.process-card-row {
+.process-card-row,
+.yahoo-process-card-row {
   display: flex;
   justify-content: space-between;
 }
@@ -282,7 +291,8 @@ nav {
   flex-basis: 100%;
 }
 
-.process-card-row > * {
+.process-card-row > *,
+.yahoo-process-card-row > * {
   width: 25%;
 }
 
@@ -383,6 +393,13 @@ nav {
   position: absolute;
   left: -12px;
   top: -15px;
+  width: 55px;
+}
+
+#smiley-yahoo {
+  position: absolute;
+  left: -43px;
+  top: -43px;
   width: 55px;
 }
 
@@ -705,7 +722,8 @@ article section {
 }
 
 .article-main-header, .activ-main-header,
-.course-main-header, .google-main-header {
+.course-main-header, .google-main-header,
+.yahoo-main-header {
   font-family: "Roboto Mono";
   font-size: 18px;
   font-weight: 700;
@@ -717,6 +735,11 @@ article section {
 
 .course-main-header {
   color: #2F80ED;
+}
+
+.yahoo-main-header {
+  /* color: var(--midnight); */
+  color: #355ca5;
 }
 
 .google-main-header {
@@ -1178,7 +1201,10 @@ article section {
   line-height: 0px;
 }
 
-.solutions-header-title, .selected-solution, .selected-topic {
+.solutions-header-title, 
+.selected-solution, 
+.selected-topic,
+.selected-yahoo-solution {
   margin: 0px 24px 0px 0px;
   font-size: 16px;
   font-weight: bold;
@@ -1193,12 +1219,16 @@ article section {
   color: #848484;
 }
 
-.selected-solution {
+.selected-solution, .selected-yahoo-solution {
   color: #FFF;
   padding: 1px 8px;
   background: #2F80ED;
   border-radius: 6px;
 }
+
+.selected-yahoo-solution {
+  background: var(--navy);
+} 
 
 .selected-topic {
   color: #FFF;
@@ -1313,6 +1343,40 @@ article section {
   width: 110px;
 }
 
+/* Yahoo */
+#yahoo-sticker-set {
+  position: absolute;
+  top: -24px;
+  right: -34px;
+  width: 190px;
+  height: auto;
+}
+
+.process-cards img, 
+.yahoo-process-cards img {
+  margin: 0px;
+}
+
+.process-image-frame,
+.yahoo-process-image-frame {
+  border-radius: 6px;
+}
+
+.ordered-takeaways li::marker {
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+ol p {
+  margin-left: 10px;
+}
+
+ol li {
+  margin-bottom: 32px;
+}
+ol li:last-child {
+  margin-bottom: 0px;
+}
 /* END */
 
 @media screen and (max-width: 1100px) {
@@ -1352,17 +1416,27 @@ article section {
   }
 }
 
+@media screen and (max-width: 1375px) {
+  .yahoo-process-card-row > * {
+    width: auto;
+    height: 125px;
+    margin-bottom: 30px;
+  }
+  .yahoo-process-card-row{ flex-direction: column; }
+}
 /* About Page */
 @media screen and (max-width: 1200px) {
   /* .currentlyimg-cobble * {
     margin-left: 50px;
   } */
   .about-col2 { display: none; }
-  .process-card-row > * {
+  .process-card-row > *{
     width: auto;
     height: 365px;
     margin-bottom: 30px;
   }
+ 
+
   .process-card-row { flex-direction: column; }
 }
 
