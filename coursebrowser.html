@@ -105,14 +105,17 @@
             </ul>
           </section>
           <section>
-            <p class="course-main-header">The Problem</p>
+            <p class="course-main-header">The Problem and Opportunity</p>
             <p class="main-subheader">How do create an efficient experience for<br>
                students looking to register for classes?</p>
             <p> Twice a year, Wellesley students flock to our course browser to search for
             classes to take. Since Wellesley is a liberal arts college, students must
             take specific classes to fulfill various requirements, such as the Foreign Language Requirement,
-            Humanities Distribution, and more. However, there is no easy way to keep track of this progress.
-            <strong>How can we provide students with intuitive, clear, and visually appealing tools to help
+            Humanities Distribution, and more. However, <strong>the problem is there is no easy or 
+            straightforward way to keep track of degree progress.</strong><br><br>
+
+            With no all-in-one solution available for students to plan their schedules, 
+            we are presented with a design opportunity: <strong>How can we provide students with intuitive, clear, and visually appealing tools to help
               students search for classes and quantify their degree progress?</strong>
             </p>
           </section>
@@ -177,7 +180,7 @@
             <p class="course-main-header">Product Decisions</p>
             <p class="main-subheader">What features would be the most<br>useful to users?</p>
             <img class="img-shadow" src="images/coursebrowser/information-architecture.png" alt="">
-            <p>We decided to include a <strong>distribution requirements page</strong> that
+            <p>We decided to include a distribution requirements page that
               would allow students to enter in their courses and have the website
               automatically show their progress for various degree requirements. Our goal is 
               to <strong>allow users to understand their degree progress and show what requirements they have fulfilled/what they are missing.</strong>
@@ -189,7 +192,7 @@
               such as “Rate-My-Professor” and a schedule builder. With the combination of these key features,
               we aimed to <strong>reduce bounce rates</strong> from our course browser and
               <strong>streamline the schedule planning process to improve user engagement</strong>. </p>
-              <img style="margin: 32px 0px 0px 0px" class="img-shadow" src="images/coursebrowser/distributions-page.jpg" alt="Distributions page">
+              <!-- <img style="margin: 32px 0px 0px 0px" class="img-shadow" src="images/coursebrowser/distributions-page.jpg" alt="Distributions page"> -->
 
           </section>
           <section class="product-decisions">
@@ -203,7 +206,66 @@
             <p>The most crucial and challenging interaction was adding classes.
             Because I was in charge of designing and coding the distributions
             feature, I was well aware of the cost of each design, as well as it’s difficulty development wise.
-            <br><br>
+            The distribution feature had two parts: 1) Entering course history and 2) Displaying 
+            what distributions each course fulfilled. 
+            </p>
+            <p class="key-header"><strong>Step 1: Add Courses</strong></p>
+            <p>Before we can show students their degree process, we have to understand their course history first. 
+              We had two options: 
+              <ol>
+                <li style="margin-bottom: 0px;">Have students enter their full course history in the beginning</li>
+                <li>Individually input classes</li>
+              </ol>
+
+              <img style="margin: 0px;" src="images/coursebrowser/sketches.png" alt="">
+            <p style=" margin: 0px; margin-bottom: 24px;
+            font-size: 14px;
+            line-height: 20px;
+            color: #828282;">Sketches/wireframe of entering course history</p>
+
+              While I mocked up both versions, I felt that the first option, having students enter 
+              their full course history, could easily turn users away from the distribution feature. To avoid 
+              a long and tedious onboarding process, I opted for the second choice. Thus, I implemented a
+              "quick add feature" so that students could cherry pick classes they took to see what requirements 
+              that class could fulfill. The quick add feature is also optimal since it would be quick to implement on the 
+              development side.
+            </p>
+            <img src="images/coursebrowser/quick-add.png" alt="">
+            <p style=" margin: 0px; margin-bottom: 24px;
+            font-size: 14px;
+            line-height: 20px;
+            color: #828282;">*We dealt with main and general requirements separately because of nuances with 
+            how main distribution areas are fulfilled vs. the other requirements</p>
+
+            <p class="key-header"><strong>Step 2: View Degree Progress</strong></p>
+            <div id="visual-iterations">
+              <div id="iteration-points">
+                  <h1 id="iteration1-sol" class="selected-iteration" data-selected="yes" data-point="iteration3">Final</h1>
+                  <h1 id="iteration2-sol" class="iteration-header-title" data-selected="no" data-point="iteration1">Iteration 1</h1>
+                  <h1 id="iteration3-sol" class="iteration-header-title" data-selected="no" data-point="iteration2">Iteration 2</h1>
+                </div>
+
+                <div id="iteration-explainations">
+                  <p id="iteration1-exp" class="" data-point="iteration3">
+                    <strong>WHY:</strong> I used Gestalt Principles to enforce clear grouping of classes 
+                  and distribution areas. I chose this design for the final MVP because of its clear 
+                  and simple visualization of degree progress.</p>
+                  <p id="iteration2-exp" class="iteration-hide" data-point="iteration1"><strong>WHY:</strong> In this first iteration, 
+                  I felt like it was the most simple layout but had too many dropdowns. This is not easily scannable and 
+                  lacks dimension/clear hierarchy.</p>
+                  <p id="iteration3-exp" class="iteration-hide" data-point="iteration2"><strong>WHY:</strong> While the second
+                  iteration was more visual, the dropdowns required the user to do more clicking. Additionally, this layout 
+                  had too many visual elements, lacked hierarchy, and felt overwhelming.</p>
+                </div>
+
+                <div id="iteration-gifs">
+                  <img id="iteration1-gif" data-point="iteration1" class="iteration-hide"src="images/coursebrowser/iteration-1.jpg" alt="Onboarding questionnaire">
+                  <img id="iteration2-gif" data-point="iteration2" class="iteration-hide" src="images/coursebrowser/iteration-2.jpg" alt="Tooltip feature">
+                  <img id="iteration3-gif" data-point="iteration3" src="images/coursebrowser/distributions-page.jpg" alt="Form dissabling feature">
+                </div>
+             </div>
+
+            <p>
             In our first iteration, we designed a sidebar that allowed students
             to add classes to the “main distribution” and
             “general" requirements separately, since some requirements
@@ -213,7 +275,7 @@
           <img class="img-shadow" id="course-flow-1" src="images/coursebrowser/errors.jpg" alt="Mockup">
 
           <div id="solution-section">
-            <p>We decided to <strong>combine the main and general distribution forms</strong> and creating a
+            <p>We decided to <strong>combine the main and general distribution forms</strong> and create a
               <strong>manual add</strong> feature that serves as a <strong>low-cost solution to
               catching the bugs</strong> from the removal of the “general distribution”
               section. Additionally, we made the following adjustments based on user feedback: </p>
@@ -378,7 +440,18 @@
               <li>“It's a great way of visualizing it that makes more sense than the current audit form Wellesley provides.”</li>
               <li>“[The distribution feature is] not available in other Wellesley resources (usually have to do by hand).”</li>
             </ul>
-            <p class="main-subheader">Beyond the MVP</p>
+            <p class="main-subheader">Next Steps</p>
+            <p>
+              If I had more time on this project, I would do the following things differently:
+              <ol>
+                <li>Experiment with the quick add bar on the left instead of the right. This would
+                  allow the bar to be more discoverable given <strong>Z Scanning Patterns</strong>. It
+                  would also solve usability problems mentioned earlier.
+                </li>
+                <li>Right side drawers are often collapsable, so allowing the quick add bar to expand or 
+                  collapse could give more room for the degree progress visualization on the left.</li>
+              </ol>
+            </p>
             <p>Some features that I hope to implement in the future is
               providing users with recommonded courses and major progress. Additionally,
             students wanted to see an edit feature to allow them to delete individual classes from
@@ -437,6 +510,33 @@
 
       $("#solution-explainations").find("[data-point='" + currentPoint + "']").addClass("solution-hide");;
       $("#solution-gifs").find("[data-point='" + currentPoint + "']").addClass("solution-hide");;
+    }
+  });
+
+  $("#iteration-points h1").on("click", function(event) {
+    var clickee = event.target;
+    var selectedPoint = $(clickee).data("point");
+    var $selected = $("#iteration-points").find(".selected-iteration");
+    var currentPoint = $selected.data("point");
+    if($(clickee).data('selected') == "yes"){
+      // do nothing
+    }
+    else {
+      console.log("else branch!")
+      $selected.removeClass().addClass("iteration-header-title");
+      $(clickee).removeClass().addClass("selected-iteration");
+      $selected.data("selected", "no");
+      $(clickee).data("selected", "yes");
+
+      console.log(selectedPoint);
+      console.log(currentPoint);
+
+
+      $("#iteration-explainations").find("[data-point='" + selectedPoint + "']").removeClass();
+      $("#iteration-gifs").find("[data-point='" + selectedPoint + "']").removeClass();
+
+      $("#iteration-explainations").find("[data-point='" + currentPoint + "']").addClass("iteration-hide");
+      $("#iteration-gifs").find("[data-point='" + currentPoint + "']").addClass("iteration-hide");
     }
   });
 
