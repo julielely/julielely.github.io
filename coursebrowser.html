@@ -81,10 +81,14 @@
               </div>
             <p class="key-header"><strong>Key Features:</strong></p>
             <ul class="key-points">
-              <li>Included "Distribution" feature to <strong>mitigate churn</strong></li>
-              <li>Clear visualization of degree progress</li>
+              <li>Included "Distribution" feature to <strong>mitigate churn</strong>, making this website relevant every semester</li>
+              <li>Clear visualization of degree progress using Gestalt Principles</li>
               <li>"Quick Add" courses interaction to <strong>reduce friction</strong></li>
             </ul>
+            <p class="key-header"><strong>Success Metrics:</strong></p>
+            <img src="images/coursebrowser/success-metrics.png" alt="">
+            <p class="key-header"><strong>My Process:</strong></p>
+            <img src="images/coursebrowser/my-process.png" alt="">
           </section>
           <section class="introduction">
             <p class="course-main-header">Introduction</p>
@@ -172,15 +176,21 @@
           <section class="product-decisions">
             <p class="course-main-header">Product Decisions</p>
             <p class="main-subheader">What features would be the most<br>useful to users?</p>
-            <img class="img-shadow" src="images/coursebrowser/distributions-page.jpg" alt="Distributions page">
+            <img class="img-shadow" src="images/coursebrowser/information-architecture.png" alt="">
             <p>We decided to include a <strong>distribution requirements page</strong> that
               would allow students to enter in their courses and have the website
-              automatically show their progress for various degree requirements.
-              <br><br>
+              automatically show their progress for various degree requirements. Our goal is 
+              to <strong>allow users to understand their degree progress and show what requirements they have fulfilled/what they are missing.</strong>
+              With the distribution feature, students can go through the following user journey:
+            </p>
+            <img style="margin: 32px 0px;" src="images/coursebrowser/user-journey.png" alt="">
+            <p>
               This would be integrated in the course browser with other features
               such as “Rate-My-Professor” and a schedule builder. With the combination of these key features,
               we aimed to <strong>reduce bounce rates</strong> from our course browser and
               <strong>streamline the schedule planning process to improve user engagement</strong>. </p>
+              <img style="margin: 32px 0px 0px 0px" class="img-shadow" src="images/coursebrowser/distributions-page.jpg" alt="Distributions page">
+
           </section>
           <section class="product-decisions">
             <p class="course-main-header">Interaction Design & Iterations</p>
@@ -304,20 +314,57 @@
                 </div>
               </div>
             </section>
+            <section id="gestalt-section" class="interaction-container">
+              <div class="design-content">
+                <img class="img-shadow" src="images/coursebrowser/gestalt.png" alt="Preview of community screen" class="inline-photo-left show-on-scroll">
+                <div class="circle-and-text-container inline-photo-right show-on-scroll">
+                  <div class="circle-and-text">
+                    <div>
+                      <div class="design-circles">5</div>
+                    </div>
+                    <div class="decision-text">
+                      <h4 class="design-decisions-header ">Gestalt Principles</h4>
+                      <p class="task-body">Use of lines, colors, and background to 
+                        group distribution areas together (Law of Common Region) 
+                        and provide a consistent representation of classes 
+                        (Law of Similarity).</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
             <p><br>We went through various iterations of the manual add feature
                and ended up choosing choice 3 (below) because of its simple and intuitive
                layout. We tried our best to minimize the amount of steps users
-              would have to perform to manually add a class. While the second
+              would have to perform to manually add a class (Hick's Law). While the second
               design has less steps, it lacks flexibility and customization that
               the third design provides.</p>
             <img src="images/coursebrowser/sidebar.jpg" alt="Design iterations">
+            <p>Because I was also developing this feature, I had to think of various edge 
+              cases that could potentially break the back-end. Due to time constraints, 
+              I decided to implement a low-cost, high-impact solution by including a 
+              toast notification. If a student tried to add a class they already 
+              entered or input a course code that did not exist, we would notify the 
+              user that the system did not add the particular course. I made sure to 
+              design the toast notification based on existing design patterns and common 
+              color archetypes (red = error/action failed) to make the toast easy to 
+              comprehend. 
+            </p>
+            <img src="images/coursebrowser/errors.png" alt="">
           </section>
           <section class="takeaways">
             <p class="course-main-header"> Takeaways & Next Steps</p>
             <p class="main-subheader">Positive user feedback</p>
+            <div style="margin: auto; margin-bottom: 24px; margin-top: 24px; width: 56%;">
+              <img id="fb-comment" src="images/coursebrowser/fb-comment.png" alt="">
+              <p style=" margin: 0px;
+              font-size: 14px;
+              line-height: 20px;
+              color: #828282;">This resource continues to stay relevant, even months after its release!</p>
+            </div>
             <p>After sharing the live site to the
               Wellesley sophomore and junior Facebook groups for beta testing,
-              we currently have <strong>225 users</strong> and expect to
+              we currently have <strong>287 users</strong> (as of 09/01/21) and expect to
               have more after releasing it to freshman and seniors.
               The team released a feedback form, and most of the distribution
               feature feedback was positive. Student testimonials include:
@@ -335,7 +382,8 @@
             <p>Some features that I hope to implement in the future is
               providing users with recommonded courses and major progress. Additionally,
             students wanted to see an edit feature to allow them to delete individual classes from
-            the distributions page. To address this issue, we decided to add a reset all button as a temporary solution.</p>
+            the distributions page. To address this issue, we decided to add a reset all button as a temporary solution.
+            Lastly, many students asked for a search feature for the overally course browser!</p>
           </section>
 
         </div>

@@ -1330,6 +1330,17 @@ article section {
   padding: 12px 42px;
 }
 
+.course-feedback-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#fb-comment {
+  border: solid 0.5px #cfcfcf;
+  margin: 0px;
+}
+
 /* Bloom */
 .image-container {
   position: relative;
