@@ -24,7 +24,7 @@
     </nav>
 
     <div class="progress-container">
-      <div style="background-color: var(--green);" class="fixed-progress-bar" id="myBar"></div>
+      <div style="background-color: #7e1fff;" class="fixed-progress-bar" id="myBar"></div>
     </div>
   </header>
 
@@ -37,7 +37,7 @@
         </p>
         <div class="image-container">
           <img id="yahoo-sticker-set" src="images/yahoo/stickers.png" alt="">
-          <img src="images/yahoo/yahoo-banner.png" alt="Layout of Course Browser">
+          <img class="img-shadow" src="images/yahoo/yahoo-banner.png" alt="Layout of Course Browser">
         </div>
         <div class="article-body-text">
           <section class="content-background" style="margin: 0px;">
@@ -76,10 +76,9 @@
             <p>During my 9-week internship at Verizon Media 
               (Yahoo!) as a Product Design Intern, I worked on 
               various projects for Yahoo Home, Yahoo News, and 
-              Yahoo’s Design System. Since most of these projects are still
-              in production, I want to share a <strong>high-level overview of 
-              my learnings and takeaways</strong>. Once they are available to the 
-              public, I'll update this page with images. Stay tuned!
+              Yahoo’s Design System. Since most of these projects are close 
+              to public release/shipment, I want to share a <strong>high-level overview of 
+              my learnings and takeaways</strong>.
               Overall, I dived into four different areas of design during my internship: <strong>prototyping, UX 
               research, visual design,</strong> and <strong>interaction design</strong>.
             </p>
@@ -93,18 +92,22 @@
               mockups. As a designer and developer hybrid, I worked 
               with the Yahoo Home design team to create high-fidelity, 
               coded prototypes that housed different flows, 
-              interactions, and states. 
+              interactions, and states. Two of the design prototyping projects I worked on were:
             </p>
+            <ol>
+              <li style="margin-bottom: 0px;">Yahoo Home Personal Finance Prototype, with Ellen Kim (Designer) and Andy Jin (UX Researcher)</li>
+              <li>Yahoo Home Module Picker, with Bryan Farevaag (Designer) and Tyson Gushiken (Designer/Mentor)</li>
+            </ol>
             <p>
-              With these high-fidelity prototypes, I was often given 
-              mockups via Sketch and InVision.  I then coded 
+              Both of these prototypes and their features are in production. With these high-fidelity prototypes, I was often given 
+              mockups via Sketch and InVision. I then coded 
               high-fidelity interfaces and flows while providing 
               my own design feedback and, most importantly, <strong>expressing 
                 my creative freedom on small micro-interactions and 
                 animation</strong>. My prototyping process:
             </p>
           
-            <div class="yahoo-process-container" style="margin: 42px 0px;" >
+            <div class="yahoo-process-container" style="margin: 56px 0px;" >
               <div class="yahoo-process-card-row">
   
                 <div class="yahoo-process-cards">
@@ -112,7 +115,7 @@
                     <div class="yahoo-process-image-frame">
                       <!-- <img class="yahoo-process-image" src="images/about/figma-design.png" alt=""> -->
                       <div class="stickers-20">
-                        <img id="smiley-yahoo" src="images/stickers/smiley-figma.png" alt="">
+                        <img id="smiley-yahoo" src="images/yahoo/smiley.png" alt="">
                       </div>
                     </div>
                     <div class="yahoo-process-card-header">
@@ -165,56 +168,93 @@
                 </div>
               </div>
             </div>
-            <p>While I was a prototyper, I was also a designer. When given mockups, 
+            <p>While I am a prototyper, I am also a designer. When given mockups, 
               I had the opportunity to collaborate with Yahoo designers and 
-              provide my own design feedback. As I did my design-to-website 
+              provide my own design feedback. 
+              </p> 
+              <img style="margin-bottom: 0px" src="images/yahoo/design-goals.png" alt="">
+              <p class="figure-caption" style="margin-bottom: 32px;">
+                Iterate on design and business goals. <br>
+                <strong>Goal</strong>: Encourage users to link their bank account over their mailbox <br>
+                <strong>Why</strong>: Bank accounts afford higher data accuracy and utilize a newly integrated software
+              </p>
+              <p> </p>As I did my design-to-website 
               translations, I would also collaborate with the designer I was 
-              working with by <strong>suggesting alternatives to components or interactions</strong>
-               and <strong>discussing other design decisions.</strong></p>
+              working with by <strong>suggesting alternatives to components or interactions</strong>, 
+              <strong>discussing other design decisions</strong>, and <strong>iterating based on feedback.</strong> </p>
             <div>
               <p class="yahoo-main-header" style="margin-top:32px; font-size: 16px; color: var(--navy);">Overall Prototyping Takeaways</p>
-              <ol class="ordered-takeaways">
-                <li>
-                  <p>
-                    <strong>Complex and interactive prototypes</strong><br>
-                    With coded prototypes, you can house various flows and states. 
-                    For example, one of the coded prototypes showed empty and 
-                    preview states while dynamically changing “dummy-data” 
-                    based on user interaction. Users could also interact with 
-                    different modals depending on the scenario—all in one prototype.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Smooth interactions and animation</strong><br>
-                    While I’m a big fan of Figma and InVision, many 
-                    prototyping tools lack flexibility, technicality, 
-                    and/or buttery transitions. With coded prototypes, 
-                    I could customize animations and motion to my liking 
-                    while taking into account when they could be triggered 
-                    based on user journeys. Engineers could also inspect my code 
-                    to understand the animation side better. 
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>High-fidelity prototypes and deliverables</strong><br>
-                    High-fidelity prototypes that are literally 
-                    the real deal, minus the back-end-data-jazz. When users 
-                    interact with it, it feels as if it’s the actual website. These 
-                    prototypes are super helpful for design discussions, user testing, 
-                    and engineering handoff. 
-                  </p> 
-                </li>
-              </ol>
-            </div>
-          </section>
+
+              <section class="interaction-container">
+                <div id="first-task" class="yahoo-content">
+                  <img src="images/yahoo/banking.gif" alt="Preview of task screen" class="inline-photo-left show-on-scroll">
+                  <div class="circle-and-text-container inline-photo-right show-on-scroll">
+                    <div class="circle-and-text">
+                      <div>
+                        <div class="interaction-circles">1</div>
+                      </div>
+                      <div class="decision-text">
+                        <h4 class="yahoo-decisions-header ">Complex and interactive prototypes</h4>
+                        <p class="task-body">With coded prototypes, you can house various flows and states. 
+                          For example, one of the coded prototypes showed empty and 
+                          preview states while dynamically changing “dummy-data” 
+                          based on user interaction. Users could also interact with 
+                          different modals depending on the scenario—all in one prototype.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="interaction-container">
+                <div id="hierarcht-img" class="yahoo-content">
+                  <img src="images/yahoo/modal.gif" alt="Preview of community screen" class="inline-photo-left show-on-scroll">
+                  <div class="circle-and-text-container inline-photo-right show-on-scroll">
+                    <div class="circle-and-text">
+                      <div>
+                        <div class="interaction-circles">2</div>
+                      </div>
+                      <div class="decision-text">
+                        <h4 class="yahoo-decisions-header ">Smooth interactions and animation</h4>
+                        <p class="task-body">While I’m a big fan of Figma and InVision, some 
+                          prototyping tools lack flexibility or buttery transitions. With coded prototypes, 
+                          I could customize animations and motion to my liking 
+                          while taking into account when they could be triggered 
+                          based on user journeys. Engineers could also inspect my code 
+                          to understand the animation side better. </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="interaction-container">
+                <div id="hierarcht-img" class="yahoo-content">
+                  <img src="images/yahoo/receipt-preview.png" alt="Preview of community screen" class="inline-photo-left show-on-scroll">
+                  <div class="circle-and-text-container inline-photo-right show-on-scroll">
+                    <div class="circle-and-text">
+                      <div>
+                        <div class="interaction-circles">3</div>
+                      </div>
+                      <div class="decision-text">
+                        <h4 class="yahoo-decisions-header">High-fidelity prototypes and deliverables</h4>
+                        <p class="task-body">High-fidelity prototypes that are literally 
+                          the real deal, minus the back-end-data-jazz. When users 
+                          interact with it, it feels as if it’s the actual website. These 
+                          prototypes are super helpful for design discussions, user testing, 
+                          and engineering handoff.  </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
 
           <section class="ideation">
             <p class="yahoo-main-header">UX Research</p>
             <p class="main-subheader">Beyond usability 💬</p>
-            <p>During my internship, I was able to work with Yahoo's UXR Team to put 
-              a prototype I coded through moderated testing. It was amazing 
+            <p>During my internship, I worked with Andy Jin on Yahoo's UXR Team to put 
+              the Personal Finance prototype I coded through moderated testing. It was amazing 
               to see the power of high-fidelity prototypes.
             </p>
             <p class="yahoo-main-header" style="margin-top:32px; font-size: 16px; color: var(--navy);">Overall UX Research Takeaways</p>
@@ -239,9 +279,8 @@
                     their needs, concerns, and wants.
                   </p>
                   <p>
-                    For example, we tested a prototype related to bank accounts, 
-                    and one user professed their uneasiness due to privacy concerns 
-                    and data breaches. This prompted the team to brainstorm   
+                    For example, one user professed their uneasiness due to privacy concerns 
+                    and data breaches while interacting with the personal finance prototype. This prompted the team to brainstorm   
                     design solutions to make users 
                     feel more safe and secure with our product. 
                   </p>
@@ -264,7 +303,7 @@
           <section class="product-decisions">
             <p class="yahoo-main-header">Visual Design</p>
             <p class="main-subheader">Yahoo's Design System 📖</p>
-            <p>As my last project, I worked with my mentor to find a way to 
+            <p>As my last project, I worked with my mentor (Tyson Gushiken) to find a way to 
               standardize documentation for Yahoo’s design system—the single 
               source of truth.</p>
               
@@ -277,11 +316,23 @@
               as a search feature.
             </p>
 
+            <!-- <img src="images/yahoo/visual-design.png" alt=""> -->
+            <div class="visual-design-fuji">
+              <div class="col-1-fuji">
+                <img src="images/yahoo/visual-design-2.png" alt="">
+                <p>12-column grid layout for wider content view and responsive layout</p>
+              </div>
+              <div class="col-2-fuji">
+                <img src="images/yahoo/visual-design-1.png" alt="">
+                <p>Reformat visual hierarchy</p>
+              </div>
+            </div>
+
             <p>With this project, I worked on the visual layout of the documentation website
               and interactions with various components on the page, from a hovering drawer to 
               a dynamic content nav.
             </p>
-
+            
             <div id="solution-points">
               <h1 id="onboarding-sol" class="selected-yahoo-solution" data-selected="yes" data-point="onboarding">Breadcrumb</h1>
               <h1 id="tooltip-sol" class="solutions-header-title" data-selected="no" data-point="tooltip">Search</h1>
@@ -305,18 +356,162 @@
               <img id="tooltip-gif" data-point="tooltip" class="solution-hide" src="images/yahoo/search.gif" alt="Tooltip feature">
               <img id="onboarding-gif" data-point="constraints" class="solution-hide" src="images/yahoo/nav.gif" alt="Form dissabling feature">
             </div>
+            
          </div>
 
           </section>
           <section class="product-decisions">
             <p class="yahoo-main-header">Interaction Design</p>
             <p class="main-subheader">Swipe, swipe away 👆</p>
-            <p>During my internship, I worked on swipe interactions for 
+            <div style="display: flex; justify-content: center; align-items: center;">
+              <img style="width: 300px;" src="images/yahoo/yahoo-swipe.png" alt="">
+            </div>
+            <p>During my internship, I worked with Lucia Chen (Designer), Ryan McCullah and Tyson Gushiken (Creative Direction) on swipe interactions for 
               Yahoo News and prototyped various versions via Protopie. For this project, 
               I iterated on the motion of UI elements to balance both user delight and utility. 
               On each iteration, I collaborated with design leadership to hone the swipe 
-              interaction with meaningful and natural animations. This 
-            feature is still in production, so I can't talk about it just yet!</p>
+              interaction with meaningful and natural animations.</p>
+
+            <p style="color: var(--navy);" class="yahoo-main-header">Project Introduction</p>
+            <p>
+              I was asked to prototype a swipe interaction for Yahoo article components, 
+              in which users could swipe left or right on a component to 
+              reveal actions such as seeing more of a post, sharing it, and 
+              so on. Ideally, this interaction could be universal to many Yahoo
+              products. 
+            </p>
+            <img style="margin-bottom: 8px;" src="images/yahoo/fuji-stream.png" alt="">
+            <p class="figure-caption" style="margin-bottom: 32px;">
+              Different article components via Yahoo News<br>
+            <p>At the start of the project, I was given a sketch file with specific 
+              dimensions for the swipe interaction. For example, when the user swipes 42px to the right, 
+              the first revealed action would be 30px, and so on.
+            </p>
+            <img src="images/yahoo/fuji-mockups.png" alt="">
+            <p class="figure-caption">A preview of the first Sketch mockup I was sent.</p>
+            <p style="color: var(--navy);" class="yahoo-main-header">Iterations</p>
+            <p>After translating the static mocks to an interactive prototype, we realized 
+              that we had a long way to go with the interaction. There was a lot of
+               movement going on: the “See less like this” text appearing as the user 
+               swiped, in addition to moving and growing buttons. We felt like the interaction 
+               had too many moving components, which can potentially disorient or overwhelm 
+               the user. 
+            </p>
+            <p>With this in mind, I went through the first iteration: </p>
+            <div class="swipe-container">
+              <img src="images/yahoo/swipe-static.gif" alt="">
+              <!-- <p style="font-weight: bold;">1. Keep the location of the button consistent, but have buttons grow as 
+                the user swiped to map the actions to the user’s swipe</p> -->
+              <div class="circle-and-text-container">
+                <div class="circle-and-text">
+                  <div>
+                      <div class="interaction-circles">1</div>
+                  </div>
+                  <div class="decision-text">
+                    <h4 class="yahoo-decisions-header">Static position</h4>
+                    <p class="task-body">Keep the location of the button consistent, 
+                      but have buttons grow as 
+                      the user swiped to map the actions to the user’s swipe.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img src="" alt="">
+            <p>While this worked fine for the short stack components,
+              the interaction became increasingly complicated when it came to “Slim Jims,” 
+              where there are two longer stories adjacent to each other. 
+            </p>
+            <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 32px;">
+              <div>
+                <img style="width: 500px; margin-bottom: 0px;" src="images/yahoo/silm-jim-swipe.gif" alt="">
+                <p class="figure-caption">Swiping the left Slim Jim.</p>
+              </div>
+            </div>
+            <p>Because the Slim Jims overlap on swipe, the swiped card and associated 
+              buttons become blurred. For example: when the left Slim Jim is swiped, 
+              the Slim Jim on the right disappears. Users could either associate the revealed 
+              actions to:
+            </p>
+            <ol>
+              <li style="margin-bottom: 0px;">The left Slim Jim, because that is the card they swiped, or 
+                <img style="max-width: 600px" src="images/yahoo/scenario-1.png" alt="">
+              </li>
+              <li>The right Slim Jim, because the revealed actions took the place of the disappeared card.
+                <img style="max-width: 600px" src="images/yahoo/scenario-2.png" alt="">
+              </li>
+            </ol>
+            <!-- <img style="width: 500px" src="images/yahoo/misconceptions.png" alt=""> -->
+            <p><em>Confusing, huh.</em></p>
+            <p>Consequently, I had to brainstorm an interaction that would be both delightful 
+              and intuitive for all article dimensions: short stack, Slim Jims, and 
+              wide components. After brainstorming and seeking advice from various 
+              designers, I came across the second iteration:
+            </p>
+            <div class="swipe-container" style="margin-top: 56px;">
+              <img class="img-shadow" src="images/yahoo/final-swipes.gif" alt="">
+              <!-- <p style="font-weight: bold;">1. Keep the location of the button consistent, but have buttons grow as 
+                the user swiped to map the actions to the user’s swipe</p> -->
+              <div class="circle-and-text-container">
+                <div class="circle-and-text">
+                  <div>
+                      <div class="interaction-circles">2</div>
+                  </div>
+                  <div class="decision-text">
+                    <h4 class="yahoo-decisions-header">Snap to center</h4>
+                    <p class="task-body">Have buttons follow the user’s swipe, and recenter on release.</p> <br>
+                    <p>The buttons follow the card the user swipes on. <strong>
+                      This further reinforces the 
+                      relationship between the swiped card and the actions associated 
+                      with that card.
+                    </strong>
+                      I removed the button scale from the previous 
+                      interaction to reduce the overall movement of the interaction 
+                      so that it wasn’t too overwhelming. 
+                      Lastly, the buttons snap into center position once the 
+                      user releases the card for consistency and ease of use. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swipe-container" style="margin-top: 86px;">
+              <img class="img-shadow" src="images/yahoo/slim-jim-scale.gif" alt="">
+              <div class="circle-and-text-container">
+                <div class="circle-and-text">
+                  <div>
+                      <div class="interaction-circles">3</div>
+                  </div>
+                  <div class="decision-text">
+                    <h4 class="yahoo-decisions-header">Delightful</h4>
+                    <p>Lastly, I wanted to create a more delightful and smooth experience by having the 
+                      disappearing Slim Jim scale and fade. This adds more dimemsion to the interaction.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swipe-container" style="margin-top: 86px;">
+              <img class="img-shadow" src="images/yahoo/onboarding-cropped.gif" alt="">
+              <div class="circle-and-text-container">
+                <div class="circle-and-text">
+                  <div>
+                      <div class="interaction-circles">4</div>
+                  </div>
+                  <div class="decision-text">
+                    <h4 class="yahoo-decisions-header">Discoverable</h4>
+                    <p>Because this swipe interaction does not have any explicit signifiers, I 
+                      decided to incorperate onboarding tooltips. I made sure that this format 
+                      matched an existing onboarding flow on the Yahoo News app. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- <p style="color: var(--navy);" class="yahoo-main-header">Discoverability</p>
+            <p>Because this swipe interaction does not have any explicit signifiers, I 
+              decided to incorperate onboarding tooltips. 
+            </p>
+            <img src="" alt=""> -->
           </section>
        
           <section class="takeaways">

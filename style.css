@@ -72,6 +72,13 @@ p, li {
   line-height: 32px;
 }
 
+.figure-caption {
+  margin: 0px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #828282
+}
+
 /* NAV */
 nav {
   padding: 56px;
@@ -210,6 +217,7 @@ nav {
   margin-bottom: 8px;
 }
 
+
 /* Project Cards */
 .project-cards, .process-cards,
 .yahoo-process-cards {
@@ -230,7 +238,12 @@ nav {
 }
 
 .process-cards { height: 445px; }
-.yahoo-process-cards {height: 190px; }
+.yahoo-process-cards {
+  height: 190px; 
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%), 0 0 1px 0 rgb(0 0 0 / 8%);
+  color: var(--navy);
+  background-color: white;
+}
 
 .project-cards:hover {
   box-shadow: 2px 4px 6px rgb(0 0 0 / 25%);
@@ -739,7 +752,7 @@ article section {
 
 .yahoo-main-header {
   /* color: var(--midnight); */
-  color: #355ca5;
+  color:#7e1fff;
 }
 
 .google-main-header {
@@ -1270,7 +1283,7 @@ article section {
 }
 
 
-.design-content {
+.design-content, .yahoo-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1281,12 +1294,26 @@ article section {
   height: 100%;
 }
 
+.yahoo-content img {
+  width: 300px;
+  height: 100%;
+}
+
 .design-decisions-header {
   font-family: "Roboto Mono";
   font-size: 20px;
   font-weight: 700;
   text-align: left;
   margin: 0px;
+}
+
+.yahoo-decisions-header {
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  margin: 0px;
+  text-transform: none;
 }
 
 .decision-text {
@@ -1299,7 +1326,7 @@ article section {
   margin-top: 8px;
 }
 
-.design-circles {
+.design-circles, .interaction-circles {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1315,6 +1342,11 @@ article section {
   background:#2F80ED;
   margin-right: 15px;
 }
+
+.interaction-circles {
+  background: #7e1fff;
+}
+
 
 .coursebrowser-insights {
   display: flex;
@@ -1393,6 +1425,47 @@ ol li {
 ol li:last-child {
   margin-bottom: 0px;
 }
+
+.visual-design-fuji {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.visual-design-fuji p {
+  padding: 0px;
+  margin: 0px;
+  margin-top: 8px;
+  line-height: 20px;
+  color: #828282;
+}
+
+.visual-design-fuji img {
+  margin-bottom: 0px;
+}
+
+.col-1-fuji {
+  width: 68.5%;
+}
+
+.col-2-fuji {
+  width: 28%;
+}
+
+.swipe-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.swipe-container img { 
+  width: 40%; 
+  margin: 0px;
+}
+/* .swipe-container p { width: 45%; } */
+.swipe-container > div { width: 55%; }
+
 /* END */
 
 @media screen and (max-width: 1100px) {
@@ -1417,6 +1490,7 @@ ol li:last-child {
     flex-wrap: wrap;
     gap: 24px;
   }
+
 }
 
 @media screen and (min-width: 1800px) {
@@ -1473,23 +1547,6 @@ ol li:last-child {
     .design-content img { margin-bottom: 36px; }
 }
 
-@media screen and (max-width: 650px) {
-  .main-container, .home-header, .home-main-content { width: 90%; }
-  .footer-container { width: 90%; }
-  .about-section { margin: 0px; }
-
-  nav {
-    margin: auto;
-    width: 90%;
-    padding: 36px 0px;
-  }
-
-  .header-nav-prog nav {
-    width: 90%;
-    padding: 36px 0px 0px 0px;
-  }
-}
-
 @media screen and (max-device-width: 680px) {
   .main-container, .home-header, .home-main-content { width: 90%; }
   .footer-container { width: 90%; }
@@ -1532,4 +1589,49 @@ ol li:last-child {
   p, li {
     font-size: 20px;
   }
+
+    /* Yahoo */
+    .yahoo-content, .swipe-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .yahoo-content > div, .swipe-container > div, .swipe-container > img {
+      width: 100%;
+    }
+
+
+    
+}
+
+@media screen and (max-width: 650px) {
+  .main-container, .home-header, .home-main-content { width: 90%; }
+  .footer-container { width: 90%; }
+  .about-section { margin: 0px; }
+
+  nav {
+    margin: auto;
+    width: 90%;
+    padding: 36px 0px;
+  }
+
+  .header-nav-prog nav {
+    width: 90%;
+    padding: 36px 0px 0px 0px;
+  }
+
+    /* Yahoo */
+    .yahoo-content, .swipe-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .yahoo-content > div, .swipe-container > div, .swipe-container > img {
+      width: 100%;
+    }
+
+    .swipe-container img{
+      margin-bottom: 36px;
+    }
+    
 }
