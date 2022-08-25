@@ -361,23 +361,37 @@ nav {
 
 .coursebrowser-stickers * {
   position: absolute;
-  right: -23px;
+  right: -29px;
   top: -25px;
-  width: 246px;
+  width: 261px;
+}
+
+.meta-stickers *:first-child {
+  position: absolute;
+  left: -12px;
+  top: -25px;
+  width: 197px;
+}
+
+.meta-stickers *:last-child {
+  position: absolute;
+  right: -12px;
+  top: -16px;
+  width: 152px;
 }
 
 #yahoo-proto {
   position: absolute;
   left: -10px;
   bottom: -10px;
-  width: 125px;
+  width: 135px;
 }
 
 #yahoo-id {
   position: absolute;
   right: -20px;
   top: -20px;
-  width: 180px;
+  width: 197px;
 }
 
 #startup-20 {
@@ -427,14 +441,14 @@ nav {
   position: absolute;
   left: -20px;
   top: -15px;
-  width: 105px;
+  width: 112px;
 }
 
 #design-systems {
   position: absolute;
   right: -15px;
   top: -10px;
-  width: 150px;
+  width: 160px;
 }
 
 #pink-star {
