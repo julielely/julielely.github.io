@@ -16,211 +16,245 @@
       </script>
   </head>
   <body>
-    <nav>
-      <a href="index.html"><img class="smiley-logo rotate" src="images/stickers/smiley.png" alt=""></a>
-      <div class="nav-options">
-        <a style="font-weight: 700;" href="#"><span class="nav-underline">Work</span></a>
-        <a href="about.html">About</a>
-        <a href="#">More</a>
-      </div>
-    </nav>
+    <iframe id="contentFrame" frameBorder="0" allowfullscreen></iframe>
 
-    <section class="introduction-container">
-      <div class="home-header">
-        <div class="home-container">
-          <div class="home-title">
-            <h1>Designer</h1>
-            <h1>Developer</h1>
-            <h1>Doer</h1>
-          </div>
-          <div class="home-subheader">
-            <p><strong>Julie Lely</strong> - Previously @ <strong>Meta (Facebook App),</strong> <strong>Yahoo!</strong></p>
-            <p>CS & Psychology @ <strong>Wellesley College '23</strong></p>
-            <p>Designer with specialties in <strong>prototyping </strong> and <strong>interaction design</strong> 
-              <img src="images/home/sparkles.png" alt="" style="width: 20px; height: 20px; position: absolute; padding-left: 5px; padding-top: 2px"></p>
-          </div>
-
-          <h4 class="floating floating-text">&#8595;</h4>
+    <div id="dialogWrap">
+      <nav>
+        <a href="index.html"><img class="smiley-logo rotate" src="images/stickers/smiley.png" alt=""></a>
+        <div class="nav-options">
+          <a style="font-weight: 700;" href="#"><span class="nav-underline">Work</span></a>
+          <a href="about.html">About</a>
+          <a href="#">More</a>
         </div>
+      </nav>
+      <div id="dark-overlay"></div>
+  
+      <div id="screen-container">
+        <section class="pw-container">
+          <img id="close-icon" src="images/close.png" alt="">
+          <img id="pw-sticker" src="images/stickers/my-logo.png" alt="">
+          <div class="pw-header">
+            <h4>Password Protected</h4>
+            <h3 style="margin-top: 0px">What’s the magic word?</h3>
+          </div>
+          <div id="pw-form">
+            <input id="pass" type="password" name="pass" placeholder="password">
+            <div>
+              <div id="submitPass" class="pw-form-button" href="#">Submit</div>
+            </div>
+          </div>
+          <span id="messageWrapper">
+            <span id="invalidPass" class="error">🚨 Sorry, please try again.</span>
+            <span id="trycatcherror" class="error">🚨 Sorry, something went wrong.</span>
+            <span id="success" class="notifyText">✨ Success!</span>
+            &nbsp;
+          </span>
+          <p>*email julielely@gmail.com for the secret password</p>
+        </section>
       </div>
-    </section>
-
-    <div class="home-background">
-
-      <div class="home-main-content" style="padding-bottom: 100px;">
-
-        <div class="switch-light">
-          <h4 id="current-time"></h4>
-          <img id="switch" src="images/light-switch.png" alt="">
+      
+  
+      <section class="introduction-container">
+        <div class="home-header">
+          <div class="home-container">
+            <div class="home-title">
+              <h1>Designer</h1>
+              <h1>Developer</h1>
+              <h1>Doer</h1>
+            </div>
+            <div class="home-subheader">
+              <p><strong>Julie Lely</strong> - Previously @ <strong>Meta (Facebook App),</strong> <strong>Yahoo!</strong></p>
+              <p>CS & Psychology @ <strong>Wellesley College '23</strong></p>
+              <p>Designer with specialties in <strong>prototyping </strong> and <strong>interaction design</strong> 
+                <img src="images/home/sparkles.png" alt="" style="width: 20px; height: 20px; position: absolute; padding-left: 5px; padding-top: 2px"></p>
+            </div>
+  
+            <h4 class="floating floating-text">&#8595;</h4>
+          </div>
         </div>
-
-        <div class="project-container">
-        <div class="project-card-row">
-
-          <div class="project-cards">
-            <div class="project-card-content">
-              <div class="project-image-frame">
-                <img class="project-image" src="images/home/meta.jpg" alt="">
-                <div class="meta-stickers">
-                  <img src="images/stickers/meta-prototyping.png" alt="">
-                  <img src="images/stickers/meta-visual-design.png" alt="">
-                </div>
-              </div>
-              <div class="project-card-header">
-                <h4>Summer 2022 Internship</h4>
-                <h3>Meta (Facebook App)</h3>
-              </div>
-              <p class="card-body">Designing solutions that offer delight, appreciation, and recognition to our creators' biggest fans via Facebook Stars.
-              </p>
-            </div>
-              <a class="disabled-button" href="coursebrowser.html">Coming Soon...</a>
+      </section>
+  
+      <div class="home-background">
+  
+        <div class="home-main-content" style="padding-bottom: 100px;">
+  
+          <div class="switch-light">
+            <h4 id="current-time"></h4>
+            <img id="switch" src="images/light-switch.png" alt="">
           </div>
-
-          <div class="project-cards">
-            <div class="project-card-content">
-              <div class="project-image-frame">
-                <img class="project-image" src="images/home/yahoo.png" alt="">
-                <div class="stickers-20">
-                  <img id="yahoo-proto" src="images/stickers/yahoo-prototyping.png" alt="">
-                  <img id="yahoo-id" src="images/stickers/yahoo-id.png" alt="">
+  
+          <div class="project-container">
+          <div class="project-card-row">
+  
+            <div class="project-cards">
+              <div class="project-card-content">
+                <div class="project-image-frame">
+                  <img class="project-image" src="images/home/meta.jpg" alt="">
+                  <div class="meta-stickers">
+                    <img src="images/stickers/meta-prototyping.png" alt="">
+                    <img src="images/stickers/meta-visual-design.png" alt="">
+                  </div>
                 </div>
+                <div class="project-card-header">
+                  <h4>Summer 2022 Internship</h4>
+                  <h3>Meta (Facebook App)</h3>
+                </div>
+                <p class="card-body">Designing solutions that offer delight, appreciation, and recognition to our creators' biggest fans via Facebook Stars.
+                </p>
               </div>
-              <div class="project-card-header">
-                <h4>Summer 2021 Internship</h4>
-                <h3>Yahoo!</h3>
-              </div>
-              <p class="card-body">Designing and prototyping solutions for Yahoo Home, Yahoo News, and Yahoo's Design System documentation.
-              </p>
+                <a id="facebook-button" class="button button-locked" href="#"> <img class="lock-img" src="images/meta/lock.png" alt="">
+                  Explore</a>
             </div>
-            <!-- <a class="disabled-button" href="#">Coming Soon</a> -->
-            <a class="button" href="yahoo.html">Explore</a>
+  
+            <div class="project-cards">
+              <div class="project-card-content">
+                <div class="project-image-frame">
+                  <img class="project-image" src="images/home/yahoo.png" alt="">
+                  <div class="stickers-20">
+                    <img id="yahoo-proto" src="images/stickers/yahoo-prototyping.png" alt="">
+                    <img id="yahoo-id" src="images/stickers/yahoo-id.png" alt="">
+                  </div>
+                </div>
+                <div class="project-card-header">
+                  <h4>Summer 2021 Internship</h4>
+                  <h3>Yahoo!</h3>
+                </div>
+                <p class="card-body">Designing and prototyping solutions for Yahoo Home, Yahoo News, and Yahoo's Design System documentation.
+                </p>
+              </div>
+              <!-- <a class="disabled-button" href="#">Coming Soon</a> -->
+              <a class="button" href="yahoo.html">Explore</a>
+            </div>
+            
+  
           </div>
+  
+          <div class="project-card-row">
+  
+            <div class="project-cards">
+              <div class="project-card-content">
+                <div class="project-image-frame">
+                  <img class="project-image" src="images/home/coursebrowser.jpg" alt="">
+                  <div class="coursebrowser-stickers">
+                    <img src="images/stickers/course-browser-stickers.png" alt="">
+                  </div>
+                </div>
+                <div class="project-card-header">
+                  <h4>Redesign</h4>
+                  <h3>Wellesley's Course Browser</h3>
+                </div>
+                <p class="card-body">Going to a liberal arts college = lots of cool requirements. Our redesigned
+                  Wellesley Course Browser makes it easier for students to understand
+                  their degree progress and plan ahead.
+                </p>
+              </div>
+                <a class="button" href="coursebrowser.html">Explore</a>
+            </div>
+            
+            <div class="project-cards">
+              <div class="project-card-content">
+                <div class="project-image-frame">
+                  <img class="project-image" src="images/home/google.jpg" alt="">
+                  <div class="google-stickers">
+                    <img id="material-design" src="images/stickers/material-design.png" alt="">
+                    <img id="pink-star" src="images/stickers/pink-star.png" alt="">
+                    <img id="design-systems" src="images/stickers/design-systems.png" alt="">
+                  </div>
+                </div>
+                <div class="project-card-header">
+                  <h4>App design</h4>
+                  <h3>2021 Google Design Challenge</h3>
+                </div>
+                <p class="card-body">The transition from high school to college can be
+                  intimidating! This app serves as a tool to bring college
+                  students together and help students get their questions answered.
+                </p>
+              </div>
+              <a class="button" href="google.html">Explore</a>
+            </div>
+  
           
-
+  
+          </div>
+  
+          <div class="project-card-row" style="display: none;">
+            <div class="project-cards">
+              <div class="project-card-content">
+                <div class="project-image-frame">
+                  <img class="project-image" src="images/home/20-preview.png" alt="">
+                  <div class="stickers-20">
+                    <img id="research-20" src="images/stickers/research.png" alt="">
+                    <img id="startup-20" src="images/stickers/start-up.png" alt="">
+                  </div>
+                </div>
+                <div class="project-card-header">
+                  <h4>Spring 2021 Internship</h4>
+                  <h3>The 2.0 Collective</h3>
+                </div>
+                <p class="card-body">Designing a website that will be the heart of your career
+                  advancement. Creating intuitive, handy tools for ambitious humans.
+                </p>
+              </div>
+              <a class="disabled-button" href="#">Coming Soon</a>
+            </div>
+  
+            <div class="project-cards">
+              <div class="project-card-content">
+                <div class="project-image-frame">
+                  <img class="project-image" src="images/home/20-preview.png" alt="">
+                  <div class="stickers-20">
+                    <img id="research-20" src="images/stickers/research.png" alt="">
+                    <img id="startup-20" src="images/stickers/start-up.png" alt="">
+                  </div>
+                </div>
+                <div class="project-card-header">
+                  <h4>Passion Project</h4>
+                  <h3>Cobble</h3>
+                </div>
+                <p class="card-body">Designing a website that will be the heart of your career
+                  advancement. Creating intuitive, handy tools for ambitious humans.
+                </p>
+              </div>
+              <a class="disabled-button" href="#">Coming Soon</a>
+            </div>
+  
+          </div>
+  
+  
         </div>
-
-        <div class="project-card-row">
-
-          <div class="project-cards">
-            <div class="project-card-content">
-              <div class="project-image-frame">
-                <img class="project-image" src="images/home/coursebrowser.jpg" alt="">
-                <div class="coursebrowser-stickers">
-                  <img src="images/stickers/course-browser-stickers.png" alt="">
-                </div>
-              </div>
-              <div class="project-card-header">
-                <h4>Redesign</h4>
-                <h3>Wellesley's Course Browser</h3>
-              </div>
-              <p class="card-body">Going to a liberal arts college = lots of cool requirements. Our redesigned
-                Wellesley Course Browser makes it easier for students to understand
-                their degree progress and plan ahead.
-              </p>
-            </div>
-              <a class="button" href="coursebrowser.html">Explore</a>
-          </div>
-          
-          <div class="project-cards">
-            <div class="project-card-content">
-              <div class="project-image-frame">
-                <img class="project-image" src="images/home/google.jpg" alt="">
-                <div class="google-stickers">
-                  <img id="material-design" src="images/stickers/material-design.png" alt="">
-                  <img id="pink-star" src="images/stickers/pink-star.png" alt="">
-                  <img id="design-systems" src="images/stickers/design-systems.png" alt="">
-                </div>
-              </div>
-              <div class="project-card-header">
-                <h4>App design</h4>
-                <h3>2021 Google Design Challenge</h3>
-              </div>
-              <p class="card-body">The transition from high school to college can be
-                intimidating! This app serves as a tool to bring college
-                students together and help students get their questions answered.
-              </p>
-            </div>
-            <a class="button" href="google.html">Explore</a>
-          </div>
-
-        
-
-        </div>
-
-        <div class="project-card-row" style="display: none;">
-          <div class="project-cards">
-            <div class="project-card-content">
-              <div class="project-image-frame">
-                <img class="project-image" src="images/home/20-preview.png" alt="">
-                <div class="stickers-20">
-                  <img id="research-20" src="images/stickers/research.png" alt="">
-                  <img id="startup-20" src="images/stickers/start-up.png" alt="">
-                </div>
-              </div>
-              <div class="project-card-header">
-                <h4>Spring 2021 Internship</h4>
-                <h3>The 2.0 Collective</h3>
-              </div>
-              <p class="card-body">Designing a website that will be the heart of your career
-                advancement. Creating intuitive, handy tools for ambitious humans.
-              </p>
-            </div>
-            <a class="disabled-button" href="#">Coming Soon</a>
-          </div>
-
-          <div class="project-cards">
-            <div class="project-card-content">
-              <div class="project-image-frame">
-                <img class="project-image" src="images/home/20-preview.png" alt="">
-                <div class="stickers-20">
-                  <img id="research-20" src="images/stickers/research.png" alt="">
-                  <img id="startup-20" src="images/stickers/start-up.png" alt="">
-                </div>
-              </div>
-              <div class="project-card-header">
-                <h4>Passion Project</h4>
-                <h3>Cobble</h3>
-              </div>
-              <p class="card-body">Designing a website that will be the heart of your career
-                advancement. Creating intuitive, handy tools for ambitious humans.
-              </p>
-            </div>
-            <a class="disabled-button" href="#">Coming Soon</a>
-          </div>
-
-        </div>
-
-
+  
       </div>
-
+  
+  
+      <footer style="margin-top: 0px;">
+        <div class="footer-container">
+          <div class="footer-col1">
+            <h3 id="spontaneous">Be spontaneous.</h3>
+            <p class="footer-text">Designed and coded with ♥ by Julie Lely</p>
+          </div>
+          <div class="footer-col2">
+            <div class="footer-links">
+              <a href="index.html"><span class="underline">projects</span>&#160;<strong>•</strong>&#160;</a>
+              <a href="about.html"><span class="underline">about</span>&#160;<strong>•</strong>&#160;</a>
+              <a href="files/LELY_JULIE.pdf"><span class="underline">resume</span></a>
+            </div>
+            <div class="social-links">
+              <a class="footer-text" id="email">julielely@gmail.com</a>
+              <a class="social-icons" href="https://www.linkedin.com/in/julielely/" target="_blank"><img src="images/socials/linkedin.png" alt="linkedin"></a>
+              <a class="social-icons" href="https://github.com/julielely" target="_blank"><img src="images/socials/github.png" alt="github"></a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-
-
-    <footer style="margin-top: 0px;">
-      <div class="footer-container">
-        <div class="footer-col1">
-          <h3 id="spontaneous">Be spontaneous.</h3>
-          <p class="footer-text">Designed and coded with ♥ by Julie Lely</p>
-        </div>
-        <div class="footer-col2">
-          <div class="footer-links">
-            <a href="index.html"><span class="underline">projects</span>&#160;<strong>•</strong>&#160;</a>
-            <a href="about.html"><span class="underline">about</span>&#160;<strong>•</strong>&#160;</a>
-            <a href="files/LELY_JULIE.pdf"><span class="underline">resume</span></a>
-          </div>
-          <div class="social-links">
-            <a class="footer-text" id="email">julielely@gmail.com</a>
-            <a class="social-icons" href="https://www.linkedin.com/in/julielely/" target="_blank"><img src="images/socials/linkedin.png" alt="linkedin"></a>
-            <a class="social-icons" href="https://github.com/julielely" target="_blank"><img src="images/socials/github.png" alt="github"></a>
-          </div>
-        </div>
-      </div>
-    </footer>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="/javascripts/mode.js" type="text/javascript"></script>
+    <script src="/javascripts/page-crypt.js" type="text/javascript"></script>
+
     <script>
       $(document).ready(function() {
               gsap.from(".home-header", {duration: 0.6, y:6});
@@ -242,6 +276,26 @@
             });
         });
 
+    // Password Handling
+    $("#facebook-button").on("click", function(e){
+      $("#screen-container").css("visibility", "visible");
+      $("#dark-overlay").css("visibility", "visible");
+      $("#screen-container").css("opacity", "1");
+      $("#dark-overlay").css("opacity", "1");
+      e.preventDefault(); //Prevent default click action which is causing the 
+      $("html").css({ height: '100%', overflow: 'hidden' }); //Disable scroll
+      return false;   
+    });
+
+    $("#close-icon").on("click", function(e){
+      $("#screen-container").css("visibility", "hidden");
+      $("#dark-overlay").css("visibility", "hidden");
+      $("#screen-container").css("opacity", "0");
+      $("#dark-overlay").css("opacity", "0");
+      e.preventDefault(); //Prevent default click action which is causing the 
+      $("html").css({ height: '100%', overflow: 'auto' }); //Re-enable scroll
+      return false;  
+    });
 
     </script>
   </body>
