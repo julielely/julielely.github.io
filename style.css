@@ -239,7 +239,7 @@ nav {
 
 .process-cards { height: 445px; }
 .yahoo-process-cards, .fb-process-cards {
-  height: 190px; 
+  height: 190px;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%), 0 0 1px 0 rgb(0 0 0 / 8%);
   color: var(--navy);
   background-color: white;
@@ -281,8 +281,8 @@ nav {
   height: 0px;
 }
 
-.project-container > div, 
-.process-container > div, 
+.project-container > div,
+.process-container > div,
 .yahoo-process-container > div {
   margin-bottom: 36px;
 }
@@ -1257,8 +1257,8 @@ article section {
   line-height: 0px;
 }
 
-.solutions-header-title, 
-.selected-solution, 
+.solutions-header-title,
+.selected-solution,
 .selected-topic,
 .selected-yahoo-solution,
 .iteration-header-title,
@@ -1289,7 +1289,7 @@ article section {
 
 .selected-yahoo-solution {
   background: var(--navy);
-} 
+}
 
 .selected-topic {
   color: #FFF;
@@ -1444,7 +1444,7 @@ article section {
 }
 
 #fb-sticker-set { width: 230px; }
-.process-cards img, 
+.process-cards img,
 .yahoo-process-cards img {
   margin: 0px;
 }
@@ -1510,8 +1510,8 @@ ol li:last-child {
   align-items: flex-start;
 }
 
-.swipe-container img { 
-  width: 40%; 
+.swipe-container img {
+  width: 40%;
   margin: 0px;
 }
 /* .swipe-container p { width: 45%; } */
@@ -1555,7 +1555,7 @@ ol li:last-child {
 #screen-container {
   visibility: hidden;
   opacity: 0;
-  transition: .3s ease-out;  
+  transition: .3s ease-out;
   width: 100%;
     height: 100vh;
     display: flex;
@@ -1659,6 +1659,7 @@ ol li:last-child {
 }
 
 #contentFrame {
+  pointer-events: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -1687,7 +1688,7 @@ ol li:last-child {
   text-align: left;
   color: var(--navy);
 }
-        
+
 
 /* END */
 
@@ -1704,7 +1705,7 @@ ol li:last-child {
   .project-card-content + .button,
   .project-card-content + .button-locked,
   .project-card-content + .disabled-button { margin-top: 20px; }
-  
+
 
   /* About Page */
   .brand-section { flex-direction: column; }
@@ -1753,7 +1754,7 @@ ol li:last-child {
     height: 365px;
     margin-bottom: 30px;
   }
- 
+
 
   .process-card-row { flex-direction: column; }
 }
@@ -1829,7 +1830,7 @@ ol li:last-child {
     }
 
 
-    
+
 }
 
 @media screen and (max-width: 650px) {
@@ -1861,5 +1862,5 @@ ol li:last-child {
     .swipe-container img{
       margin-bottom: 36px;
     }
-    
+
 }
