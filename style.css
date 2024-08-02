@@ -469,6 +469,13 @@ nav {
   width: 112px;
 }
 
+#new-yahoo-design {
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  width: 190px;
+}
+
 #design-systems {
   position: absolute;
   right: -15px;
@@ -478,8 +485,9 @@ nav {
 
 #pink-star {
   position: absolute;
-  left: 64px;
-  top: -18px;
+  right: -20px;
+  transform: rotate(24deg);
+  bottom: -20px;
   width: 35px;
 }
 
@@ -665,6 +673,12 @@ footer {
   /* margin-left: 100px; */
 }
 
+.currentlyimg-dog * {
+  width: 160px;
+  /* margin-left: 100px; */
+}
+
+
 .currentlyimg-cobble .currently-stickers {
   /* bottom: -10px;
   left: -52px;
@@ -672,6 +686,12 @@ footer {
   bottom: -40px;
   left: 20px;
   width: 118px;
+}
+
+.currentlyimg-dog .currently-stickers {
+  bottom: -10px;
+  left: 20px;
+  width: 140px;
 }
 
 .currentlyimg-netflix * {

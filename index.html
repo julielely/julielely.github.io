@@ -65,7 +65,6 @@
             <div class="home-subheader">
               <p><strong>Julie Lely</strong> - Product Designer @ <strong>Yahoo!</strong></p>
               <p>Previously @ <strong>Meta (Facebook App),</strong> <strong>SiriusXM</strong></p>
-              <p>CS @ <strong>Wellesley College '23</strong></p>
               <p>Designer with specialties in <strong>prototyping </strong> and <strong>interaction design</strong>
                 <img src="images/home/sparkles.png" alt="" style="width: 20px; height: 20px; position: absolute; padding-left: 5px; padding-top: 2px"></p>
             </div>
@@ -90,6 +89,29 @@
             <div class="project-cards">
               <div class="project-card-content">
                 <div class="project-image-frame">
+                  <img class="project-image" src="images/home/new-yahoo-2.png" alt="">
+                  <div class="google-stickers">
+                    <img id="new-yahoo-design" src="images/stickers/new-yahoo.png" alt="">
+                    <img id="pink-star" src="images/stickers/pink-star.png" alt="">
+                    <!-- <img id="design-systems" src="images/stickers/design-systems.png" alt=""> -->
+                  </div>
+                </div>
+                <div class="project-card-header">
+                  <h4>Currently</h4>
+                  <h3>Yahoo Home</h3>
+                </div>
+                <p class="card-body">Launched a new experience for millions of users, 
+                  with new features, design improvements, and a wealth of opportunities to learn
+                  from our users.
+                </p>
+              </div>
+              <a id="new-yahoo-button" class="button button-locked" href="#"> <img class="lock-img" src="images/meta/lock.png" alt="">
+                Explore</a>
+            </div>
+
+            <div class="project-cards">
+              <div class="project-card-content">
+                <div class="project-image-frame">
                   <img class="project-image" src="images/home/meta.jpg" alt="">
                   <div class="meta-stickers">
                     <img src="images/stickers/meta-prototyping.png" alt="">
@@ -106,6 +128,12 @@
                 <a id="facebook-button" class="button button-locked" href="#"> <img class="lock-img" src="images/meta/lock.png" alt="">
                   Explore</a>
             </div>
+
+
+
+          </div>
+
+          <div class="project-card-row">
 
             <div class="project-cards">
               <div class="project-card-content">
@@ -127,11 +155,6 @@
               <a class="button" href="yahoo.html">Explore</a>
             </div>
 
-
-          </div>
-
-          <div class="project-card-row">
-
             <div class="project-cards">
               <div class="project-card-content">
                 <div class="project-image-frame">
@@ -151,28 +174,7 @@
               </div>
                 <a class="button" href="coursebrowser.html">Explore</a>
             </div>
-
-            <div class="project-cards">
-              <div class="project-card-content">
-                <div class="project-image-frame">
-                  <img class="project-image" src="images/home/google.jpg" alt="">
-                  <div class="google-stickers">
-                    <img id="material-design" src="images/stickers/material-design.png" alt="">
-                    <img id="pink-star" src="images/stickers/pink-star.png" alt="">
-                    <img id="design-systems" src="images/stickers/design-systems.png" alt="">
-                  </div>
-                </div>
-                <div class="project-card-header">
-                  <h4>App design</h4>
-                  <h3>2021 Google Design Challenge</h3>
-                </div>
-                <p class="card-body">The transition from high school to college can be
-                  intimidating! This app serves as a tool to bring college
-                  students together and help students get their questions answered.
-                </p>
-              </div>
-              <a class="button" href="google.html">Explore</a>
-            </div>
+            
 
 
 
@@ -279,6 +281,17 @@
 
     // Password Handling
     $("#facebook-button").on("click", function(e){
+      $("#screen-container").css("visibility", "visible");
+      $("#dark-overlay").css("visibility", "visible");
+      $("#screen-container").css("opacity", "1");
+      $("#dark-overlay").css("opacity", "1");
+      e.preventDefault(); //Prevent default click action which is causing the
+      $("html").css({ height: '100%', overflow: 'hidden' }); //Disable scroll
+      return false;
+    });
+
+      // Password Handling for Yahoo
+        $("#new-yahoo-button").on("click", function(e){
       $("#screen-container").css("visibility", "visible");
       $("#dark-overlay").css("visibility", "visible");
       $("#screen-container").css("opacity", "1");
