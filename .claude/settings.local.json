@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "mcp__figma-desktop__get_screenshot",
+      "Bash(npm install:*)"
+    ]
+  }
+}

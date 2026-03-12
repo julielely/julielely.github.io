@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Pulse" clip-path="url(#clip0_164_13871)">
+<path id="Exclude" opacity="0.5" d="M8 0C9.10457 0 10 0.895431 10 2V8C10 9.10457 9.10457 10 8 10H2C0.895431 10 1.61066e-08 9.10457 0 8V2C0 0.895431 0.895431 1.61066e-08 2 0L8 0ZM5 2.5C3.61929 2.5 2.5 3.61929 2.5 5C2.5 6.38071 3.61929 7.5 5 7.5C6.38071 7.5 7.5 6.38071 7.5 5C7.5 3.61929 6.38071 2.5 5 2.5Z" fill="var(--fill-0, white)"/>
+</g>
+<defs>
+<clipPath id="clip0_164_13871">
+<rect width="10" height="10" fill="white"/>
+</clipPath>
+</defs>
+</svg>

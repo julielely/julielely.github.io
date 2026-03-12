@@ -1,0 +1,80 @@
+/*
+  Design tokens scaffold.
+  Replace the placeholder values below with the exact values exported from Figma (colors, type scales, spacings).
+  Use Figma's Inspect panel to copy hex values and font names.
+*/
+:root {
+  /* Colors (placeholder values) */
+  --color-primary: #0b5cff; /* primary brand (placeholder) */
+  --color-accent: #ff7ab6; /* accent / interactive (placeholder) */
+  /* Palette extracted from Figma style guide in the file */
+  --color-primary: #98CEFF; /* light blue */
+  --color-accent: #F2CDFF; /* pink/lilac */
+  --color-secondary: #C4DDFD; /* pale blue */
+  --color-ternary: #97CFD0; /* mint */
+  --color-ink: #2C2C2C; /* dark text from style guide */
+  --color-background: #ffffff; /* page background */
+  --color-surface: #f8fafc; /* panels/cards */
+  --color-muted: #94a3b8; /* subdued text (placeholder) */
+  --color-text: var(--color-ink); /* primary text from style guide */
+/*
+  Design tokens scaffold (wired to Figma palette)
+  This file contains the project's color, typography and spacing tokens.
+  Update values only from the Figma style guide when necessary.
+*/
+
+:root {
+  /* Brand & UI colors (extracted from Figma style guide frames) */
+  --light-brand-blue: #98CEFF; /* primary / light blue */
+  --light-brand-pink-accent: #DE96FF; /* pink accent (user-specified) */
+  --light-brand-lilac: #F2CDFF; /* lilac */
+  --light-brand-secondary: #C4DDFD; /* pale blue */
+  --light-brand-mint: #97CFD0; /* mint/green */
+
+  /* Functional tokens */
+  --color-ink: #2C2C2C; /* primary dark text */
+  --color-background: #ffffff; /* page background */
+  --color-surface: #f8fafc; /* panels/cards */
+  --color-muted: #94a3b8; /* muted text */
+  --stroke: #e6ebf1; /* strokes/borders */
+
+  /* Map common names to brand tokens */
+  --color-primary: var(--light-brand-blue);
+  --color-accent: var(--light-brand-lilac);
+  --color-secondary: var(--light-brand-secondary);
+  --color-ternary: var(--light-brand-mint);
+  --color-text: var(--color-ink);
+
+  /* Type tokens */
+  --font-family-sans: 'Albert Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --type-h1-size: 50px;
+  --type-h2-size: 36px;
+  --type-h3-size: 24px;
+  --type-body-size: 18px;
+  --type-ui-size: 14px;
+  --line-height-tight: 1.05;
+  --line-height-default: 1.5;
+  --letter-spacing-body: -0.09px;
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+}
+
+/* Dot colors (header/window chrome) mapped to Figma palette
+   Per request: dot-blue maps to the pink-accent token via CSS var fallback */
+:root {
+  --dot-pink: var(--light-brand-lilac);
+  --dot-blue: var(--light-brand-pink-accent, #DE96FF);
+  --dot-green: var(--light-brand-mint);
+}
+
+/* Utility class helpers */
+.body-tokens {
+  color: var(--color-text);
+  background-color: var(--color-background);
+  font-family: var(--font-family-sans);
+}
