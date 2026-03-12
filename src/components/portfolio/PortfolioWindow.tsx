@@ -5,6 +5,7 @@ import { ResumePanel } from "./ResumePanel";
 import { SmileyIcon } from "../icons/SmileyIcon";
 import { StatusTicker } from "./StatusTicker";
 import { ThemeToggle } from "./ThemeToggle";
+import { useTheme } from "../../contexts/ThemeContext";
 
 type TabId = "work" | "about" | "resume";
 
@@ -21,6 +22,7 @@ const TABS: Tab[] = [
 ];
 
 export function PortfolioWindow() {
+  const { theme } = useTheme();
   const [activeTab, setActiveTab] = useState<TabId>("work");
   const [scrollY, setScrollY] = useState(0);
   const [showFixedTabs, setShowFixedTabs] = useState(false);
@@ -64,9 +66,17 @@ export function PortfolioWindow() {
     setShowFixedTabs(shouldShowFixed);
   }, [shouldShowFixed]);
 
-  // Border radius and full-width based on scroll position
-  const borderRadius = showFixedTabs ? 0 : 16;
-  const isFullWidth = showFixedTabs;
+  const [isNarrow, setIsNarrow] = useState(() => window.innerWidth < 1024);
+
+  useEffect(() => {
+    function check() { setIsNarrow(window.innerWidth < 1024); }
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
+
+  // Border radius and full-width based on scroll position or narrow screen
+  const borderRadius = (showFixedTabs || isNarrow) ? 0 : 16;
+  const isFullWidth = showFixedTabs || isNarrow;
 
   const ActiveComponent =
     TABS.find((tab) => tab.id === activeTab)?.component || ProjectGrid;
@@ -79,13 +89,24 @@ export function PortfolioWindow() {
   };
 
   return (
-    <div className={`min-h-screen flex flex-col items-center px-8 lg:px-12 transition-colors duration-300 ${
-      activeTab === "resume" && isFullWidth ? "bg-bg-primary" : "bg-bg-secondary"
-    }`}>
-      <div className="w-full max-w-[1184px] pt-8 md:pt-16 pb-8 md:pb-16 flex-1 flex flex-col">
+    <div
+      className={`min-h-screen flex flex-col items-center transition-colors duration-300 ${
+        isNarrow ? "px-0" : "px-8 lg:px-12"
+      } ${
+        (activeTab === "resume" || activeTab === "about") && isFullWidth ? "bg-bg-primary" : "bg-bg-secondary"
+      }`}
+      style={activeTab === "about" && isFullWidth ? {
+        backgroundImage: `radial-gradient(circle, ${theme === 'dark' ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.12)'} 1.5px, transparent 1.5px)`,
+        backgroundSize: '24px 24px',
+        backgroundAttachment: 'fixed',
+      } : undefined}
+    >
+      <div className="w-full max-w-[1184px] pt-4 md:pt-8 pb-8 md:pb-16 flex-1 flex flex-col">
         {/* Header Section */}
-        <div className="mb-8">
-          <SmileyIcon className="w-12 h-12 md:w-16 md:h-16 mb-6 md:mb-8" />
+        <div className={`mb-8 ${
+            isNarrow ? "px-6" : "px-0"
+          }`}>
+          <SmileyIcon className="w-12 h-12 md:w-16 md:h-16 mb-3 md:mb-4" />
           <h1 className="text-[40px] md:text-[60px] lg:text-[80px] font-semibold leading-[1.2] md:leading-[1.5] text-content-primary tracking-tight-lg mb-4">
             julie lely
           </h1>
@@ -249,7 +270,7 @@ export function PortfolioWindow() {
             id={`panel-${activeTab}`}
             aria-labelledby={`tab-${activeTab}`}
             className={`min-w-0 transition-[border-radius] duration-150 ease-out ${
-              activeTab === "resume" ? "bg-bg-primary" : "bg-bg-secondary"
+              activeTab === "resume" || activeTab === "about" ? "bg-bg-primary" : "bg-bg-secondary"
             }`}
             style={{ borderBottomLeftRadius: `${borderRadius}px`, borderBottomRightRadius: `${borderRadius}px` }}
           >

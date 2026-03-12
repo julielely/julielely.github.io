@@ -60,7 +60,7 @@ export function ResumePanel() {
                 width={containerWidth}
                 renderTextLayer={false}
                 renderAnnotationLayer={false}
-                canvasBackground="transparent"
+                canvasBackground={theme === 'dark' ? 'transparent' : '#ffffff'}
               />
             ))}
         </Document>

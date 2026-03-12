@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes sparkle-float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33%       { transform: translateY(-4px) rotate(6deg); }
+  66%       { transform: translateY(-2px) rotate(-4deg); }
+}
+
 @import './styles/design-tokens.css';
 
 /* Light mode colors (default) - WCAG AA compliant */
@@ -122,6 +128,13 @@ code {
   display: block !important;
 }
 
+/* Ensure canvas has white background in light mode */
+html:not(.dark) .react-pdf__Page,
+html:not(.dark) .react-pdf__Page canvas,
+html:not(.dark) .react-pdf__Page__canvas {
+  background: #ffffff !important;
+}
+
 /* Ensure canvas has no border in dark mode */
 .dark .react-pdf__Page,
 .dark .react-pdf__Page canvas,
@@ -131,4 +144,13 @@ code {
   outline: 0 !important;
   box-shadow: none !important;
   background: var(--color-bg-primary) !important;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }

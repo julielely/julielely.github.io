@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 
 const HOROSCOPE_MESSAGES = [
-  "today is your day to shine ✨",
-  "good vibes incoming 🌈",
-  "trust your creative instincts 🎨",
-  "something exciting is brewing ☕",
-  "the stars say: take a break 💫",
-  "luck is on your side today 🍀",
+  "today is your day to shine",
+  "good vibes incoming",
+  "trust your creative instincts",
+  "something exciting is brewing",
+  "the stars say: take a break",
+  "luck is on your side today",
 ];
 
 // Seattle, WA coordinates
@@ -120,8 +120,9 @@ function getWeatherIcon(code: number) {
 }
 
 export function StatusTicker() {
-  const [horoscopeIndex, setHoroscopeIndex] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [horoscopeIndex] = useState(() =>
+    Math.floor(Math.random() * HOROSCOPE_MESSAGES.length)
+  );
   const [weather, setWeather] = useState<WeatherData | null>(null);
 
   // Fetch weather data
@@ -146,17 +147,6 @@ export function StatusTicker() {
     return () => clearInterval(interval);
   }, []);
 
-  // Rotate horoscope messages
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIsTransitioning(true);
-      setTimeout(() => {
-        setHoroscopeIndex((prev) => (prev + 1) % HOROSCOPE_MESSAGES.length);
-        setIsTransitioning(false);
-      }, 300);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <div className="flex items-center gap-4 text-xs font-medium text-content-secondary">
@@ -201,12 +191,7 @@ export function StatusTicker() {
           <path d="M23.2945 37.1606C24.5523 45.0332 31.2608 58.4762 48.0328 49.2676" stroke="#1B1F24" strokeWidth="1.34118" />
           <path d="M48.4957 45.8147C47.771 47.5042 47.2091 50.9498 50.7588 51.2151" stroke="#1B1F24" strokeWidth="1.34118" />
         </svg>
-        <span
-          className="transition-opacity duration-300"
-          style={{ opacity: isTransitioning ? 0 : 1 }}
-        >
-          {HOROSCOPE_MESSAGES[horoscopeIndex]}
-        </span>
+        <span>{HOROSCOPE_MESSAGES[horoscopeIndex]}</span>
       </div>
 
       <div className="w-px h-3 bg-stroke-primary" />
