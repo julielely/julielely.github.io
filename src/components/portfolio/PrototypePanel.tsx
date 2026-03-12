@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { prototypeConfig } from "../../content/projects/prototypeConfig";
 import { getProjectById } from "../../content/projects/helpers";
 import { ArrowIcon } from "../icons/ArrowIcon";

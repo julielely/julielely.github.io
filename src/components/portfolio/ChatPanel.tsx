@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import type { Project, ProjectId } from "../../content/projects/schema";
-import { chatProjects, getProjectById } from "../../content/projects/helpers";
-import { openProject } from "../../content/projects/helpers";
+import { useState } from "react";
+import type { ProjectId } from "../../content/projects/schema";
+import { chatProjects, getProjectById, openProject } from "../../content/projects/helpers";
 
 interface Message {
   id: string;
@@ -17,7 +16,9 @@ const SUGGESTED_PROMPTS = [
   { label: "Tell me about your process", filter: null },
 ];
 
-function getResponseForPrompt(label: string, filter: string | null): { text: string; projectId?: ProjectId } {
+function getResponseForPrompt(
+  filter: string | null
+): { text: string; projectId?: ProjectId } {
   if (filter === "Design Systems") {
     const project = chatProjects.find((p) => p.tags.includes("Design Systems"));
     return {
@@ -63,7 +64,8 @@ export function ChatPanel() {
       content: prompt.label,
     };
 
-    const response = getResponseForPrompt(prompt.label, prompt.filter);
+    const response = getResponseForPrompt(prompt.filter);
+
     const assistantMessage: Message = {
       id: `assistant-${Date.now()}`,
       sender: "assistant",

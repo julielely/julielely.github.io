@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const MAGIC_8_BALL_RESPONSES = [
   "No cap, signs point to yes.",
