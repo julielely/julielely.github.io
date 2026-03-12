@@ -6,12 +6,13 @@ export const projects: Project[] = [
     company: {
       name: "FIS",
       brandColor: "#0e8800",
+      logoSrc: "/images/26e3d15a1b2ac270c71bcfb2c1560331f46f1631.png",
     },
     tags: ["Design Systems", "Product Design"],
     card: {
       title: "Design Systems",
       description:
-        "Launched a new yahoo.com for millions of users, with new features, design improvements, and a wealth of opportunities to learn from our users.",
+        "Creating cohesive product experiences at scale through motion, components, and foundational design systems, and led FIS’s conversational UI initiative.",
       companyLine: "FIS",
       image: {
         src: "/images/103c6b0f8112ed8b255b19e5e78b6f7e18062bcf.png",
@@ -38,6 +39,7 @@ export const projects: Project[] = [
     company: {
       name: "Yahoo",
       brandColor: "#7d2dff",
+      logoSrc: "/images/ff1a32b5c7bc90aa763a1bbb4dc4958323590f04.png",
     },
     tags: ["Product Design", "Responsive"],
     card: {
@@ -70,6 +72,7 @@ export const projects: Project[] = [
     company: {
       name: "Meta",
       brandColor: "#0083ff",
+      logoSrc: "/images/6532e765b16cf34e53e0cf6ec8fecaa2077d4919.png",
     },
     tags: ["Product Design", "Research"],
     card: {
@@ -102,6 +105,7 @@ export const projects: Project[] = [
     company: {
       name: "SiriusXM",
       brandColor: "#0201f5",
+      logoSrc: "/images/50f7dc12c9f10ccd5aed993a7f9ea6b73ec09786.png",
     },
     tags: ["Product Design", "Prototyping"],
     card: {

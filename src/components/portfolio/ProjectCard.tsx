@@ -1,24 +1,24 @@
 import React from "react";
 import type { Project } from "../../content/projects/schema";
-import { openProject } from "../../content/projects/helpers";
 import { ArrowIcon } from "../icons/ArrowIcon";
 
 interface ProjectCardProps {
   project: Project;
   className?: string;
+  onCardClick?: (project: Project) => void;
 }
 
-export function ProjectCard({ project, className = "" }: ProjectCardProps) {
+export function ProjectCard({ project, className = "", onCardClick }: ProjectCardProps) {
   const { card, company } = project;
 
   const handleClick = () => {
-    openProject(project);
+    onCardClick?.(project);
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "Enter" || e.key === " ") {
       e.preventDefault();
-      openProject(project);
+      onCardClick?.(project);
     }
   };
 
@@ -41,8 +41,16 @@ export function ProjectCard({ project, className = "" }: ProjectCardProps) {
               className="w-full h-full object-cover transition-transform group-hover:scale-105"
             />
           </div>
-          {/* Company Logo Overlay - placeholder for now */}
-          <div className="absolute bottom-4 left-4 w-8 h-8 border border-stroke-primary rounded bg-white" />
+          {/* Company Logo Overlay */}
+          {company.logoSrc && (
+            <div className="absolute bottom-4 left-4 w-8 h-8 rounded overflow-hidden border border-stroke-primary">
+              <img
+                src={company.logoSrc}
+                alt={`${company.name} logo`}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          )}
         </div>
 
         {/* Content Wrapper */}
