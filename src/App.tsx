@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { PortfolioWindow } from "./components/portfolio";
 
 function App() {
